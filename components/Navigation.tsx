@@ -13,16 +13,13 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-18">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-blue rounded-lg flex items-center justify-center">
-              <svg viewBox="0 0 24 24" fill="white" className="w-6 h-6">
-                <path d="M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3z"/>
-              </svg>
-            </div>
-            <span className="text-2xl font-bold text-navy">
-              Base<span className="text-blue">Mortgages</span>
-            </span>
-          </Link>
+<Link href="/" className="flex items-center gap-3">
+  <img 
+    src="/base-mortgages-logo.svg" 
+    alt="Base Mortgages" 
+    className="h-10 w-auto"
+  />
+</Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">

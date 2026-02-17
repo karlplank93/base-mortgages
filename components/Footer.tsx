@@ -7,16 +7,31 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           {/* Company Info */}
           <div>
-            <div className="flex items-center gap-3 mb-5">
-              <div className="w-8 h-8 bg-blue rounded-lg flex items-center justify-center">
-                <svg viewBox="0 0 24 24" fill="white" className="w-5 h-5">
-                  <path d="M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3z"/>
-                </svg>
-              </div>
-              <span className="text-xl font-bold text-white">
-                Base<span className="text-blue">Mortgages</span>
-              </span>
-            </div>
+<div className="mb-5">
+  <img 
+    src="/base-mortgages-logo.svg" 
+    alt="Base Mortgages" 
+    className="h-8 w-auto brightness-0 invert"
+  />
+</div>
+```
+
+6. **Save** (Ctrl+S or Cmd+S)
+
+---
+
+## 🚀 Deploy Your Changes
+
+1. **Go to GitHub Desktop**
+
+2. **You'll see these changes:**
+   - ✅ Modified: `components/Navigation.tsx`
+   - ✅ Modified: `components/Footer.tsx`
+   - ✅ Added: `public/base-mortgages-logo.svg`
+
+3. **Bottom left box**, type:
+```
+   Updated logo
             <p className="text-sm leading-relaxed mb-5 max-w-xs">
               Strategic mortgage advice for New Zealanders at every stage of their property journey. We're here to help you make the most of your mortgage.
             </p>
