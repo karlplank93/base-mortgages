@@ -9,7 +9,7 @@ export default function Navigation() {
   const [servicesOpen, setServicesOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-50 bg-white border-b border-cream-dark shadow-sm">
+    <nav className="sticky top-0 z-50 bg-white border-b border-sand-dark shadow-sm">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-18">
           {/* Logo */}
@@ -28,7 +28,7 @@ export default function Navigation() {
                 Services <ChevronDown className="w-4 h-4" />
               </button>
               {servicesOpen && (
-                <div className="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-56 bg-white border border-cream-dark rounded-xl shadow-lg py-2">
+                <div className="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-56 bg-white border border-sand-dark rounded-xl shadow-lg py-2">
                   <Link href="/services/first-home-buyers" className="block px-4 py-2.5 text-sm text-navy/70 hover:text-navy hover:bg-teal-light transition">First Home Buyers</Link>
                   <Link href="/services/refinancing" className="block px-4 py-2.5 text-sm text-navy/70 hover:text-navy hover:bg-teal-light transition">Refinancing</Link>
                   <Link href="/services/investors" className="block px-4 py-2.5 text-sm text-navy/70 hover:text-navy hover:bg-teal-light transition">Property Investors</Link>
@@ -58,7 +58,7 @@ export default function Navigation() {
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div className="md:hidden py-4 space-y-3 border-t border-cream-dark">
+          <div className="md:hidden py-4 space-y-3 border-t border-sand-dark">
             <Link href="/about" className="block py-2 text-navy/70 font-medium">About Us</Link>
             <Link href="/resources" className="block py-2 text-navy/70 font-medium">Resources</Link>
             <Link href="/contact" className="block py-2 text-navy/70 font-medium">Contact</Link>

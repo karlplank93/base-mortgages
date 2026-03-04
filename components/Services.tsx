@@ -50,7 +50,7 @@ export default function Services() {
           <h2 className="font-display text-4xl md:text-5xl font-bold text-navy mb-4 leading-tight">
             Mortgage advice for every<br />stage of your journey
           </h2>
-          <p className="text-lg text-navy/60 max-w-2xl">
+          <p className="text-lg text-slate/60 max-w-2xl">
             From your first home to your fifth investment property — we provide strategic mortgage advice that goes beyond just finding a rate.
           </p>
         </div>
@@ -65,7 +65,7 @@ export default function Services() {
                 className={`group relative rounded-2xl p-8 border transition-all duration-300 hover:-translate-y-1 hover:shadow-xl ${
                   service.featured
                     ? 'bg-navy-deep border-navy-deep text-white'
-                    : 'bg-white border-cream-dark hover:border-teal'
+                    : 'bg-white border-sand-dark hover:border-teal'
                 }`}
               >
                 <div className={`w-14 h-14 rounded-xl flex items-center justify-center mb-5 ${
@@ -78,7 +78,7 @@ export default function Services() {
                   {service.title}
                 </h3>
 
-                <p className={`text-sm leading-relaxed ${service.featured ? 'text-white/65' : 'text-navy/60'}`}>
+                <p className={`text-sm leading-relaxed ${service.featured ? 'text-white/65' : 'text-slate/60'}`}>
                   {service.description}
                 </p>
 

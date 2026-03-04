@@ -33,7 +33,7 @@ export default function WhoWeHelp() {
           <h2 className="font-display text-4xl md:text-5xl font-bold text-navy mb-4 leading-tight">
             Wherever you are on your<br />property journey
           </h2>
-          <p className="text-lg text-navy/60 max-w-2xl">
+          <p className="text-lg text-slate/60 max-w-2xl">
             We specialise in three types of clients — each with a tailored approach designed around their unique situation.
           </p>
         </div>

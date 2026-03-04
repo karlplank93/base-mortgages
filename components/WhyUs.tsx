@@ -25,7 +25,7 @@ const features = [
 
 export default function WhyUs() {
   return (
-    <section className="bg-cream py-20 px-6 lg:px-8">
+    <section className="bg-sand py-20 px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left: Content */}
@@ -34,7 +34,7 @@ export default function WhyUs() {
             <h2 className="font-display text-4xl md:text-5xl font-bold text-navy mb-4 leading-tight">
               Your mortgage adviser,<br />for life.
             </h2>
-            <p className="text-lg text-navy/60 mb-9 max-w-xl">
+            <p className="text-lg text-slate/60 mb-9 max-w-xl">
               We're not a transactional service. We build long-term relationships and proactively manage your mortgage so you never leave money on the table.
             </p>
 
@@ -50,7 +50,7 @@ export default function WhyUs() {
                       <h4 className="text-base font-semibold text-navy mb-1">
                         {feature.title}
                       </h4>
-                      <p className="text-sm text-navy/60 leading-relaxed">
+                      <p className="text-sm text-slate/60 leading-relaxed">
                         {feature.description}
                       </p>
                     </div>

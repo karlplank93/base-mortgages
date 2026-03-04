@@ -25,21 +25,21 @@ const steps = [
 
 export default function Process() {
   return (
-    <section className="bg-cream py-20 px-6 lg:px-8">
+    <section className="bg-sand py-20 px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="mb-16">
           <div className="text-xs font-bold text-teal uppercase tracking-widest mb-3">How It Works</div>
           <h2 className="font-display text-4xl md:text-5xl font-bold text-navy mb-4 leading-tight">
             Four simple steps to your<br />new mortgage
           </h2>
-          <p className="text-lg text-navy/60 max-w-2xl">
+          <p className="text-lg text-slate/60 max-w-2xl">
             We've streamlined the entire process so you know exactly what to expect — no surprises, no jargon.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0">
           {steps.map((step, index) => (
-            <div key={step.number} className="relative p-8 border-r border-cream-dark last:border-r-0">
+            <div key={step.number} className="relative p-8 border-r border-sand-dark last:border-r-0">
               <div className="font-display text-6xl font-bold text-teal/25 mb-4 leading-none">
                 {step.number}
               </div>
@@ -48,7 +48,7 @@ export default function Process() {
                 {step.title}
               </h3>
 
-              <p className="text-sm text-navy/60 leading-relaxed">
+              <p className="text-sm text-slate/60 leading-relaxed">
                 {step.description}
               </p>
 

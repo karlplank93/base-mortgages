@@ -9,23 +9,30 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Teal = PRIMARY brand color
-        teal: {
-          DEFAULT: '#2ab5a4',
-          dark: '#1e9183',
-          darker: '#147066',
-          light: '#e6f7f5',
-          mid: '#b2e8e3',
-        },
-        // Navy = SECONDARY (footer, dark sections only)
+        // Primary navy (from brand palette)
         navy: {
-          DEFAULT: '#1e2d3d',
-          deep: '#141f2b',
-          light: '#2a3f55',
+          DEFAULT: '#1F3A5F',
+          deep: '#162d4a',
+          light: '#2a4f7a',
         },
+        // Accent teal (from brand palette)
+        teal: {
+          DEFAULT: '#27C1B7',
+          dark: '#1e9990',
+          darker: '#166e68',
+          light: '#e8f9f8',
+          mid: '#a8e8e4',
+        },
+        // Sand warm neutral (from brand palette)
+        sand: {
+          DEFAULT: '#F1E8D9',
+          dark: '#e3d6c4',
+        },
+        // Text
+        slate: '#333333',
         cream: {
-          DEFAULT: '#f5f2ed',
-          dark: '#ede9e2',
+          DEFAULT: '#F1E8D9',
+          dark: '#e3d6c4',
         },
       },
       fontFamily: {

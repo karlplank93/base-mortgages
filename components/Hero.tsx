@@ -6,13 +6,13 @@ import { motion } from 'framer-motion';
 export default function Hero() {
   return (
     <section className="relative bg-white overflow-hidden min-h-[88vh]">
-      {/* Subtle teal gradient wash top-right */}
-      <div className="absolute top-0 right-0 w-[700px] h-[700px] bg-teal-light rounded-full blur-[140px] -translate-y-1/3 translate-x-1/3 pointer-events-none opacity-70" />
-      {/* Subtle teal gradient bottom-left */}
-      <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-teal-light rounded-full blur-[100px] translate-y-1/3 -translate-x-1/3 pointer-events-none opacity-50" />
+      {/* Teal glow top-right */}
+      <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-teal-light rounded-full blur-[140px] -translate-y-1/3 translate-x-1/3 pointer-events-none opacity-80" />
+      {/* Sand glow bottom-left */}
+      <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-sand rounded-full blur-[100px] translate-y-1/3 -translate-x-1/3 pointer-events-none opacity-60" />
 
-      <div className="relative max-w-7xl mx-auto px-6 lg:px-8 py-24">
-        <div className="grid lg:grid-cols-2 gap-14 items-center">
+      <div className="relative max-w-7xl mx-auto px-6 lg:px-8 py-16 lg:py-24">
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
           {/* Left: Text */}
           <div>
             <motion.div
@@ -29,7 +29,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="font-display text-5xl md:text-6xl font-bold text-navy mb-6 leading-tight"
+              className="font-display text-4xl sm:text-5xl md:text-6xl font-bold text-navy mb-6 leading-tight"
             >
               Smart mortgages,<br />
               <span className="text-teal">built around you.</span>
@@ -39,7 +39,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}
-              className="text-lg md:text-xl text-navy/60 mb-11 leading-relaxed max-w-lg"
+              className="text-lg md:text-xl text-slate/70 mb-11 leading-relaxed max-w-lg"
             >
               At Base Mortgages, we take the complexity out of home lending. Whether you're buying your first home, refinancing, or growing your property portfolio — we get you the best deal.
             </motion.p>
@@ -60,7 +60,7 @@ export default function Hero() {
               </a>
               <Link
                 href="#services"
-                className="bg-white text-navy border-2 border-cream-dark px-8 py-4 rounded-xl font-medium text-lg hover:border-teal hover:text-teal transition"
+                className="bg-white text-navy border-2 border-sand-dark px-8 py-4 rounded-xl font-medium text-lg hover:border-teal hover:text-teal transition"
               >
                 See How We Help
               </Link>
@@ -71,42 +71,40 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.5 }}
-              className="flex flex-wrap gap-10 mt-14 pt-10 border-t border-cream-dark"
+              className="flex flex-wrap gap-8 mt-12 pt-10 border-t border-sand-dark"
             >
               <div>
-                <div className="font-display text-4xl text-teal font-bold">$500M+</div>
-                <div className="text-sm text-navy/50 mt-1">Mortgages settled</div>
+                <div className="font-display text-3xl text-teal font-bold">$500M+</div>
+                <div className="text-sm text-slate/50 mt-1">Mortgages settled</div>
               </div>
               <div>
-                <div className="font-display text-4xl text-teal font-bold">5 Banks</div>
-                <div className="text-sm text-navy/50 mt-1">ANZ, ASB, BNZ,<br />Westpac & Kiwibank</div>
+                <div className="font-display text-3xl text-teal font-bold">5 Banks</div>
+                <div className="text-sm text-slate/50 mt-1">ANZ, ASB, BNZ,<br />Westpac & Kiwibank</div>
               </div>
               <div>
-                <div className="font-display text-4xl text-teal font-bold">100%</div>
-                <div className="text-sm text-navy/50 mt-1">Fee-free to you</div>
+                <div className="font-display text-3xl text-teal font-bold">100%</div>
+                <div className="text-sm text-slate/50 mt-1">Fee-free to you</div>
               </div>
             </motion.div>
           </div>
 
-          {/* Right: Image */}
+          {/* Right: Image - visible on all screens, stacked on mobile */}
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="relative hidden lg:block"
+            className="relative order-first lg:order-last"
           >
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl ring-1 ring-cream-dark">
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl ring-1 ring-sand-dark">
               <img
                 src="/hero-image.jpg"
                 alt="Base Mortgages Team"
-                className="w-full h-auto object-cover"
+                className="w-full h-64 sm:h-80 lg:h-auto object-cover"
               />
-              {/* Subtle teal tint overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-teal/10 to-transparent" />
             </div>
-            {/* Decorative teal blobs */}
-            <div className="absolute -bottom-8 -right-8 w-64 h-64 bg-teal/15 rounded-full blur-3xl -z-10" />
-            <div className="absolute -top-8 -left-8 w-48 h-48 bg-teal-light rounded-full blur-2xl -z-10" />
+            <div className="absolute -bottom-6 -right-6 w-56 h-56 bg-teal/10 rounded-full blur-3xl -z-10" />
+            <div className="absolute -top-6 -left-6 w-40 h-40 bg-sand rounded-full blur-2xl -z-10" />
           </motion.div>
         </div>
       </div>
