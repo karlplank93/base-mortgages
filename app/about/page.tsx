@@ -95,10 +95,6 @@ export default function AboutPage() {
                     alt="Karl Plank — Financial Adviser, Base Mortgages"
                     className="w-full object-cover object-top"
                     style={{ aspectRatio: '3/4' }}
-                    onError={(e) => {
-                      const target = e.target as HTMLImageElement;
-                      target.style.display = 'none';
-                    }}
                   />
                   <div className="p-6 bg-white">
                     <div className="font-display text-xl font-bold text-navy">Karl Plank</div>
