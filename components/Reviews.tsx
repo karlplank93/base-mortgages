@@ -21,16 +21,16 @@ const reviews = [
 
 export default function Reviews() {
   return (
-    <section className="py-20 px-6 lg:px-8">
+    <section className="py-20 px-6 lg:px-8 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="flex items-end justify-between mb-12 flex-wrap gap-6">
           <div>
-            <div className="text-xs font-bold text-blue uppercase tracking-widest mb-3">Client Reviews</div>
+            <div className="text-xs font-bold text-teal uppercase tracking-widest mb-3">Client Reviews</div>
             <h2 className="font-display text-4xl md:text-5xl font-bold text-navy leading-tight">
               Real results for real<br />New Zealanders
             </h2>
           </div>
-          <div className="flex items-center gap-2 text-sm text-gray-600">
+          <div className="flex items-center gap-2 text-sm text-navy/60">
             <svg className="w-4 h-4" viewBox="0 0 24 24">
               <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
               <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
@@ -43,18 +43,18 @@ export default function Reviews() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {reviews.map((review) => (
-            <div key={review.name} className="bg-gray-50 border border-gray-200 rounded-2xl p-7">
+            <div key={review.name} className="bg-cream border border-cream-dark rounded-2xl p-7 hover:shadow-md transition">
               <div className="text-yellow-500 text-lg mb-4 tracking-wider">★★★★★</div>
-              <p className="text-sm text-gray-700 leading-relaxed italic mb-6">
+              <p className="text-sm text-navy/70 leading-relaxed italic mb-6">
                 "{review.text}"
               </p>
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-navy flex items-center justify-center text-white font-bold text-sm">
+                <div className="w-10 h-10 rounded-full bg-teal flex items-center justify-center text-white font-bold text-sm">
                   {review.initials}
                 </div>
                 <div>
                   <div className="font-semibold text-sm text-navy">{review.name}</div>
-                  <div className="text-xs text-gray-600">{review.type}</div>
+                  <div className="text-xs text-navy/50">{review.type}</div>
                 </div>
               </div>
             </div>

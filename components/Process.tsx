@@ -25,35 +25,35 @@ const steps = [
 
 export default function Process() {
   return (
-    <section className="bg-gray-50 py-20 px-6 lg:px-8">
+    <section className="bg-cream py-20 px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="mb-16">
-          <div className="text-xs font-bold text-blue uppercase tracking-widest mb-3">How It Works</div>
+          <div className="text-xs font-bold text-teal uppercase tracking-widest mb-3">How It Works</div>
           <h2 className="font-display text-4xl md:text-5xl font-bold text-navy mb-4 leading-tight">
             Four simple steps to your<br />new mortgage
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl">
+          <p className="text-lg text-navy/60 max-w-2xl">
             We've streamlined the entire process so you know exactly what to expect — no surprises, no jargon.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0">
           {steps.map((step, index) => (
-            <div key={step.number} className="relative p-8 border-r border-gray-200 last:border-r-0">
-              <div className="font-display text-6xl font-bold text-sky mb-4 leading-none">
+            <div key={step.number} className="relative p-8 border-r border-cream-dark last:border-r-0">
+              <div className="font-display text-6xl font-bold text-teal/25 mb-4 leading-none">
                 {step.number}
               </div>
-              
+
               <h3 className="text-lg font-semibold text-navy mb-3">
                 {step.title}
               </h3>
-              
-              <p className="text-sm text-gray-600 leading-relaxed">
+
+              <p className="text-sm text-navy/60 leading-relaxed">
                 {step.description}
               </p>
 
               {index < steps.length - 1 && (
-                <div className="hidden lg:flex absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 w-7 h-7 bg-blue rounded-full items-center justify-center z-10">
+                <div className="hidden lg:flex absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 w-7 h-7 bg-teal rounded-full items-center justify-center z-10">
                   <ChevronRight className="w-4 h-4 text-white" />
                 </div>
               )}

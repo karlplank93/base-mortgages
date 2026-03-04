@@ -9,13 +9,13 @@ const lenders = [
 
 export default function Lenders() {
   return (
-    <section className="bg-gray-50 py-20 px-6 lg:px-8 text-center">
+    <section className="bg-cream py-20 px-6 lg:px-8 text-center">
       <div className="max-w-5xl mx-auto">
-        <div className="text-xs font-bold text-blue uppercase tracking-widest mb-3">Our Lender Panel</div>
+        <div className="text-xs font-bold text-teal uppercase tracking-widest mb-3">Our Lender Panel</div>
         <h2 className="font-display text-4xl md:text-5xl font-bold text-navy mb-4 leading-tight">
           Access to New Zealand's<br />leading banks & lenders
         </h2>
-        <p className="text-lg text-gray-600 mb-10 max-w-2xl mx-auto">
+        <p className="text-lg text-navy/60 mb-10 max-w-2xl mx-auto">
           We're accredited with all major NZ banks, giving you the widest possible choice.
         </p>
 
@@ -23,10 +23,10 @@ export default function Lenders() {
           {lenders.map((lender) => (
             <div
               key={lender.name}
-              className="bg-white border border-gray-300 rounded-xl px-7 py-5 min-w-[140px] hover:border-blue hover:shadow-md transition"
+              className="bg-white border border-cream-dark rounded-xl px-7 py-5 min-w-[140px] hover:border-teal hover:shadow-md transition"
             >
               <div className="font-bold text-base text-navy">{lender.name}</div>
-              <div className="text-xs text-gray-500 uppercase tracking-wide mt-1">{lender.subtitle}</div>
+              <div className="text-xs text-navy/45 uppercase tracking-wide mt-1">{lender.subtitle}</div>
             </div>
           ))}
         </div>

@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  @apply antialiased;
+  @apply antialiased bg-white text-navy;
 }
 
 @layer utilities {

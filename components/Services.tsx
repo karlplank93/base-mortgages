@@ -43,14 +43,14 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services" className="py-20 px-6 lg:px-8">
+    <section id="services" className="py-20 px-6 lg:px-8 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="mb-16">
-          <div className="text-xs font-bold text-blue uppercase tracking-widest mb-3">What We Do</div>
+          <div className="text-xs font-bold text-teal uppercase tracking-widest mb-3">What We Do</div>
           <h2 className="font-display text-4xl md:text-5xl font-bold text-navy mb-4 leading-tight">
             Mortgage advice for every<br />stage of your journey
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl">
+          <p className="text-lg text-navy/60 max-w-2xl">
             From your first home to your fifth investment property — we provide strategic mortgage advice that goes beyond just finding a rate.
           </p>
         </div>
@@ -64,26 +64,26 @@ export default function Services() {
                 href={service.href}
                 className={`group relative rounded-2xl p-8 border transition-all duration-300 hover:-translate-y-1 hover:shadow-xl ${
                   service.featured
-                    ? 'bg-navy border-navy text-white'
-                    : 'bg-white border-gray-200 hover:border-blue'
+                    ? 'bg-navy-deep border-navy-deep text-white'
+                    : 'bg-white border-cream-dark hover:border-teal'
                 }`}
               >
                 <div className={`w-14 h-14 rounded-xl flex items-center justify-center mb-5 ${
-                  service.featured ? 'bg-white/10' : 'bg-sky'
+                  service.featured ? 'bg-teal/20' : 'bg-teal-light'
                 }`}>
-                  <Icon className={`w-7 h-7 ${service.featured ? 'text-blue-300' : 'text-blue'}`} />
+                  <Icon className={`w-7 h-7 ${service.featured ? 'text-teal' : 'text-teal-dark'}`} />
                 </div>
-                
+
                 <h3 className={`text-xl font-semibold mb-3 ${service.featured ? 'text-white' : 'text-navy'}`}>
                   {service.title}
                 </h3>
-                
-                <p className={`text-sm leading-relaxed ${service.featured ? 'text-white/70' : 'text-gray-600'}`}>
+
+                <p className={`text-sm leading-relaxed ${service.featured ? 'text-white/65' : 'text-navy/60'}`}>
                   {service.description}
                 </p>
 
                 <div className={`absolute bottom-6 right-6 text-2xl opacity-0 group-hover:opacity-100 transition-opacity ${
-                  service.featured ? 'text-blue-300' : 'text-blue'
+                  service.featured ? 'text-teal' : 'text-teal'
                 }`}>
                   →
                 </div>

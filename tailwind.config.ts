@@ -10,14 +10,19 @@ const config: Config = {
     extend: {
       colors: {
         navy: {
-          DEFAULT: '#1b2a6b',
-          deep: '#111d55',
+          DEFAULT: '#1e2d3d',
+          deep: '#141f2b',
+          light: '#2a3f55',
         },
-        blue: {
-          DEFAULT: '#2979ff',
-          light: '#5b9bff',
+        teal: {
+          DEFAULT: '#2ab5a4',
+          dark: '#1e9183',
+          light: '#e6f7f5',
         },
-        sky: '#deeeff',
+        cream: {
+          DEFAULT: '#f5f2ed',
+          dark: '#ede9e2',
+        },
       },
       fontFamily: {
         sans: ['var(--font-dm-sans)', 'system-ui', 'sans-serif'],
