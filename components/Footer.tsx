@@ -11,7 +11,7 @@ export default function Footer() {
               <img
                 src="/base-mortgages-logo.svg"
                 alt="Base Mortgages"
-                className="h-8 w-auto brightness-0 invert"
+                className="h-11 w-auto brightness-0 invert"
               />
             </div>
             <p className="text-sm leading-relaxed mb-5 max-w-xs">
