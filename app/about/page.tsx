@@ -72,7 +72,8 @@ export default function AboutPage() {
                   href="https://calendly.com/karl-mortgage-adviser/borrowing-review"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-white px-8 py-4 rounded-xl font-semibold text-lg transition shadow-cta hover:-translate-y-0.5" style={{ background: '#27C1B7' }}"
+                  className="text-white px-8 py-4 rounded-xl font-semibold text-lg transition shadow-cta hover:-translate-y-0.5"
+                  style={{ background: '#27C1B7' }}
                 >
                   Book a Free Call
                 </a>
