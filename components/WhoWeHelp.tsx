@@ -3,24 +3,27 @@ import Link from 'next/link';
 const audiences = [
   {
     tag: "First Home",
+    tagColor: "bg-teal text-white",
+    arrowColor: "text-teal",
     title: "First Home Buyers",
     description: "Get your First Home Roadmap — from KiwiSaver to keys in hand.",
     href: "/services/first-home-buyers",
-    accent: "from-navy-deep to-navy-light",
   },
   {
     tag: "Homeowner",
+    tagColor: "bg-[#4DA3FF] text-white",
+    arrowColor: "text-[#4DA3FF]",
     title: "Existing Homeowners",
     description: "Refinance, restructure, or top up — make your mortgage work harder.",
     href: "/services/homeowners",
-    accent: "from-teal-dark to-teal",
   },
   {
     tag: "Investor",
+    tagColor: "bg-white/20 text-white",
+    arrowColor: "text-white",
     title: "Property Investors",
     description: "Strategic debt structuring to grow your portfolio faster.",
     href: "/services/investors",
-    accent: "from-navy to-navy-light",
   },
 ];
 
@@ -33,32 +36,28 @@ export default function WhoWeHelp() {
           <h2 className="font-display text-4xl md:text-5xl font-bold text-navy mb-4 leading-tight">
             Wherever you are on your<br />property journey
           </h2>
-          <p className="text-lg text-slate/60 max-w-2xl">
+          <p className="text-lg max-w-2xl" style={{ color: '#6B7280' }}>
             We specialise in three types of clients — each with a tailored approach designed around their unique situation.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-7">
           {audiences.map((audience) => (
-            <Link
-              key={audience.tag}
-              href={audience.href}
-              className="group relative rounded-2xl overflow-hidden min-h-[320px] flex flex-col justify-end p-8 transition-transform hover:-translate-y-1"
+            <Link key={audience.tag} href={audience.href}
+              className="group relative rounded-2xl overflow-hidden min-h-[320px] flex flex-col justify-end p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-card"
+              style={{ background: 'linear-gradient(135deg, #243A5E, #1B2F4A)' }}
             >
-              <div className={`absolute inset-0 bg-gradient-to-br ${audience.accent} transition-transform group-hover:scale-105`} />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+              {/* Subtle inner glow */}
+              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                style={{ background: 'radial-gradient(circle at 50% 0%, rgba(43,183,169,0.15), transparent 70%)' }} />
 
               <div className="relative z-10">
-                <div className="inline-block bg-teal text-white text-xs font-bold uppercase tracking-wide px-3 py-1 rounded mb-3">
+                <span className={`inline-block text-xs font-bold uppercase tracking-wide px-3 py-1 rounded mb-4 ${audience.tagColor}`}>
                   {audience.tag}
-                </div>
-                <h3 className="font-display text-2xl font-bold text-white mb-2">
-                  {audience.title}
-                </h3>
-                <p className="text-sm text-white/75 leading-relaxed mb-4">
-                  {audience.description}
-                </p>
-                <div className="flex items-center gap-2 text-teal font-semibold text-sm">
+                </span>
+                <h3 className="font-display text-2xl font-bold text-white mb-2">{audience.title}</h3>
+                <p className="text-sm text-white/70 leading-relaxed mb-5">{audience.description}</p>
+                <div className={`flex items-center gap-2 font-semibold text-sm ${audience.arrowColor}`}>
                   Learn more <span>→</span>
                 </div>
               </div>

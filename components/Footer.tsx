@@ -2,17 +2,14 @@ import Link from 'next/link';
 
 export default function Footer() {
   return (
-    <footer className="bg-navy-deep text-white/55 py-16 px-6 lg:px-8">
+    <footer style={{ background: '#1B2F4A', color: 'rgba(255,255,255,0.55)' }} className="py-16 px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
-          {/* Company Info */}
+
+          {/* Company */}
           <div>
             <div className="mb-5">
-              <img
-                src="/base-mortgages-logo.svg"
-                alt="Base Mortgages"
-                className="h-11 w-auto brightness-0 invert"
-              />
+              <img src="/base-mortgages-logo.svg" alt="Base Mortgages" className="h-11 w-auto brightness-0 invert" />
             </div>
             <p className="text-sm leading-relaxed mb-5 max-w-xs">
               Strategic mortgage advice for New Zealanders at every stage of their property journey.
@@ -28,12 +25,9 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-bold text-sm uppercase tracking-wider mb-5">Services</h4>
             <div className="space-y-2.5 text-sm">
-              <Link href="/services/first-home-buyers" className="block hover:text-teal transition">First Home Buyers</Link>
-              <Link href="/services/refinancing" className="block hover:text-teal transition">Refinancing</Link>
-              <Link href="/services/refix" className="block hover:text-teal transition">Refix & Restructure</Link>
-              <Link href="/services/investors" className="block hover:text-teal transition">Property Investors</Link>
-              <Link href="/services/construction" className="block hover:text-teal transition">New Build & Construction</Link>
-              <Link href="/services/alternative-lending" className="block hover:text-teal transition">Alternative Lending</Link>
+              {[['First Home Buyers','/services/first-home-buyers'],['Refinancing','/services/refinancing'],['Refix & Restructure','/services/refix'],['Property Investors','/services/investors'],['New Build & Construction','/services/construction'],['Alternative Lending','/services/alternative-lending']].map(([l,h])=>(
+                <Link key={h} href={h} className="block hover:text-teal transition">{l}</Link>
+              ))}
             </div>
           </div>
 
@@ -41,11 +35,9 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-bold text-sm uppercase tracking-wider mb-5">Company</h4>
             <div className="space-y-2.5 text-sm">
-              <Link href="/about" className="block hover:text-teal transition">About Us</Link>
-              <Link href="/team" className="block hover:text-teal transition">Our Team</Link>
-              <Link href="/resources" className="block hover:text-teal transition">Blog & Resources</Link>
-              <Link href="/calculator" className="block hover:text-teal transition">Mortgage Calculator</Link>
-              <Link href="/contact" className="block hover:text-teal transition">Contact Us</Link>
+              {[['About Us','/about'],['Our Team','/team'],['Blog & Resources','/resources'],['Mortgage Calculator','/calculator'],['Contact Us','/contact']].map(([l,h])=>(
+                <Link key={h} href={h} className="block hover:text-teal transition">{l}</Link>
+              ))}
             </div>
           </div>
 
@@ -53,26 +45,25 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-bold text-sm uppercase tracking-wider mb-5">Legal</h4>
             <div className="space-y-2.5 text-sm">
-              <Link href="/disclosures" className="block hover:text-teal transition">Disclosures</Link>
-              <Link href="/privacy" className="block hover:text-teal transition">Privacy Policy</Link>
-              <Link href="/terms" className="block hover:text-teal transition">Terms of Service</Link>
-              <Link href="/complaints" className="block hover:text-teal transition">Complaints</Link>
+              {[['Disclosures','/disclosures'],['Privacy Policy','/privacy'],['Terms of Service','/terms'],['Complaints','/complaints']].map(([l,h])=>(
+                <Link key={h} href={h} className="block hover:text-teal transition">{l}</Link>
+              ))}
             </div>
           </div>
         </div>
 
         {/* Disclosure */}
-        <div className="bg-black/20 rounded-xl p-5 text-xs leading-relaxed text-white/35 mb-8">
-          <strong className="text-white/50">Disclosure:</strong> Base Mortgages is a licensed financial advice provider under the Financial Markets Conduct Act 2013. Our financial advisers are authorised to provide mortgage and insurance advice. We receive commissions from lenders when a mortgage settles — full details are available in our disclosure statement. This website contains general information only and does not constitute personalised financial advice.
+        <div className="rounded-xl p-5 text-xs leading-relaxed mb-8" style={{ background: 'rgba(0,0,0,0.2)', color: 'rgba(255,255,255,0.35)' }}>
+          <strong style={{ color: 'rgba(255,255,255,0.5)' }}>Disclosure:</strong> Base Mortgages is a licensed financial advice provider under the Financial Markets Conduct Act 2013. Our financial advisers are authorised to provide mortgage and insurance advice. We receive commissions from lenders when a mortgage settles — full details are available in our disclosure statement. This website contains general information only and does not constitute personalised financial advice.
         </div>
 
-        {/* Bottom Bar */}
-        <div className="flex flex-wrap items-center justify-between gap-4 pt-8 border-t border-white/8 text-xs">
+        {/* Bottom */}
+        <div className="flex flex-wrap items-center justify-between gap-4 pt-8 text-xs" style={{ borderTop: '1px solid rgba(255,255,255,0.08)' }}>
           <span>© 2026 Base Mortgages. All rights reserved.</span>
           <div className="flex gap-4">
-            <Link href="/privacy" className="hover:text-teal transition">Privacy</Link>
-            <Link href="/disclosures" className="hover:text-teal transition">Disclosures</Link>
-            <Link href="/complaints" className="hover:text-teal transition">Complaints</Link>
+            {[['Privacy','/privacy'],['Disclosures','/disclosures'],['Complaints','/complaints']].map(([l,h])=>(
+              <Link key={h} href={h} className="hover:text-teal transition">{l}</Link>
+            ))}
           </div>
         </div>
       </div>

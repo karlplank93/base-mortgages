@@ -4,19 +4,17 @@
 
 :root {
   --font-dm-sans: 'DM Sans', sans-serif;
-  --font-playfair: 'Playfair Display', serif;
+  --font-inter:   'Inter', sans-serif;
 }
 
-html {
-  scroll-behavior: smooth;
-}
+html { scroll-behavior: smooth; }
 
 body {
-  @apply antialiased bg-white text-navy;
+  @apply antialiased;
+  background-color: #F7F9FC;
+  color: #1A1A1A;
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+  .text-balance { text-wrap: balance; }
 }

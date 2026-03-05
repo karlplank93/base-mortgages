@@ -72,13 +72,13 @@ export default function AboutPage() {
                   href="https://calendly.com/your-calendly-link"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-teal text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-teal-dark transition shadow-lg shadow-teal/25"
+                  className="bg-orange text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-orange-dark transition shadow-cta hover:-translate-y-0.5"
                 >
                   Book a Free Call
                 </a>
                 <Link
                   href="/contact"
-                  className="bg-white text-navy border-2 border-sand-dark px-8 py-4 rounded-xl font-medium text-lg hover:border-teal hover:text-teal transition"
+                  className="bg-transparent text-navy border border-[#E6EAF0] px-8 py-4 rounded-xl font-medium text-lg hover:border-teal hover:text-teal transition"
                 >
                   Send a Message
                 </Link>
@@ -116,7 +116,7 @@ export default function AboutPage() {
       </section>
 
       {/* Credentials bar */}
-      <div className="bg-sand border-y border-sand-dark py-6 px-6 lg:px-8">
+      <div className="border-y border-[#E6EAF0] py-6 px-6 lg:px-8">
         <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-center gap-x-10 gap-y-3 text-sm">
           <div className="flex items-center gap-2 text-slate/70">
             <Shield className="w-4 h-4 text-teal" />
@@ -156,7 +156,7 @@ export default function AboutPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {values.map((value) => (
-              <div key={value.title} className="bg-sand rounded-2xl p-8 border border-sand-dark">
+              <div key={value.title} className="rounded-2xl p-8 border border-[#E6EAF0]" style={{ background: "#F7F9FC" }}>
                 <div className="flex items-start gap-4">
                   <div className="flex-shrink-0 w-8 h-8 rounded-full bg-teal-light flex items-center justify-center mt-0.5">
                     <CheckCircle className="w-5 h-5 text-teal" />
@@ -173,7 +173,7 @@ export default function AboutPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-teal py-16 px-6 lg:px-8 text-center">
+      <section className="py-16 px-6 lg:px-8 text-center" style={{ background: "linear-gradient(135deg, #243A5E, #1B2F4A)" }}>
         <div className="max-w-2xl mx-auto">
           <h2 className="font-display text-3xl md:text-4xl font-bold text-white mb-4">
             Ready to work together?
@@ -185,7 +185,7 @@ export default function AboutPage() {
             href="https://calendly.com/your-calendly-link"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-white text-teal-darker px-8 py-4 rounded-xl font-bold text-lg hover:bg-sand transition shadow-lg"
+            className="inline-block bg-orange text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-orange-dark transition shadow-cta"
           >
             Book a Free Discovery Call
           </a>
