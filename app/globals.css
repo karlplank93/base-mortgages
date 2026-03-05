@@ -3,15 +3,15 @@
 @tailwind utilities;
 
 :root {
-  --font-dm-sans: 'DM Sans', sans-serif;
-  --font-inter:   'Inter', sans-serif;
+  --font-inter:    'Inter', sans-serif;
+  --font-playfair: 'Playfair Display', Georgia, serif;
 }
 
 html { scroll-behavior: smooth; }
 
 body {
   @apply antialiased;
-  background-color: #F7F9FC;
+  background-color: #FFFFFF;
   color: #1A1A1A;
 }
 

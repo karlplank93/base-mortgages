@@ -9,21 +9,21 @@ const steps = [
 
 export default function Process() {
   return (
-    <section className="py-20 px-6 lg:px-8" style={{ background: '#F7F9FC' }}>
+    <section className="py-24 px-6 lg:px-8 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="mb-16">
           <div className="text-xs font-bold text-teal uppercase tracking-widest mb-3">How It Works</div>
-          <h2 className="font-display text-4xl md:text-5xl font-bold text-navy mb-4 leading-tight">
+          <h2 className="font-display text-4xl md:text-5xl font-bold text-navy mb-5 leading-tight">
             Four simple steps to your<br />new mortgage
           </h2>
           <p className="text-lg max-w-2xl" style={{ color: '#6B7280' }}>
-            We've streamlined the entire process so you know exactly what to expect — no surprises, no jargon.
+            We&apos;ve streamlined the entire process so you know exactly what to expect — no surprises, no jargon.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0">
           {steps.map((step, index) => (
-            <div key={step.number} className="relative p-8 border-r border-[#E6EAF0] last:border-r-0 bg-white rounded-none first:rounded-l-2xl last:rounded-r-2xl">
-              <div className="font-display text-6xl font-bold mb-4 leading-none" style={{ color: 'rgba(43,183,169,0.2)' }}>
+            <div key={step.number} className="relative p-8 border-r border-[#E6EAF0] last:border-r-0 bg-white rounded-none first:rounded-l-2xl last:rounded-r-2xl border border-[#E6EAF0]">
+              <div className="font-display text-6xl font-bold mb-4 leading-none" style={{ color: 'rgba(39,193,183,0.18)' }}>
                 {step.number}
               </div>
               <h3 className="text-lg font-semibold text-navy mb-3">{step.title}</h3>

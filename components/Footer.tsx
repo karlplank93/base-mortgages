@@ -15,8 +15,8 @@ export default function Footer() {
               Strategic mortgage advice for New Zealanders at every stage of their property journey.
             </p>
             <div className="space-y-2 text-sm">
-              <div>📞 <span>0800 000 000</span></div>
-              <div>✉️ <span>hello@basemortgages.co.nz</span></div>
+              <div>📞 <span>027 266 4925</span></div>
+              <div>✉️ <span>karl@kiwimortgages.co.nz</span></div>
               <div>📍 <span>Auckland, New Zealand</span></div>
             </div>
           </div>

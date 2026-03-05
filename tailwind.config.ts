@@ -15,8 +15,8 @@ const config: Config = {
           light:   '#2a4f7a',
         },
         teal: {
-          DEFAULT: '#2BB7A9',
-          dark:    '#23B5A7',
+          DEFAULT: '#27C1B7',
+          dark:    '#1FA79F',
           darker:  '#1a8a7e',
           light:   '#e8f9f8',
           mid:     '#a8e8e4',
@@ -29,27 +29,28 @@ const config: Config = {
           DEFAULT: '#E6EAF0',
         },
         bg: {
-          DEFAULT: '#F7F9FC',
-          trust:   '#F3F6FA',
+          DEFAULT: '#FFFFFF',
+          light:   '#F5F7FA',
+          trust:   '#F5F7FA',
         },
         text: {
           primary:   '#1A1A1A',
           secondary: '#6B7280',
         },
-        // keep cream/sand aliases so old refs don't break
+        // keep sand/cream so old refs don't break
         sand: {
-          DEFAULT: '#F1E8D9',
-          dark:    '#e3d6c4',
+          DEFAULT: '#F5F7FA',
+          dark:    '#E6EAF0',
         },
         cream: {
-          DEFAULT: '#F1E8D9',
-          dark:    '#e3d6c4',
+          DEFAULT: '#F5F7FA',
+          dark:    '#E6EAF0',
         },
         slate: '#333333',
       },
       fontFamily: {
-        sans:    ['var(--font-dm-sans)', 'system-ui', 'sans-serif'],
-        display: ['var(--font-inter)', 'system-ui', 'sans-serif'],
+        sans:    ['var(--font-inter)', 'system-ui', 'sans-serif'],
+        display: ['var(--font-playfair)', 'Georgia', 'serif'],
       },
       boxShadow: {
         cta:  '0 8px 20px rgba(0,0,0,0.08)',

@@ -6,9 +6,9 @@ const reviews = [
 
 export default function Reviews() {
   return (
-    <section className="py-20 px-6 lg:px-8 bg-white">
+    <section className="py-24 px-6 lg:px-8" style={{ background: '#F5F7FA' }}>
       <div className="max-w-7xl mx-auto">
-        <div className="flex items-end justify-between mb-12 flex-wrap gap-6">
+        <div className="flex items-end justify-between mb-14 flex-wrap gap-6">
           <div>
             <div className="text-xs font-bold text-teal uppercase tracking-widest mb-3">Client Reviews</div>
             <h2 className="font-display text-4xl md:text-5xl font-bold text-navy leading-tight">
@@ -27,10 +27,9 @@ export default function Reviews() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {reviews.map((review) => (
-            <div key={review.name} className="rounded-2xl p-7 border border-[#E6EAF0] hover:shadow-card transition-all duration-300 hover:-translate-y-0.5"
-              style={{ background: '#F7F9FC' }}>
-              <div className="text-yellow-500 text-lg mb-4 tracking-wider">★★★★★</div>
-              <p className="text-sm leading-relaxed italic mb-6" style={{ color: '#6B7280' }}>"{review.text}"</p>
+            <div key={review.name} className="rounded-2xl p-8 border border-[#E6EAF0] bg-white hover:shadow-card transition-all duration-300 hover:-translate-y-0.5">
+              <div className="text-yellow-500 text-lg mb-5 tracking-wider">★★★★★</div>
+              <p className="text-sm leading-relaxed italic mb-7" style={{ color: '#6B7280' }}>&ldquo;{review.text}&rdquo;</p>
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-full bg-teal flex items-center justify-center text-white font-bold text-sm">
                   {review.initials}

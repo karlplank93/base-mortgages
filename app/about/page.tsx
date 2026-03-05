@@ -69,10 +69,10 @@ export default function AboutPage() {
 
               <div className="flex flex-wrap gap-4">
                 <a
-                  href="https://calendly.com/your-calendly-link"
+                  href="https://calendly.com/karl-mortgage-adviser/borrowing-review"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-orange text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-orange-dark transition shadow-cta hover:-translate-y-0.5"
+                  className="text-white px-8 py-4 rounded-xl font-semibold text-lg transition shadow-cta hover:-translate-y-0.5" style={{ background: '#27C1B7' }}"
                 >
                   Book a Free Call
                 </a>
@@ -156,7 +156,7 @@ export default function AboutPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {values.map((value) => (
-              <div key={value.title} className="rounded-2xl p-8 border border-[#E6EAF0]" style={{ background: "#F7F9FC" }}>
+              <div key={value.title} className="rounded-2xl p-8 border border-[#E6EAF0]" style={{ background: "#F5F7FA" }}>
                 <div className="flex items-start gap-4">
                   <div className="flex-shrink-0 w-8 h-8 rounded-full bg-teal-light flex items-center justify-center mt-0.5">
                     <CheckCircle className="w-5 h-5 text-teal" />
@@ -182,10 +182,10 @@ export default function AboutPage() {
             Book a free 20-minute Discovery Call with Karl and let's talk about your mortgage goals.
           </p>
           <a
-            href="https://calendly.com/your-calendly-link"
+            href="https://calendly.com/karl-mortgage-adviser/borrowing-review"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-orange text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-orange-dark transition shadow-cta"
+            className="inline-block text-white px-8 py-4 rounded-xl font-bold text-lg transition shadow-cta" style={{ background: '#27C1B7' }}
           >
             Book a Free Discovery Call
           </a>

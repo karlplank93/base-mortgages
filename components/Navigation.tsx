@@ -50,9 +50,10 @@ export default function Navigation() {
             <Link href="/resources" className="text-text-secondary hover:text-navy transition font-medium text-sm">Resources</Link>
             <Link href="/contact"   className="text-text-secondary hover:text-navy transition font-medium text-sm">Contact</Link>
 
-            {/* Orange CTA */}
-            <a href="https://calendly.com/your-calendly-link" target="_blank" rel="noopener noreferrer"
-              className="bg-orange text-white px-6 py-2.5 rounded-xl font-semibold text-sm hover:bg-orange-dark transition shadow-cta">
+            {/* Teal CTA */}
+            <a href="https://calendly.com/karl-mortgage-adviser/borrowing-review" target="_blank" rel="noopener noreferrer"
+              className="text-white px-6 py-2.5 rounded-xl font-semibold text-sm transition shadow-cta"
+              style={{ background: '#27C1B7' }}>
               Book a Call
             </a>
           </div>
@@ -69,8 +70,9 @@ export default function Navigation() {
             <Link href="/about"     className="block py-2 text-text-secondary font-medium">About Us</Link>
             <Link href="/resources" className="block py-2 text-text-secondary font-medium">Resources</Link>
             <Link href="/contact"   className="block py-2 text-text-secondary font-medium">Contact</Link>
-            <a href="https://calendly.com/your-calendly-link" target="_blank" rel="noopener noreferrer"
-              className="block bg-orange text-white px-6 py-3 rounded-xl text-center font-semibold shadow-cta">
+            <a href="https://calendly.com/karl-mortgage-adviser/borrowing-review" target="_blank" rel="noopener noreferrer"
+              className="block text-white px-6 py-3 rounded-xl text-center font-semibold shadow-cta"
+              style={{ background: '#27C1B7' }}>
               Book a Call
             </a>
           </div>
