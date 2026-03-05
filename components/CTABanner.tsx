@@ -22,17 +22,12 @@ export default function CTABanner() {
         </p>
 
         <div className="flex flex-col sm:flex-row justify-center gap-4">
-          {/* Primary: orange */}
           <a href="https://calendly.com/your-calendly-link" target="_blank" rel="noopener noreferrer"
             className="bg-orange text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-orange-dark transition shadow-cta hover:-translate-y-0.5">
             Book a Free Discovery Call
           </a>
-          {/* Secondary: outline */}
           <Link href="/contact"
-            className="bg-transparent text-white border px-8 py-4 rounded-xl font-medium text-lg transition hover:-translate-y-0.5"
-            style={{ borderColor: 'rgba(255,255,255,0.25)' }}
-            onMouseOver={(e) => (e.currentTarget.style.borderColor = 'rgba(255,255,255,0.5)')}
-            onMouseOut={(e)  => (e.currentTarget.style.borderColor = 'rgba(255,255,255,0.25)')}>
+            className="bg-transparent text-white border border-white/25 px-8 py-4 rounded-xl font-medium text-lg hover:border-white/60 transition hover:-translate-y-0.5">
             Get in Touch
           </Link>
         </div>
