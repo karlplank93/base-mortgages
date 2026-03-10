@@ -2,20 +2,22 @@ const lenders = ['ANZ', 'ASB', 'BNZ', 'Westpac', 'Kiwibank', '+ Non-Bank'];
 
 export default function Lenders() {
   return (
-    <section className="py-24 px-6 lg:px-8 text-center bg-white">
-      <div className="max-w-5xl mx-auto">
-        <div className="text-xs font-bold text-teal uppercase tracking-widest mb-3">Our Lender Panel</div>
-        <h2 className="font-display text-4xl md:text-5xl font-bold text-navy mb-5 leading-tight">
-          Access to New Zealand&apos;s<br />leading banks &amp; lenders
+    <section className="py-24 px-6 lg:px-8 text-center" style={{ background: '#F8F9FB' }}>
+      <div className="max-w-4xl mx-auto">
+        <p className="text-sm font-semibold text-teal uppercase tracking-widest mb-3">Our Lender Panel</p>
+        <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-5 leading-tight" style={{ letterSpacing: '-0.02em' }}>
+          Access to New Zealand&apos;s leading banks
         </h2>
-        <p className="text-lg mb-12 max-w-2xl mx-auto" style={{ color: '#6B7280' }}>
+        <p className="text-lg text-gray-500 mb-12 max-w-xl mx-auto">
           We&apos;re accredited with all major NZ banks, giving you the widest possible choice.
         </p>
         <div className="flex flex-wrap justify-center gap-4">
           {lenders.map((name) => (
-            <div key={name}
-              className="bg-white border border-[#E6EAF0] rounded-xl px-8 py-5 min-w-[130px] hover:border-teal hover:shadow-card transition-all duration-300 hover:-translate-y-0.5">
-              <div className="font-bold text-base text-navy opacity-70">{name}</div>
+            <div
+              key={name}
+              className="bg-white border border-gray-200 rounded-2xl px-8 py-5 min-w-[130px] hover:border-teal hover:shadow-card transition-all duration-200"
+            >
+              <div className="font-bold text-base text-gray-700">{name}</div>
             </div>
           ))}
         </div>

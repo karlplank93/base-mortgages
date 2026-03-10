@@ -2,52 +2,47 @@ import Link from 'next/link';
 import { Home, RefreshCw, TrendingUp, BarChart3, Building2, AlertCircle } from 'lucide-react';
 
 const services = [
-  { icon: Home,        title: "First Home Buyers",       description: "We build your First Home Roadmap — from assessing your borrowing power to settlement day. We'll handle KiwiSaver withdrawals, First Home Loans, and every step in between.", href: "/services/first-home-buyers", featured: true },
-  { icon: RefreshCw,   title: "Refinancing",             description: "Move lenders, unlock equity, or simply get a better rate. We compare all five major banks and negotiate on your behalf.", href: "/services/refinancing" },
-  { icon: BarChart3,   title: "Refix & Restructure",     description: "Don't just roll over your rate. Let us review your full loan structure and advise on the optimal combination of fixed, floating, and term lengths.", href: "/services/refix" },
-  { icon: TrendingUp,  title: "Property Investors",      description: "Grow your portfolio with expert debt structuring, entity advice, and access to lenders who understand investment property lending.", href: "/services/investors" },
-  { icon: Building2,   title: "New Build & Construction",description: "Building your dream home? We manage construction loan drawdowns, progress payments, and make sure your finances are in order at every stage.", href: "/services/construction" },
-  { icon: AlertCircle, title: "Bank Said No?",            description: "We have access to non-bank lenders and specialist solutions for self-employed clients, complex income situations, or credit challenges.", href: "/services/alternative-lending" },
+  { icon: Home,        title: 'First Home Buyers',        description: 'We build your First Home Roadmap — from assessing your borrowing power to settlement day. KiwiSaver, First Home Loans, and every step in between.',     href: '/services/first-home-buyers' },
+  { icon: RefreshCw,   title: 'Refinancing',              description: 'Move lenders, unlock equity, or get a better rate. We compare all major banks and non-bank lenders and negotiate on your behalf.',                         href: '/services/refinancing' },
+  { icon: BarChart3,   title: 'Refix & Restructure',      description: "Don't just roll over your rate. We review your full loan structure and advise on the best combination of fixed, floating, and term lengths.",              href: '/services/refix' },
+  { icon: TrendingUp,  title: 'Property Investors',       description: 'Grow your portfolio with strategic debt structuring, entity advice, and access to lenders who understand investment lending.',                             href: '/services/investors' },
+  { icon: Building2,   title: 'New Build & Construction', description: 'Building your dream home? We manage construction loan drawdowns, progress payments, and make sure your finances are in order at every stage.',             href: '/services/construction' },
+  { icon: AlertCircle, title: 'Bank Said No?',            description: 'We have access to specialist and non-bank lenders for self-employed clients, complex income situations, or credit challenges.',                           href: '/services/alternative-lending' },
 ];
 
 export default function Services() {
   return (
     <section id="services" className="py-24 px-6 lg:px-8 bg-white">
       <div className="max-w-7xl mx-auto">
-        <div className="mb-16">
-          <div className="text-xs font-bold text-teal uppercase tracking-widest mb-3">What We Do</div>
-          <h2 className="font-display text-4xl md:text-5xl font-bold text-navy mb-4 leading-tight">
-            Mortgage advice for every<br />stage of your journey
+
+        <div className="max-w-2xl mb-14">
+          <p className="text-sm font-semibold text-teal uppercase tracking-widest mb-3">What We Do</p>
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-4" style={{ letterSpacing: '-0.02em' }}>
+            Mortgage advice for every stage of your journey
           </h2>
-          <p className="text-lg max-w-2xl" style={{ color: '#6B7280' }}>
-            From your first home to your fifth investment property — strategic mortgage advice that goes beyond just finding a rate.
+          <p className="text-lg text-gray-500">
+            From your first home to your fifth investment property — strategic advice that goes beyond just finding a rate.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           {services.map((service) => {
             const Icon = service.icon;
             return (
-              <Link key={service.title} href={service.href}
-                className={`group relative rounded-2xl p-8 border transition-all duration-300 hover:-translate-y-1 hover:shadow-card ${
-                  service.featured
-                    ? 'border-navy-deep text-white'
-                    : 'bg-white border-[#E6EAF0] hover:border-teal'
-                }`}
-                style={service.featured ? { background: 'linear-gradient(135deg,#243A5E,#1B2F4A)' } : {}}
+              <Link
+                key={service.title}
+                href={service.href}
+                className="group rounded-2xl p-7 border border-gray-100 bg-white hover:border-teal hover:shadow-card transition-all duration-200"
+                style={{ boxShadow: '0 1px 4px rgba(0,0,0,0.05)' }}
               >
-                <div className={`w-14 h-14 rounded-xl flex items-center justify-center mb-5 ${
-                  service.featured ? 'bg-white/10' : 'bg-teal-light'
-                }`}>
-                  <Icon className={`w-7 h-7 ${service.featured ? 'text-teal' : 'text-teal'}`} />
+                <div className="w-11 h-11 rounded-xl bg-teal-light flex items-center justify-center mb-5">
+                  <Icon className="w-5 h-5 text-teal" />
                 </div>
-                <h3 className={`text-xl font-semibold mb-3 ${service.featured ? 'text-white' : 'text-navy'}`}>
-                  {service.title}
-                </h3>
-                <p className={`text-sm leading-relaxed ${service.featured ? 'text-white/65' : ''}`}
-                   style={service.featured ? {} : { color: '#6B7280' }}>
-                  {service.description}
-                </p>
-                <div className={`absolute bottom-6 right-6 text-xl opacity-0 group-hover:opacity-100 transition-opacity text-teal`}>→</div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">{service.title}</h3>
+                <p className="text-sm text-gray-500 leading-relaxed">{service.description}</p>
+                <div className="mt-4 text-sm font-semibold text-teal opacity-0 group-hover:opacity-100 transition-opacity">
+                  Learn more →
+                </div>
               </Link>
             );
           })}

@@ -10,51 +10,47 @@ const config: Config = {
     extend: {
       colors: {
         navy: {
-          DEFAULT: '#243A5E',
-          deep:    '#1B2F4A',
-          light:   '#2a4f7a',
+          DEFAULT: '#0A2E6B',
+          deep:    '#071F4A',
+          light:   '#1a4a8a',
         },
         teal: {
           DEFAULT: '#27C1B7',
           dark:    '#1FA79F',
           darker:  '#1a8a7e',
-          light:   '#e8f9f8',
+          light:   '#EBF9F8',
           mid:     '#a8e8e4',
         },
-        orange: {
-          DEFAULT: '#FF7A3D',
-          dark:    '#E8692F',
-        },
         border: {
-          DEFAULT: '#E6EAF0',
+          DEFAULT: '#E5E7EB',
         },
         bg: {
           DEFAULT: '#FFFFFF',
-          light:   '#F5F7FA',
-          trust:   '#F5F7FA',
+          light:   '#F8F9FB',
+          soft:    '#F3F4F6',
+          trust:   '#F8F9FB',
         },
         text: {
-          primary:   '#1A1A1A',
+          primary:   '#111827',
           secondary: '#6B7280',
+          muted:     '#9CA3AF',
         },
-        // keep sand/cream so old refs don't break
-        sand: {
-          DEFAULT: '#F5F7FA',
-          dark:    '#E6EAF0',
-        },
-        cream: {
-          DEFAULT: '#F5F7FA',
-          dark:    '#E6EAF0',
-        },
-        slate: '#333333',
+        // backwards-compat aliases
+        sand: { DEFAULT: '#F8F9FB', dark: '#E5E7EB' },
+        cream: { DEFAULT: '#F8F9FB', dark: '#E5E7EB' },
+        slate: '#374151',
+        orange: { DEFAULT: '#FF7A3D', dark: '#E8692F' },
       },
       fontFamily: {
-        sans:    ['var(--font-inter)', 'system-ui', 'sans-serif'],
-        display: ['var(--font-playfair)', 'Georgia', 'serif'],
+        sans:    ['var(--font-outfit)', 'system-ui', 'sans-serif'],
+        display: ['var(--font-outfit)', 'system-ui', 'sans-serif'],
+      },
+      borderRadius: {
+        '4xl': '2rem',
       },
       boxShadow: {
-        cta:  '0 8px 20px rgba(0,0,0,0.08)',
-        card: '0 12px 30px rgba(0,0,0,0.08)',
+        cta:  '0 8px 24px rgba(39,193,183,0.28)',
+        card: '0 4px 16px rgba(0,0,0,0.07)',
       },
     },
   },

@@ -1,78 +1,71 @@
 import { Phone, Search, CheckCircle } from 'lucide-react';
-import { ChevronRight } from 'lucide-react';
 
 const steps = [
   {
-    number: "01",
+    number: '01',
     icon: Phone,
-    title: "Discovery Call",
-    description: "We get to know you, your goals, and your financial situation. Free, no-obligation, and usually just 20–30 minutes.",
+    title: 'Discovery Call',
+    description: 'We get to know you, your goals, and your financial situation. Free, no-obligation, and usually just 20–30 minutes.',
   },
   {
-    number: "02",
+    number: '02',
     icon: Search,
-    title: "Compare Lenders",
-    description: "We assess your affordability across 30+ banks and lenders, then present a tailored mortgage strategy that fits your life.",
+    title: 'Compare Lenders',
+    description: 'We assess your affordability across 30+ banks and lenders, then present a tailored mortgage strategy that fits your life.',
   },
   {
-    number: "03",
+    number: '03',
     icon: CheckCircle,
-    title: "Secure the Best Deal",
-    description: "We prepare and submit your application, negotiate on your behalf, and get you the best possible rate and structure.",
+    title: 'Secure the Best Deal',
+    description: 'We prepare and submit your application, negotiate on your behalf, and get you the best possible rate and structure.',
   },
 ];
 
 export default function Process() {
   return (
-    <section className="py-28 px-6 lg:px-8 bg-white">
+    <section className="py-24 px-6 lg:px-8" style={{ background: '#F8F9FB' }}>
       <div className="max-w-7xl mx-auto">
-        <div className="mb-16">
-          <div className="text-xs font-bold text-teal uppercase tracking-widest mb-3">How It Works</div>
-          <h2 className="font-display text-4xl md:text-5xl font-bold text-navy mb-5 leading-tight">
-            Three simple steps to your<br />new mortgage
+
+        <div className="max-w-2xl mb-14">
+          <p className="text-sm font-semibold text-teal uppercase tracking-widest mb-3">How It Works</p>
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-4" style={{ letterSpacing: '-0.02em' }}>
+            Three simple steps to your new mortgage
           </h2>
-          <p className="text-lg max-w-2xl" style={{ color: '#6B7280' }}>
-            We&apos;ve streamlined the entire process so you know exactly what to expect — no surprises, no jargon.
+          <p className="text-lg text-gray-500">
+            No surprises, no jargon. Here&apos;s exactly what to expect.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-0 relative">
-          {steps.map((step, index) => {
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+          {steps.map((step) => {
             const Icon = step.icon;
             return (
-              <div key={step.number}
-                className="relative p-10 border border-[#E6EAF0] bg-white first:rounded-l-2xl last:rounded-r-2xl -ml-px first:ml-0 hover:z-10 transition-shadow duration-300 hover:shadow-lg">
-                {/* Step number watermark */}
-                <div className="font-display text-7xl font-bold mb-6 leading-none select-none"
-                  style={{ color: 'rgba(39,193,183,0.12)' }}>
+              <div
+                key={step.number}
+                className="bg-white rounded-2xl p-8 border border-gray-100"
+                style={{ boxShadow: '0 1px 4px rgba(0,0,0,0.05)' }}
+              >
+                <div className="text-5xl font-bold mb-5 leading-none" style={{ color: 'rgba(39,193,183,0.15)' }}>
                   {step.number}
                 </div>
-
-                {/* Icon */}
-                <div className="w-12 h-12 rounded-xl bg-teal-light flex items-center justify-center mb-5">
-                  <Icon className="w-6 h-6 text-teal" />
+                <div className="w-11 h-11 rounded-xl bg-teal-light flex items-center justify-center mb-5">
+                  <Icon className="w-5 h-5 text-teal" />
                 </div>
-
-                <h3 className="text-xl font-semibold text-navy mb-3">{step.title}</h3>
-                <p className="text-sm leading-relaxed" style={{ color: '#6B7280' }}>{step.description}</p>
-
-                {/* Arrow connector */}
-                {index < steps.length - 1 && (
-                  <div className="hidden md:flex absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 w-7 h-7 rounded-full items-center justify-center z-10"
-                    style={{ background: '#27C1B7' }}>
-                    <ChevronRight className="w-4 h-4 text-white" />
-                  </div>
-                )}
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">{step.title}</h3>
+                <p className="text-sm text-gray-500 leading-relaxed">{step.description}</p>
               </div>
             );
           })}
         </div>
 
-        {/* CTA below */}
-        <div className="text-center mt-12">
-          <a href="https://calendly.com/karl-mortgage-adviser/borrowing-review" target="_blank" rel="noopener noreferrer"
-            className="inline-block text-white px-8 py-4 rounded-xl font-semibold text-lg transition hover:-translate-y-0.5"
-            style={{ background: '#27C1B7', boxShadow: '0 4px 20px rgba(39,193,183,0.3)' }}>
+        <div className="text-center">
+          <a
+            href="https://calendly.com/karl-mortgage-adviser/borrowing-review"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center px-8 py-3.5 rounded-full text-white font-semibold text-base transition-all hover:opacity-90"
+            style={{ background: '#27C1B7', boxShadow: '0 4px 20px rgba(39,193,183,0.28)' }}
+          >
             Start with a Free Discovery Call
           </a>
         </div>
