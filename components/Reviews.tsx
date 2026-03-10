@@ -2,20 +2,21 @@ const reviews = [
   { name: "James & Tara", initials: "JT", type: "First Home Buyers, Auckland",   text: "Karl made the whole process so straightforward. We were first home buyers completely overwhelmed by the process — he broke everything down, got us a great rate, and was always available to answer questions. Couldn't recommend more highly." },
   { name: "Mark C.",      initials: "MC", type: "Property Investor, Wellington",  text: "We refinanced three properties with Base Mortgages and saved significantly across the portfolio. The strategic advice on splitting fixed terms was something no bank had ever offered us before. Genuinely life-changing." },
   { name: "Sarah R.",     initials: "SR", type: "Self-Employed, Christchurch",    text: "I'd been turned down by two banks and thought my chances were gone. Base Mortgages found a solution I didn't know existed and had me approved within a week. Absolutely incredible service." },
+  { name: "David & Amy",  initials: "DA", type: "Refinancing, Auckland",          text: "Switched lenders through Base Mortgages and saved over $4,000 in the first year alone. The process was fast, communication was excellent, and Karl clearly knew his stuff. Would absolutely use again." },
 ];
 
 export default function Reviews() {
   return (
-    <section className="py-24 px-6 lg:px-8" style={{ background: '#F5F7FA' }}>
+    <section className="py-28 px-6 lg:px-8" style={{ background: '#0A2E6B' }}>
       <div className="max-w-7xl mx-auto">
         <div className="flex items-end justify-between mb-14 flex-wrap gap-6">
           <div>
-            <div className="text-xs font-bold text-teal uppercase tracking-widest mb-3">Client Reviews</div>
-            <h2 className="font-display text-4xl md:text-5xl font-bold text-navy leading-tight">
+            <div className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: '#27C1B7' }}>Client Reviews</div>
+            <h2 className="font-display text-4xl md:text-5xl font-bold text-white leading-tight">
               Real results for real<br />New Zealanders
             </h2>
           </div>
-          <div className="flex items-center gap-2 text-sm" style={{ color: '#6B7280' }}>
+          <div className="flex items-center gap-2 text-sm text-white/60">
             <svg className="w-4 h-4" viewBox="0 0 24 24">
               <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
               <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
@@ -25,18 +26,31 @@ export default function Reviews() {
             <span className="font-medium">Verified Google Reviews</span>
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+        {/* Overall rating */}
+        <div className="flex items-center gap-3 mb-10">
+          <div className="text-5xl font-bold font-display" style={{ color: '#27C1B7' }}>4.9</div>
+          <div>
+            <div className="text-yellow-400 text-xl tracking-wider">★★★★★</div>
+            <div className="text-white/50 text-sm">Based on Google Reviews</div>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
           {reviews.map((review) => (
-            <div key={review.name} className="rounded-2xl p-8 border border-[#E6EAF0] bg-white hover:shadow-card transition-all duration-300 hover:-translate-y-0.5">
-              <div className="text-yellow-500 text-lg mb-5 tracking-wider">★★★★★</div>
-              <p className="text-sm leading-relaxed italic mb-7" style={{ color: '#6B7280' }}>&ldquo;{review.text}&rdquo;</p>
+            <div key={review.name}
+              className="rounded-2xl p-7 border border-white/10 flex flex-col hover:-translate-y-1 transition-all duration-300"
+              style={{ background: 'rgba(255,255,255,0.06)' }}>
+              <div className="text-yellow-400 text-base mb-4 tracking-wider">★★★★★</div>
+              <p className="text-sm leading-relaxed italic mb-7 flex-1 text-white/75">&ldquo;{review.text}&rdquo;</p>
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-teal flex items-center justify-center text-white font-bold text-sm">
+                <div className="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0"
+                  style={{ background: '#27C1B7' }}>
                   {review.initials}
                 </div>
                 <div>
-                  <div className="font-semibold text-sm text-navy">{review.name}</div>
-                  <div className="text-xs" style={{ color: '#6B7280' }}>{review.type}</div>
+                  <div className="font-semibold text-sm text-white">{review.name}</div>
+                  <div className="text-xs text-white/50">{review.type}</div>
                 </div>
               </div>
             </div>

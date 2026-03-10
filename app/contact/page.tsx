@@ -107,7 +107,7 @@ export default function ContactPage() {
 
               <div className="pt-6">
                 <a
-                  href="https://calendly.com/karl-mortgage-adviser/borrowing-review"
+                  href="https://calendly.com/your-calendly-link"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 bg-blue text-white px-6 py-3 rounded-lg font-semibold hover:bg-navy transition w-full"

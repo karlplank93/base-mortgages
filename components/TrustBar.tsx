@@ -1,34 +1,40 @@
-import { Shield, Star } from 'lucide-react';
-
 const banks = ['ANZ', 'ASB', 'BNZ', 'Westpac', 'Kiwibank'];
+
+const metrics = [
+  { value: '$36M+', label: 'Loans Arranged' },
+  { value: '30+',   label: 'Banks & Lenders' },
+  { value: '4.9★',  label: 'Google Rating' },
+];
 
 export default function TrustBar() {
   return (
-    <div style={{ background: '#F5F7FA' }} className="border-b border-[#E6EAF0] py-4">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-3 text-sm">
-          <div className="flex items-center gap-2" style={{ color: '#6B7280' }}>
-            <Shield className="w-4 h-4 text-teal" />
-            <span className="font-medium">Licensed Financial Adviser</span>
-          </div>
-          <div className="hidden md:block w-px h-4 bg-[#E6EAF0]" />
-          <div className="flex items-center gap-3">
-            <span className="font-medium" style={{ color: '#6B7280' }}>Accredited with:</span>
-            <div className="flex gap-2 flex-wrap">
-              {banks.map((bank) => (
-                <span key={bank} className="bg-white border border-[#E6EAF0] rounded-md px-2.5 py-1 text-xs font-bold text-navy opacity-80">
-                  {bank}
-                </span>
-              ))}
+    <section style={{ background: '#0A2E6B' }} className="py-14 px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto">
+
+        {/* Trust Metrics */}
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mb-12 text-center">
+          {metrics.map(({ value, label }) => (
+            <div key={value}>
+              <div className="font-display text-5xl font-bold mb-1" style={{ color: '#27C1B7' }}>{value}</div>
+              <div className="text-white/70 text-sm font-medium">{label}</div>
             </div>
-          </div>
-          <div className="hidden md:block w-px h-4 bg-[#E6EAF0]" />
-          <div className="flex items-center gap-2" style={{ color: '#6B7280' }}>
-            <Star className="w-4 h-4 text-yellow-500 fill-yellow-500" />
-            <span className="font-medium">4.9★ from 39 Google Reviews</span>
-          </div>
+          ))}
+        </div>
+
+        {/* Divider */}
+        <div className="border-t border-white/10 mb-10" />
+
+        {/* Bank Logos */}
+        <div className="flex flex-wrap items-center justify-center gap-3">
+          <span className="text-white/50 text-sm font-medium mr-2">Accredited with:</span>
+          {banks.map((bank) => (
+            <span key={bank}
+              className="bg-white/10 border border-white/15 rounded-lg px-5 py-2.5 text-sm font-bold text-white hover:bg-white/20 transition">
+              {bank}
+            </span>
+          ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }

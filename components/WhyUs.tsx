@@ -1,17 +1,24 @@
-import { Target, MessageCircle, Zap, DollarSign } from 'lucide-react';
+import { CheckCircle, Target, MessageCircle, Zap, DollarSign } from 'lucide-react';
 
 const features = [
   { icon: Target,        title: "Whole-of-market access", description: "We compare all five major banks and non-bank lenders to find the best fit for your situation — not just the easiest option." },
   { icon: MessageCircle, title: "Plain English advice",    description: "No jargon, no confusion. We explain everything clearly so you can make confident, informed decisions." },
-  { icon: Zap,           title: "Fast & proactive",       description: "We move quickly when you need to, and we proactively reach out before your rates expire so you're always in the optimal position." },
+  { icon: Zap,           title: "Fast & proactive",       description: "We move quickly when you need to, and proactively reach out before your rates expire so you're always in the optimal position." },
   { icon: DollarSign,    title: "Free to you",            description: "Our advice costs you nothing. We're paid by the bank when your mortgage settles — so our interests are aligned with yours." },
+];
+
+const bullets = [
+  'Access to 30+ lenders',
+  'Negotiated cashback offers',
+  'Personalised mortgage strategy',
+  '100% free service',
 ];
 
 export default function WhyUs() {
   return (
-    <section className="py-24 px-6 lg:px-8" style={{ background: '#F5F7FA' }}>
+    <section className="py-28 px-6 lg:px-8" style={{ background: '#F5F7FA' }}>
       <div className="max-w-7xl mx-auto">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-16 items-start">
 
           {/* Left */}
           <div>
@@ -19,9 +26,21 @@ export default function WhyUs() {
             <h2 className="font-display text-4xl md:text-5xl font-bold text-navy mb-5 leading-tight">
               Your mortgage adviser,<br />for life.
             </h2>
-            <p className="text-lg mb-10 max-w-xl" style={{ color: '#6B7280' }}>
+            <p className="text-lg mb-8 max-w-xl" style={{ color: '#6B7280' }}>
               We&apos;re not a transactional service. We build long-term relationships and proactively manage your mortgage so you never leave money on the table.
             </p>
+
+            {/* Bullet points with check icons */}
+            <div className="space-y-3 mb-10">
+              {bullets.map((bullet) => (
+                <div key={bullet} className="flex items-center gap-3">
+                  <CheckCircle className="w-5 h-5 flex-shrink-0" style={{ color: '#27C1B7' }} />
+                  <span className="text-base font-medium text-navy">{bullet}</span>
+                </div>
+              ))}
+            </div>
+
+            {/* Feature list */}
             <div className="space-y-7">
               {features.map(({ icon: Icon, title, description }) => (
                 <div key={title} className="flex gap-5">
@@ -39,8 +58,9 @@ export default function WhyUs() {
 
           {/* Right: stats card */}
           <div className="rounded-3xl p-10 text-white relative overflow-hidden"
-            style={{ background: 'linear-gradient(135deg, #243A5E, #1B2F4A)' }}>
-            <div className="absolute top-[-60px] right-[-60px] w-56 h-56 rounded-full blur-3xl" style={{ background: 'rgba(39,193,183,0.2)' }} />
+            style={{ background: 'linear-gradient(135deg, #0A2E6B, #1B2F4A)' }}>
+            <div className="absolute top-[-60px] right-[-60px] w-56 h-56 rounded-full blur-3xl"
+              style={{ background: 'rgba(39,193,183,0.2)' }} />
             <div className="relative grid grid-cols-2 gap-5 mb-6">
               {[
                 { stat: '4.9★', label: '39 Google Reviews from NZ homeowners' },
@@ -48,13 +68,13 @@ export default function WhyUs() {
                 { stat: '24hr', label: 'Average response time' },
                 { stat: '$0',   label: 'Cost to you for our advice' },
               ].map(({ stat, label }) => (
-                <div key={stat} className="rounded-2xl p-6 border border-white/10" style={{ background: 'rgba(255,255,255,0.06)' }}>
+                <div key={stat} className="rounded-2xl p-6 border border-white/10"
+                  style={{ background: 'rgba(255,255,255,0.06)' }}>
                   <div className="font-display text-4xl font-bold mb-1" style={{ color: '#27C1B7' }}>{stat}</div>
                   <div className="text-xs leading-snug" style={{ color: 'rgba(255,255,255,0.55)' }}>{label}</div>
                 </div>
               ))}
             </div>
-            {/* Teal CTA inside card */}
             <div className="rounded-2xl p-5 text-center" style={{ background: '#27C1B7' }}>
               <p className="text-sm mb-3 text-white/90">Ready to get started? Book a free call today.</p>
               <a href="https://calendly.com/karl-mortgage-adviser/borrowing-review" target="_blank" rel="noopener noreferrer"

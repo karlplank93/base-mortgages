@@ -1,20 +1,19 @@
 import type { Metadata } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
+import { DM_Sans, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
-const inter = Inter({
+const dmSans = DM_Sans({ 
   subsets: ["latin"],
-  variable: '--font-inter',
-  weight: ['400', '500', '600', '700', '800'],
+  variable: '--font-dm-sans',
   display: 'swap',
 });
 
-const playfair = Playfair_Display({
+const playfair = Playfair_Display({ 
   subsets: ["latin"],
   variable: '--font-playfair',
-  weight: ['400', '600', '700', '800', '900'],
+  weight: ['600', '700'],
   display: 'swap',
 });
 
@@ -30,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
+    <html lang="en" className={`${dmSans.variable} ${playfair.variable}`}>
       <head>
         <link rel="icon" href="/favicon.ico" />
       </head>

@@ -3,18 +3,20 @@
 @tailwind utilities;
 
 :root {
-  --font-inter:    'Inter', sans-serif;
-  --font-playfair: 'Playfair Display', Georgia, serif;
+  --font-dm-sans: 'DM Sans', sans-serif;
+  --font-playfair: 'Playfair Display', serif;
 }
 
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   @apply antialiased;
-  background-color: #FFFFFF;
-  color: #1A1A1A;
 }
 
 @layer utilities {
-  .text-balance { text-wrap: balance; }
+  .text-balance {
+    text-wrap: balance;
+  }
 }
