@@ -1,3 +1,5 @@
+'use client';
+
 import Link from 'next/link';
 import { BookOpen, Calculator, DollarSign, ArrowRight } from 'lucide-react';
 
