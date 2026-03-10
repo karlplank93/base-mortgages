@@ -35,7 +35,7 @@ const resources: ResourceCard[] = [
     category: 'Article',
     title: 'How Cashback Works When Switching Banks',
     description:
-      'Many NZ banks offer cashback incentives when you take out a new mortgage. Here's how to make the most of it — and the catch to watch out for.',
+      "Many NZ banks offer cashback incentives when you take out a new mortgage. Here's how to make the most of it — and the catch to watch out for.",
     readTime: 5,
     href: '/resources/cashback-explained',
     gradientFrom: 'from-blue-400',
@@ -66,7 +66,7 @@ const resources: ResourceCard[] = [
   {
     id: 5,
     category: 'Article',
-    title: 'Property Investment in NZ: A Beginner's Roadmap',
+    title: "Property Investment in NZ: A Beginner's Roadmap",
     description:
       "Thinking about buying an investment property? From LVR rules to entity structures, here's what you need to know before you start.",
     readTime: 10,
@@ -79,7 +79,7 @@ const resources: ResourceCard[] = [
     category: 'Guide',
     title: 'Refinancing Your Mortgage: Is It Worth It?',
     description:
-      'Switching lenders could save you thousands — but it's not always the right move. Here's how to weigh up the costs and benefits.',
+      "Switching lenders could save you thousands — but it's not always the right move. Here's how to weigh up the costs and benefits.",
     readTime: 6,
     href: '/resources/refinancing-guide',
     gradientFrom: 'from-pink-400',
