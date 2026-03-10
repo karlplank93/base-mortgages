@@ -33,7 +33,7 @@ export default function Navigation() {
 
           {/* Logo */}
           <Link href="/" className="flex-shrink-0">
-            <img src="/base-mortgages-logo.svg" alt="Base Mortgages" className="h-10 w-auto brightness-0 invert" />
+            <img src="/base-mortgages-logo.svg" alt="Base Mortgages" className="h-12 w-auto" />
           </Link>
 
           {/* Desktop nav links */}

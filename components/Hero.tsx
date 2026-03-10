@@ -26,7 +26,7 @@ export default function Hero() {
               Whether you&apos;re buying your first home, refinancing, or growing your portfolio — we find the right mortgage and handle everything for you.
             </p>
 
-            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mb-12">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
               <a
                 href="https://calendly.com/karl-mortgage-adviser/borrowing-review"
                 target="_blank"
@@ -44,19 +44,6 @@ export default function Hero() {
               </Link>
             </div>
 
-            {/* Stats row */}
-            <div className="flex flex-wrap gap-8 pt-8 border-t border-gray-100">
-              {[
-                { value: '$36M+', label: 'Loans Arranged' },
-                { value: '30+',   label: 'Banks & Lenders' },
-                { value: '4.9★',  label: 'Google Rating' },
-              ].map(({ value, label }) => (
-                <div key={value}>
-                  <div className="text-2xl font-bold text-navy">{value}</div>
-                  <div className="text-sm text-gray-400 mt-0.5">{label}</div>
-                </div>
-              ))}
-            </div>
           </div>
 
           {/* Image */}
