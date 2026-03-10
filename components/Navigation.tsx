@@ -25,8 +25,8 @@ export default function Navigation() {
 
   return (
     <nav
-      className="sticky top-0 z-50 bg-white transition-all duration-200"
-      style={{ boxShadow: scrolled ? '0 1px 0 #E5E7EB, 0 4px 20px rgba(0,0,0,0.07)' : '0 1px 0 #E5E7EB' }}
+      className="sticky top-0 z-50 transition-all duration-200"
+      style={{ background: '#001F5D', boxShadow: scrolled ? '0 4px 20px rgba(0,0,0,0.18)' : 'none' }}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between" style={{ height: '72px' }}>
@@ -43,7 +43,7 @@ export default function Navigation() {
               onMouseEnter={() => setServicesOpen(true)}
               onMouseLeave={() => setServicesOpen(false)}
             >
-              <button className="flex items-center gap-1 px-4 py-2 rounded-lg text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50 transition-colors">
+              <button className="flex items-center gap-1 px-4 py-2 rounded-lg text-sm font-medium text-white/80 hover:text-white hover:bg-white/10 transition-colors">
                 Services
                 <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${servicesOpen ? 'rotate-180' : ''}`} />
               </button>
@@ -58,9 +58,9 @@ export default function Navigation() {
                 </div>
               )}
             </div>
-            <Link href="/about"     className="px-4 py-2 rounded-lg text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50 transition-colors">About</Link>
-            <Link href="/resources" className="px-4 py-2 rounded-lg text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50 transition-colors">Resources</Link>
-            <Link href="/contact"   className="px-4 py-2 rounded-lg text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50 transition-colors">Contact</Link>
+            <Link href="/about"     className="px-4 py-2 rounded-lg text-sm font-medium text-white/80 hover:text-white hover:bg-white/10 transition-colors">About</Link>
+            <Link href="/resources" className="px-4 py-2 rounded-lg text-sm font-medium text-white/80 hover:text-white hover:bg-white/10 transition-colors">Resources</Link>
+            <Link href="/contact"   className="px-4 py-2 rounded-lg text-sm font-medium text-white/80 hover:text-white hover:bg-white/10 transition-colors">Contact</Link>
           </div>
 
           {/* CTA */}
@@ -78,7 +78,7 @@ export default function Navigation() {
 
           {/* Mobile hamburger */}
           <button
-            className="md:hidden p-2 rounded-lg text-gray-500 hover:bg-gray-50 transition-colors"
+            className="md:hidden p-2 rounded-lg text-white/80 hover:bg-white/10 transition-colors"
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label="Toggle menu"
           >
@@ -88,17 +88,17 @@ export default function Navigation() {
 
         {/* Mobile menu */}
         {mobileOpen && (
-          <div className="md:hidden pb-4 pt-2 space-y-1 border-t border-gray-100">
+          <div className="md:hidden pb-4 pt-2 space-y-1 border-t border-white/10">
             {services.map(([label, href]) => (
               <Link key={href} href={href}
-                className="block px-4 py-2.5 text-sm font-medium text-gray-600 hover:text-navy hover:bg-gray-50 rounded-lg transition-colors">
+                className="block px-4 py-2.5 text-sm font-medium text-white/80 hover:text-white hover:bg-white/10 rounded-lg transition-colors">
                 {label}
               </Link>
             ))}
-            <div className="border-t border-gray-100 my-2" />
-            <Link href="/about"     className="block px-4 py-2.5 text-sm font-medium text-gray-600 hover:text-navy hover:bg-gray-50 rounded-lg transition-colors">About</Link>
-            <Link href="/resources" className="block px-4 py-2.5 text-sm font-medium text-gray-600 hover:text-navy hover:bg-gray-50 rounded-lg transition-colors">Resources</Link>
-            <Link href="/contact"   className="block px-4 py-2.5 text-sm font-medium text-gray-600 hover:text-navy hover:bg-gray-50 rounded-lg transition-colors">Contact</Link>
+            <div className="border-t border-white/10 my-2" />
+            <Link href="/about"     className="block px-4 py-2.5 text-sm font-medium text-white/80 hover:text-white hover:bg-white/10 rounded-lg transition-colors">About</Link>
+            <Link href="/resources" className="block px-4 py-2.5 text-sm font-medium text-white/80 hover:text-white hover:bg-white/10 rounded-lg transition-colors">Resources</Link>
+            <Link href="/contact"   className="block px-4 py-2.5 text-sm font-medium text-white/80 hover:text-white hover:bg-white/10 rounded-lg transition-colors">Contact</Link>
             <div className="pt-2 px-4">
               <a
                 href="https://calendly.com/karl-mortgage-adviser/borrowing-review"
