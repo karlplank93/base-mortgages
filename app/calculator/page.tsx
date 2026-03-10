@@ -1,15 +1,6 @@
 'use client';
 
 import { useState, useMemo } from 'react';
-import { Metadata } from 'next';
-
-interface CalculatorMetadata extends Metadata {
-  title?: string;
-  description?: string;
-}
-
-// Note: Metadata export not possible in client components
-// Add this to layout or route segment config in parent directory
 
 export default function CalculatorPage() {
   // Repayment Calculator State
