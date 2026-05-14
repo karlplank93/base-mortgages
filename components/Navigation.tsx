@@ -26,7 +26,7 @@ export default function Navigation() {
   return (
     <nav
       className="sticky top-0 z-50 transition-all duration-200"
-      style={{ background: '#001F5D', boxShadow: scrolled ? '0 4px 20px rgba(0,0,0,0.18)' : 'none' }}
+      style={{ background: '#1a252e', boxShadow: scrolled ? '0 4px 20px rgba(0,0,0,0.18)' : 'none' }}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between" style={{ height: '72px' }}>
@@ -70,7 +70,7 @@ export default function Navigation() {
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-5 py-2.5 rounded-full text-sm font-semibold text-white transition-all hover:opacity-90"
-              style={{ background: '#27C1B7' }}
+              style={{ background: '#006D77' }}
             >
               Book a Free Call
             </a>
@@ -105,7 +105,7 @@ export default function Navigation() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block text-center w-full py-3 rounded-full text-sm font-semibold text-white"
-                style={{ background: '#27C1B7' }}
+                style={{ background: '#006D77' }}
               >
                 Book a Free Call
               </a>

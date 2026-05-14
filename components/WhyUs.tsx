@@ -16,7 +16,7 @@ const bullets = [
 
 export default function WhyUs() {
   return (
-    <section className="py-24 px-6 lg:px-8" style={{ background: '#F8F9FB' }}>
+    <section className="py-24 px-6 lg:px-8" style={{ background: '#F8FAF9' }}>
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-16 items-start">
 
@@ -58,7 +58,7 @@ export default function WhyUs() {
           <div className="bg-navy rounded-3xl p-10 text-white relative overflow-hidden">
             <div
               className="absolute top-0 right-0 w-64 h-64 rounded-full blur-3xl pointer-events-none"
-              style={{ background: 'rgba(39,193,183,0.18)', transform: 'translate(30%, -30%)' }}
+              style={{ background: 'rgba(0,109,119,0.18)', transform: 'translate(30%, -30%)' }}
             />
             <div className="relative grid grid-cols-2 gap-4 mb-6">
               {[
@@ -73,14 +73,14 @@ export default function WhyUs() {
                 </div>
               ))}
             </div>
-            <div className="relative rounded-2xl p-5 text-center" style={{ background: '#27C1B7' }}>
+            <div className="relative rounded-2xl p-5 text-center" style={{ background: '#006D77' }}>
               <p className="text-sm mb-3 text-white/90">Ready to get started? Book a free call today.</p>
               <a
                 href="https://calendly.com/karl-mortgage-adviser/borrowing-review"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-white rounded-full px-6 py-2.5 font-bold text-sm hover:opacity-90 transition"
-                style={{ color: '#1FA79F' }}
+                style={{ color: '#005761' }}
               >
                 Book Discovery Call →
               </a>

@@ -37,7 +37,7 @@ export default function ContactPage() {
     <div className="bg-white">
 
       {/* Page header */}
-      <section className="py-16 px-6 lg:px-8 border-b border-gray-100" style={{ background: '#F8F9FB' }}>
+      <section className="py-16 px-6 lg:px-8 border-b border-gray-100" style={{ background: '#F8FAF9' }}>
         <div className="max-w-7xl mx-auto">
           <p className="text-sm font-semibold text-teal uppercase tracking-widest mb-3">Contact</p>
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight" style={{ letterSpacing: '-0.02em' }}>
@@ -92,7 +92,7 @@ export default function ContactPage() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center w-full py-3 rounded-full text-white font-semibold text-sm transition-all hover:opacity-90"
-                  style={{ background: '#27C1B7' }}
+                  style={{ background: '#006D77' }}
                 >
                   Book a Free Discovery Call
                 </a>
@@ -101,7 +101,7 @@ export default function ContactPage() {
 
             {/* Form */}
             <div className="lg:col-span-3">
-              <div className="rounded-2xl p-8 border border-gray-100" style={{ background: '#F8F9FB' }}>
+              <div className="rounded-2xl p-8 border border-gray-100" style={{ background: '#F8FAF9' }}>
                 {submitted ? (
                   <div className="text-center py-12">
                     <div className="w-14 h-14 bg-teal-light rounded-full flex items-center justify-center mx-auto mb-4">
@@ -182,7 +182,7 @@ export default function ContactPage() {
                       type="submit"
                       disabled={submitting}
                       className="w-full py-3.5 rounded-full text-white font-semibold text-sm transition-all hover:opacity-90 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
-                      style={{ background: '#27C1B7' }}
+                      style={{ background: '#006D77' }}
                     >
                       {submitting ? 'Sending...' : <><Send className="w-4 h-4" /> Send Message</>}
                     </button>

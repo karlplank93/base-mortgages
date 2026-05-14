@@ -32,7 +32,7 @@ export default function Hero() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center px-7 py-3.5 rounded-full text-white font-semibold text-base transition-all hover:opacity-90"
-                style={{ background: '#27C1B7', boxShadow: '0 4px 20px rgba(39,193,183,0.3)' }}
+                style={{ background: '#006D77', boxShadow: '0 4px 20px rgba(0,109,119,0.3)' }}
               >
                 Book a Free Discovery Call
               </a>

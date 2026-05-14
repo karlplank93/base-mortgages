@@ -10,9 +10,9 @@ export default function FirstHomeBuyersPage() {
   return (
     <div className="bg-white">
       {/* Header Section */}
-      <section className="bg-[#F8F9FB] py-16 md:py-24">
+      <section className="bg-[#F8FAF9] py-16 md:py-24">
         <div className="max-w-5xl mx-auto px-4 md:px-8">
-          <p className="text-sm font-semibold text-[#27C1B7] uppercase tracking-widest mb-4">
+          <p className="text-sm font-semibold text-[#006D77] uppercase tracking-widest mb-4">
             First Home Buyers
           </p>
           <h1
@@ -26,7 +26,7 @@ export default function FirstHomeBuyersPage() {
           </p>
           <a
             href="https://calendly.com/karl-mortgage-adviser/borrowing-review"
-            className="inline-block bg-[#27C1B7] text-white px-6 py-3 rounded-full font-medium hover:opacity-90 transition"
+            className="inline-block bg-[#006D77] text-white px-6 py-3 rounded-full font-medium hover:opacity-90 transition"
           >
             Book a free chat
           </a>
@@ -50,7 +50,7 @@ export default function FirstHomeBuyersPage() {
             {/* Card 1 */}
             <div className="border border-gray-100 rounded-2xl p-8 shadow-sm hover:shadow-md transition">
               <div className="bg-blue-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-                <Home className="w-6 h-6 text-[#0A2E6B]" />
+                <Home className="w-6 h-6 text-[#24323D]" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">KiwiSaver & First Home Loan</h3>
               <p className="text-gray-500">
@@ -61,7 +61,7 @@ export default function FirstHomeBuyersPage() {
             {/* Card 2 */}
             <div className="border border-gray-100 rounded-2xl p-8 shadow-sm hover:shadow-md transition">
               <div className="bg-green-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-                <CheckCircle className="w-6 h-6 text-[#27C1B7]" />
+                <CheckCircle className="w-6 h-6 text-[#006D77]" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Bank pre-approval</h3>
               <p className="text-gray-500">
@@ -72,7 +72,7 @@ export default function FirstHomeBuyersPage() {
             {/* Card 3 */}
             <div className="border border-gray-100 rounded-2xl p-8 shadow-sm hover:shadow-md transition">
               <div className="bg-purple-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-                <TrendingUp className="w-6 h-6 text-[#0A2E6B]" />
+                <TrendingUp className="w-6 h-6 text-[#24323D]" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Access to all lenders</h3>
               <p className="text-gray-500">
@@ -83,7 +83,7 @@ export default function FirstHomeBuyersPage() {
             {/* Card 4 */}
             <div className="border border-gray-100 rounded-2xl p-8 shadow-sm hover:shadow-md transition">
               <div className="bg-yellow-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-                <Heart className="w-6 h-6 text-[#0A2E6B]" />
+                <Heart className="w-6 h-6 text-[#24323D]" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">It's completely free</h3>
               <p className="text-gray-500">
@@ -95,7 +95,7 @@ export default function FirstHomeBuyersPage() {
       </section>
 
       {/* Process section */}
-      <section className="py-16 md:py-24 bg-[#F8F9FB]">
+      <section className="py-16 md:py-24 bg-[#F8FAF9]">
         <div className="max-w-5xl mx-auto px-4 md:px-8">
           <h2
             className="text-3xl md:text-4xl font-bold text-gray-900 mb-12"
@@ -108,7 +108,7 @@ export default function FirstHomeBuyersPage() {
             {/* Step 1 */}
             <div className="flex gap-8">
               <div className="flex flex-col items-center">
-                <div className="bg-[#27C1B7] text-white w-10 h-10 rounded-full flex items-center justify-center font-bold text-lg">
+                <div className="bg-[#006D77] text-white w-10 h-10 rounded-full flex items-center justify-center font-bold text-lg">
                   1
                 </div>
                 <div className="w-1 h-20 bg-gray-200 mt-4" />
@@ -124,7 +124,7 @@ export default function FirstHomeBuyersPage() {
             {/* Step 2 */}
             <div className="flex gap-8">
               <div className="flex flex-col items-center">
-                <div className="bg-[#27C1B7] text-white w-10 h-10 rounded-full flex items-center justify-center font-bold text-lg">
+                <div className="bg-[#006D77] text-white w-10 h-10 rounded-full flex items-center justify-center font-bold text-lg">
                   2
                 </div>
                 <div className="w-1 h-20 bg-gray-200 mt-4" />
@@ -140,7 +140,7 @@ export default function FirstHomeBuyersPage() {
             {/* Step 3 */}
             <div className="flex gap-8">
               <div className="flex flex-col items-center">
-                <div className="bg-[#27C1B7] text-white w-10 h-10 rounded-full flex items-center justify-center font-bold text-lg">
+                <div className="bg-[#006D77] text-white w-10 h-10 rounded-full flex items-center justify-center font-bold text-lg">
                   3
                 </div>
               </div>
@@ -167,7 +167,7 @@ export default function FirstHomeBuyersPage() {
 
           <div className="space-y-6">
             {/* FAQ 1 */}
-            <details className="border border-gray-100 rounded-2xl p-6 open:bg-[#F8F9FB] group cursor-pointer">
+            <details className="border border-gray-100 rounded-2xl p-6 open:bg-[#F8FAF9] group cursor-pointer">
               <summary className="flex items-center justify-between font-bold text-gray-900 text-lg select-none">
                 How much deposit do I actually need?
                 <ChevronDown className="w-5 h-5 text-gray-500 group-open:rotate-180 transition" />
@@ -178,7 +178,7 @@ export default function FirstHomeBuyersPage() {
             </details>
 
             {/* FAQ 2 */}
-            <details className="border border-gray-100 rounded-2xl p-6 open:bg-[#F8F9FB] group cursor-pointer">
+            <details className="border border-gray-100 rounded-2xl p-6 open:bg-[#F8FAF9] group cursor-pointer">
               <summary className="flex items-center justify-between font-bold text-gray-900 text-lg select-none">
                 Can I withdraw from my KiwiSaver?
                 <ChevronDown className="w-5 h-5 text-gray-500 group-open:rotate-180 transition" />
@@ -189,7 +189,7 @@ export default function FirstHomeBuyersPage() {
             </details>
 
             {/* FAQ 3 */}
-            <details className="border border-gray-100 rounded-2xl p-6 open:bg-[#F8F9FB] group cursor-pointer">
+            <details className="border border-gray-100 rounded-2xl p-6 open:bg-[#F8FAF9] group cursor-pointer">
               <summary className="flex items-center justify-between font-bold text-gray-900 text-lg select-none">
                 What's the First Home Loan exactly?
                 <ChevronDown className="w-5 h-5 text-gray-500 group-open:rotate-180 transition" />
@@ -200,7 +200,7 @@ export default function FirstHomeBuyersPage() {
             </details>
 
             {/* FAQ 4 */}
-            <details className="border border-gray-100 rounded-2xl p-6 open:bg-[#F8F9FB] group cursor-pointer">
+            <details className="border border-gray-100 rounded-2xl p-6 open:bg-[#F8FAF9] group cursor-pointer">
               <summary className="flex items-center justify-between font-bold text-gray-900 text-lg select-none">
                 How long does it take to get pre-approved?
                 <ChevronDown className="w-5 h-5 text-gray-500 group-open:rotate-180 transition" />
@@ -214,7 +214,7 @@ export default function FirstHomeBuyersPage() {
       </section>
 
       {/* Final CTA Banner */}
-      <section className="bg-[#0A2E6B] py-16 md:py-24">
+      <section className="bg-[#24323D] py-16 md:py-24">
         <div className="max-w-4xl mx-auto px-4 md:px-8 text-center">
           <h2
             className="text-3xl md:text-4xl font-bold text-white mb-6"
@@ -227,7 +227,7 @@ export default function FirstHomeBuyersPage() {
           </p>
           <a
             href="https://calendly.com/karl-mortgage-adviser/borrowing-review"
-            className="inline-block bg-[#27C1B7] text-white px-8 py-3 rounded-full font-medium hover:opacity-90 transition flex items-center gap-2"
+            className="inline-block bg-[#006D77] text-white px-8 py-3 rounded-full font-medium hover:opacity-90 transition flex items-center gap-2"
           >
             Book a free consultation
             <ArrowRight className="w-4 h-4" />

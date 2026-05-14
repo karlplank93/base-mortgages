@@ -23,7 +23,7 @@ const steps = [
 
 export default function Process() {
   return (
-    <section className="py-24 px-6 lg:px-8" style={{ background: '#F8F9FB' }}>
+    <section className="py-24 px-6 lg:px-8" style={{ background: '#F8FAF9' }}>
       <div className="max-w-7xl mx-auto">
 
         <div className="max-w-2xl mb-14">
@@ -45,7 +45,7 @@ export default function Process() {
                 className="bg-white rounded-2xl p-8 border border-gray-100"
                 style={{ boxShadow: '0 1px 4px rgba(0,0,0,0.05)' }}
               >
-                <div className="text-5xl font-bold mb-5 leading-none" style={{ color: 'rgba(39,193,183,0.15)' }}>
+                <div className="text-5xl font-bold mb-5 leading-none" style={{ color: 'rgba(0,109,119,0.15)' }}>
                   {step.number}
                 </div>
                 <div className="w-11 h-11 rounded-xl bg-teal-light flex items-center justify-center mb-5">
@@ -64,7 +64,7 @@ export default function Process() {
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center px-8 py-3.5 rounded-full text-white font-semibold text-base transition-all hover:opacity-90"
-            style={{ background: '#27C1B7', boxShadow: '0 4px 20px rgba(39,193,183,0.28)' }}
+            style={{ background: '#006D77', boxShadow: '0 4px 20px rgba(0,109,119,0.28)' }}
           >
             Start with a Free Discovery Call
           </a>

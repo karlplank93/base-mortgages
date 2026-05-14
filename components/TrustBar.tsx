@@ -8,7 +8,7 @@ const banks = ['ANZ', 'ASB', 'BNZ', 'Westpac', 'Kiwibank'];
 
 export default function TrustBar() {
   return (
-    <section className="py-16 px-6 lg:px-8" style={{ background: '#F8F9FB' }}>
+    <section className="py-16 px-6 lg:px-8" style={{ background: '#F8FAF9' }}>
       <div className="max-w-7xl mx-auto">
         {/* Metrics */}
         <div className="grid grid-cols-3 gap-8 mb-10 text-center">
