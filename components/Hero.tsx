@@ -1,52 +1,67 @@
 'use client';
 
-import Link from 'next/link';
-
 export default function Hero() {
   return (
-    <section className="bg-white">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-20 lg:py-28">
+    <section className="relative bg-white overflow-hidden">
+      {/* Decorative mint wedge — bottom-left signature element from brand guide */}
+      <div
+        className="absolute left-0 bottom-0 w-[55%] h-[110px] pointer-events-none"
+        style={{
+          background: '#D6E7E2',
+          clipPath: 'polygon(0 100%, 100% 100%, 0 0)',
+        }}
+        aria-hidden="true"
+      />
+      {/* Soft teal accent — bottom-right balancing wedge */}
+      <div
+        className="absolute right-0 bottom-0 w-[30%] h-[80px] pointer-events-none opacity-90"
+        style={{
+          background: '#006D77',
+          clipPath: 'polygon(100% 0, 100% 100%, 0 100%)',
+        }}
+        aria-hidden="true"
+      />
+
+      <div className="relative max-w-7xl mx-auto px-6 lg:px-8 py-16 lg:py-24">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
-          {/* Text */}
+          {/* Text column */}
           <div>
-            <p className="text-sm font-semibold text-teal uppercase tracking-widest mb-5">
-              New Zealand Mortgage Advisers
-            </p>
-
             <h1
-              className="font-display font-bold text-gray-900 mb-6 leading-tight"
-              style={{ fontSize: 'clamp(40px, 5vw, 64px)', letterSpacing: '-0.02em' }}
+              className="font-display font-bold mb-6 leading-[1.05]"
+              style={{
+                fontSize: 'clamp(40px, 5.4vw, 68px)',
+                letterSpacing: '-0.02em',
+                color: '#24323D',
+              }}
             >
-              Smart mortgages,{' '}
-              <span className="text-teal">built around you.</span>
+              Mortgages<br />
+              made <span style={{ color: '#A8B8B2' }}>simple.</span><br />
+              Advice you can <span style={{ color: '#A8B8B2' }}>trust.</span>
             </h1>
 
-            <p className="text-lg text-gray-500 mb-8 leading-relaxed max-w-lg">
-              Whether you&apos;re buying your first home, refinancing, or growing your portfolio — we find the right mortgage and handle everything for you.
+            <p
+              className="text-lg mb-9 leading-relaxed max-w-md"
+              style={{ color: '#6B7280' }}
+            >
+              We&apos;ll help you find the right mortgage for your home and your future.
             </p>
 
-            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
-              <a
-                href="https://calendly.com/karl-mortgage-adviser/borrowing-review"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center px-7 py-3.5 rounded-full text-white font-semibold text-base transition-all hover:opacity-90"
-                style={{ background: '#006D77', boxShadow: '0 4px 20px rgba(0,109,119,0.3)' }}
-              >
-                Book a Free Discovery Call
-              </a>
-              <Link
-                href="#services"
-                className="inline-flex items-center gap-2 font-medium text-gray-700 hover:text-navy transition-colors text-base"
-              >
-                See how we help <span className="text-teal">→</span>
-              </Link>
-            </div>
-
+            <a
+              href="https://calendly.com/karl-mortgage-adviser/borrowing-review"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center px-7 py-3.5 rounded-lg text-white font-semibold text-base transition-all hover:opacity-90"
+              style={{
+                background: '#006D77',
+                boxShadow: '0 4px 16px rgba(0,109,119,0.22)',
+              }}
+            >
+              Book a Free Consultation
+            </a>
           </div>
 
-          {/* Image */}
+          {/* Image column */}
           <div className="relative order-first lg:order-last">
             <div
               className="rounded-3xl overflow-hidden"
@@ -54,19 +69,24 @@ export default function Hero() {
             >
               <img
                 src="/hero-image.jpg"
-                alt="Base Mortgages Team"
-                className="w-full h-72 sm:h-96 lg:h-[480px] object-cover"
+                alt="A New Zealand family settling into their new home"
+                className="w-full h-72 sm:h-96 lg:h-[520px] object-cover"
               />
             </div>
-            {/* Floating badge */}
+
+            {/* Floating reviews badge */}
             <div
               className="absolute -bottom-5 -left-5 bg-white rounded-2xl px-5 py-4 hidden sm:block"
               style={{ boxShadow: '0 8px 32px rgba(0,0,0,0.10)' }}
             >
-              <div className="text-xs text-gray-400 mb-1">Google Reviews</div>
+              <div className="text-xs mb-1" style={{ color: '#A8B8B2' }}>
+                Google Reviews
+              </div>
               <div className="flex items-center gap-2">
                 <span className="text-yellow-400 text-sm tracking-wider">★★★★★</span>
-                <span className="font-bold text-gray-900 text-sm">4.9 / 5</span>
+                <span className="font-bold text-sm" style={{ color: '#24323D' }}>
+                  4.9 / 5
+                </span>
               </div>
             </div>
           </div>
