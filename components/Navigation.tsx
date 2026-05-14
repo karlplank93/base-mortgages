@@ -4,17 +4,18 @@ import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import { Menu, X, ChevronDown } from 'lucide-react';
 
-const services = [
+const mortgageLinks: [string, string][] = [
   ['First Home Buyers',        '/services/first-home-buyers'],
   ['Refinancing',              '/services/refinancing'],
   ['Property Investors',       '/services/investors'],
   ['Refix & Restructure',      '/services/refix'],
   ['New Build & Construction', '/services/construction'],
+  ['Alternative Lending',      '/services/alternative-lending'],
 ];
 
 export default function Navigation() {
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [servicesOpen, setServicesOpen] = useState(false);
+  const [mortgagesOpen, setMortgagesOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -23,64 +24,85 @@ export default function Navigation() {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
+  const linkClass = 'px-3 py-2 text-sm font-medium transition-colors';
+  const linkColor = { color: '#24323D' };
+
   return (
     <nav
-      className="sticky top-0 z-50 transition-all duration-200"
-      style={{ background: '#1a252e', boxShadow: scrolled ? '0 4px 20px rgba(0,0,0,0.18)' : 'none' }}
+      className="sticky top-0 z-50 transition-all duration-200 bg-white"
+      style={{
+        boxShadow: scrolled ? '0 2px 12px rgba(0,0,0,0.06)' : 'none',
+        borderBottom: scrolled ? 'none' : '1px solid rgba(0,0,0,0.04)',
+      }}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="flex items-center justify-between" style={{ height: '72px' }}>
+        <div className="flex items-center justify-between" style={{ height: '76px' }}>
 
           {/* Logo */}
           <Link href="/" className="flex-shrink-0">
-            <img src="/logos/base-mortgages-logo.svg" alt="Base Mortgages" className="h-12 w-auto" />
+            <img
+              src="/logos/base-mortgages-logo.svg"
+              alt="Base Mortgages"
+              className="h-9 w-auto"
+            />
           </Link>
 
           {/* Desktop nav links */}
           <div className="hidden md:flex items-center gap-1">
             <div
               className="relative"
-              onMouseEnter={() => setServicesOpen(true)}
-              onMouseLeave={() => setServicesOpen(false)}
+              onMouseEnter={() => setMortgagesOpen(true)}
+              onMouseLeave={() => setMortgagesOpen(false)}
             >
-              <button className="flex items-center gap-1 px-4 py-2 rounded-lg text-sm font-medium text-white/80 hover:text-white hover:bg-white/10 transition-colors">
-                Services
-                <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${servicesOpen ? 'rotate-180' : ''}`} />
+              <button
+                className={`${linkClass} flex items-center gap-1 rounded-lg hover:opacity-70`}
+                style={linkColor}
+              >
+                Mortgages
+                <ChevronDown
+                  className={`w-4 h-4 transition-transform duration-200 ${mortgagesOpen ? 'rotate-180' : ''}`}
+                />
               </button>
-              {servicesOpen && (
-                <div className="absolute top-full left-1/2 -translate-x-1/2 mt-1 w-60 bg-white border border-gray-100 rounded-2xl shadow-lg py-2 z-50">
-                  {services.map(([label, href]) => (
-                    <Link key={href} href={href}
-                      className="block px-4 py-2.5 text-sm text-gray-600 hover:text-navy hover:bg-gray-50 transition-colors mx-1 rounded-lg">
+              {mortgagesOpen && (
+                <div className="absolute top-full left-1/2 -translate-x-1/2 mt-1 w-64 bg-white border border-gray-100 rounded-2xl py-2 z-50"
+                  style={{ boxShadow: '0 12px 32px rgba(0,0,0,0.08)' }}>
+                  {mortgageLinks.map(([label, href]) => (
+                    <Link
+                      key={href}
+                      href={href}
+                      className="block px-4 py-2.5 text-sm transition-colors mx-1 rounded-lg hover:bg-mint/40"
+                      style={{ color: '#24323D' }}
+                    >
                       {label}
                     </Link>
                   ))}
                 </div>
               )}
             </div>
-            <Link href="/about"     className="px-4 py-2 rounded-lg text-sm font-medium text-white/80 hover:text-white hover:bg-white/10 transition-colors">About</Link>
-            <Link href="/resources" className="px-4 py-2 rounded-lg text-sm font-medium text-white/80 hover:text-white hover:bg-white/10 transition-colors">Resources</Link>
-            <Link href="/contact"   className="px-4 py-2 rounded-lg text-sm font-medium text-white/80 hover:text-white hover:bg-white/10 transition-colors">Contact</Link>
+
+            <Link href="/about"      className={`${linkClass} hover:opacity-70`} style={linkColor}>About Us</Link>
+            <Link href="/resources"  className={`${linkClass} hover:opacity-70`} style={linkColor}>Guides</Link>
+            <Link href="/calculator" className={`${linkClass} hover:opacity-70`} style={linkColor}>Calculators</Link>
+            <Link href="/contact"    className={`${linkClass} hover:opacity-70`} style={linkColor}>Contact</Link>
           </div>
 
           {/* CTA */}
           <div className="hidden md:block">
-            <a
-              href="https://calendly.com/karl-mortgage-adviser/borrowing-review"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center px-5 py-2.5 rounded-full text-sm font-semibold text-white transition-all hover:opacity-90"
+            <Link
+              href="/contact"
+              className="inline-flex items-center px-5 py-2.5 rounded-lg text-sm font-semibold text-white transition-all hover:opacity-90"
               style={{ background: '#006D77' }}
             >
-              Book a Free Call
-            </a>
+              Get in Touch
+            </Link>
           </div>
 
           {/* Mobile hamburger */}
           <button
-            className="md:hidden p-2 rounded-lg text-white/80 hover:bg-white/10 transition-colors"
+            className="md:hidden p-2 rounded-lg transition-colors hover:bg-gray-100"
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label="Toggle menu"
+            style={{ color: '#24323D' }}
           >
             {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
           </button>
@@ -88,27 +110,33 @@ export default function Navigation() {
 
         {/* Mobile menu */}
         {mobileOpen && (
-          <div className="md:hidden pb-4 pt-2 space-y-1 border-t border-white/10">
-            {services.map(([label, href]) => (
-              <Link key={href} href={href}
-                className="block px-4 py-2.5 text-sm font-medium text-white/80 hover:text-white hover:bg-white/10 rounded-lg transition-colors">
+          <div className="md:hidden pb-4 pt-2 space-y-1 border-t border-gray-100">
+            <div className="px-4 pt-3 pb-1 text-xs font-bold uppercase tracking-wider" style={{ color: '#A8B8B2' }}>
+              Mortgages
+            </div>
+            {mortgageLinks.map(([label, href]) => (
+              <Link
+                key={href}
+                href={href}
+                className="block px-4 py-2.5 text-sm font-medium rounded-lg transition-colors hover:bg-gray-50"
+                style={{ color: '#24323D' }}
+              >
                 {label}
               </Link>
             ))}
-            <div className="border-t border-white/10 my-2" />
-            <Link href="/about"     className="block px-4 py-2.5 text-sm font-medium text-white/80 hover:text-white hover:bg-white/10 rounded-lg transition-colors">About</Link>
-            <Link href="/resources" className="block px-4 py-2.5 text-sm font-medium text-white/80 hover:text-white hover:bg-white/10 rounded-lg transition-colors">Resources</Link>
-            <Link href="/contact"   className="block px-4 py-2.5 text-sm font-medium text-white/80 hover:text-white hover:bg-white/10 rounded-lg transition-colors">Contact</Link>
-            <div className="pt-2 px-4">
-              <a
-                href="https://calendly.com/karl-mortgage-adviser/borrowing-review"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block text-center w-full py-3 rounded-full text-sm font-semibold text-white"
+            <div className="border-t border-gray-100 my-2" />
+            <Link href="/about"      className="block px-4 py-2.5 text-sm font-medium rounded-lg transition-colors hover:bg-gray-50" style={linkColor}>About Us</Link>
+            <Link href="/resources"  className="block px-4 py-2.5 text-sm font-medium rounded-lg transition-colors hover:bg-gray-50" style={linkColor}>Guides</Link>
+            <Link href="/calculator" className="block px-4 py-2.5 text-sm font-medium rounded-lg transition-colors hover:bg-gray-50" style={linkColor}>Calculators</Link>
+            <Link href="/contact"    className="block px-4 py-2.5 text-sm font-medium rounded-lg transition-colors hover:bg-gray-50" style={linkColor}>Contact</Link>
+            <div className="pt-3 px-4">
+              <Link
+                href="/contact"
+                className="block text-center w-full py-3 rounded-lg text-sm font-semibold text-white"
                 style={{ background: '#006D77' }}
               >
-                Book a Free Call
-              </a>
+                Get in Touch
+              </Link>
             </div>
           </div>
         )}
