@@ -9,7 +9,7 @@ export default function Footer() {
 
           {/* Brand */}
           <div>
-            <img src="/base-mortgages-logo.svg" alt="Base Mortgages" className="h-9 w-auto mb-5" />
+            <img src="/logos/base-mortgages-logo.svg" alt="Base Mortgages" className="h-9 w-auto mb-5" />
             <p className="text-sm text-gray-500 leading-relaxed mb-5 max-w-xs">
               Strategic mortgage advice for New Zealanders at every stage of their property journey.
             </p>
