@@ -13,6 +13,8 @@ html {
 
 body {
   @apply antialiased;
+  background-color: #F8FAF9;
+  color: #24323D;
 }
 
 @layer utilities {

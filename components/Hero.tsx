@@ -2,22 +2,12 @@
 
 export default function Hero() {
   return (
-    <section className="relative bg-white overflow-hidden">
-      {/* Decorative mint wedge — signature bottom-left element from brand guide */}
-      <div
-        className="absolute left-0 bottom-0 w-[48%] h-[90px] pointer-events-none"
-        style={{
-          background: '#D6E7E2',
-          clipPath: 'polygon(0 100%, 100% 100%, 0 0)',
-        }}
-        aria-hidden="true"
-      />
-
-      <div className="relative max-w-7xl mx-auto px-6 lg:px-8 py-14 lg:py-20">
+    <section className="relative overflow-hidden" style={{ background: '#F8FAF9' }}>
+      <div className="relative max-w-7xl mx-auto px-6 lg:px-8 pt-14 pb-32 lg:pt-20 lg:pb-40">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
           {/* Text column */}
-          <div>
+          <div className="relative z-10">
             <h1
               className="font-display font-bold mb-6 leading-[1.05]"
               style={{
@@ -53,7 +43,7 @@ export default function Hero() {
           </div>
 
           {/* Image column */}
-          <div className="relative order-first lg:order-last">
+          <div className="relative order-first lg:order-last z-10">
             <div
               className="rounded-3xl overflow-hidden"
               style={{ boxShadow: '0 20px 60px rgba(0,0,0,0.10)' }}
@@ -68,6 +58,27 @@ export default function Hero() {
 
         </div>
       </div>
+
+      {/* Smooth curve graphics — signature brand element from the brand guide */}
+      <svg
+        className="absolute bottom-0 left-0 w-full pointer-events-none"
+        viewBox="0 0 1440 220"
+        preserveAspectRatio="none"
+        style={{ height: 'clamp(120px, 14vw, 220px)' }}
+        aria-hidden="true"
+      >
+        {/* Background mint curve — primary signature swoosh */}
+        <path
+          d="M 0,220 L 0,150 Q 360,40 720,90 T 1440,60 L 1440,220 Z"
+          fill="#D6E7E2"
+        />
+        {/* Foreground teal accent curve — overlaps on the right */}
+        <path
+          d="M 720,220 L 720,180 Q 1080,90 1440,140 L 1440,220 Z"
+          fill="#006D77"
+          opacity="0.92"
+        />
+      </svg>
     </section>
   );
 }

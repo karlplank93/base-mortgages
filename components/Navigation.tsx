@@ -36,14 +36,14 @@ export default function Navigation() {
       }}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="flex items-center justify-between" style={{ height: '76px' }}>
+        <div className="flex items-center justify-between" style={{ height: '88px' }}>
 
           {/* Logo */}
           <Link href="/" className="flex-shrink-0">
             <img
               src="/base-mortgages-logo.svg"
               alt="Base Mortgages"
-              className="h-9 w-auto"
+              className="h-14 w-auto"
             />
           </Link>
 

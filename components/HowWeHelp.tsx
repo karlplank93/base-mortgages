@@ -37,7 +37,7 @@ const helpCategories: {
 
 export default function HowWeHelp() {
   return (
-    <section className="bg-white py-20 lg:py-24 px-6 lg:px-8">
+    <section className="py-20 lg:py-24 px-6 lg:px-8" style={{ background: '#F8FAF9' }}>
       <div className="max-w-6xl mx-auto">
         <h2
           className="font-display font-bold text-center mb-14 lg:mb-16"
