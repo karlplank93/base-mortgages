@@ -1,5 +1,12 @@
 import { Phone, Mail, Calendar } from 'lucide-react';
 
+const stats: { value: string; label: string }[] = [
+  { value: '4.9★', label: 'Google Reviews from NZ homeowners' },
+  { value: '30+',  label: 'Lenders on our panel' },
+  { value: '24hr', label: 'Average response time' },
+  { value: '$0',   label: 'Cost to you for our advice' },
+];
+
 export default function MeetAdviser() {
   return (
     <section
@@ -130,6 +137,34 @@ export default function MeetAdviser() {
               Book a Meeting with Karl
             </a>
           </div>
+        </div>
+
+        {/* Stats strip — moved from old WhyUs section */}
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mt-10">
+          {stats.map((stat) => (
+            <div
+              key={stat.label}
+              className="rounded-2xl p-6 text-center"
+              style={{ background: '#0F4C4F' }}
+            >
+              <div
+                className="font-display font-bold mb-2"
+                style={{
+                  fontSize: 'clamp(28px, 3vw, 40px)',
+                  color: '#C7E8DE',
+                  lineHeight: 1,
+                }}
+              >
+                {stat.value}
+              </div>
+              <div
+                className="text-xs leading-snug"
+                style={{ color: 'rgba(255,255,255,0.75)' }}
+              >
+                {stat.label}
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>
