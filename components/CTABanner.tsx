@@ -5,7 +5,7 @@ export default function CTABanner() {
     <section className="py-24 px-6 lg:px-8 bg-navy">
       <div className="max-w-3xl mx-auto text-center">
 
-        <p className="text-sm font-semibold uppercase tracking-widest mb-5" style={{ color: '#006D77' }}>
+        <p className="text-sm font-semibold uppercase tracking-widest mb-5" style={{ color: '#0F4C4F' }}>
           Free, no-obligation
         </p>
 
@@ -22,7 +22,7 @@ export default function CTABanner() {
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center px-8 py-3.5 rounded-full text-white font-semibold text-base transition-all hover:opacity-90"
-            style={{ background: '#006D77', boxShadow: '0 4px 20px rgba(0,109,119,0.3)' }}
+            style={{ background: '#0F4C4F', boxShadow: '0 4px 20px rgba(15,76,79,0.3)' }}
           >
             Book a Free Discovery Call
           </a>

@@ -75,7 +75,7 @@ const lenders = [
 
 export default function Lenders() {
   return (
-    <section className="py-24 px-6 lg:px-8 text-center" style={{ background: '#F8FAF9' }}>
+    <section className="py-24 px-6 lg:px-8 text-center" style={{ background: '#F7F5F2' }}>
       <div className="max-w-4xl mx-auto">
         <p className="text-sm font-semibold text-teal uppercase tracking-widest mb-3">Our Lender Panel</p>
         <h2

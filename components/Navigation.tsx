@@ -29,21 +29,21 @@ export default function Navigation() {
 
   return (
     <nav
-      className="sticky top-0 z-50 transition-all duration-200 bg-white"
+      className="sticky top-0 z-50 transition-all duration-200"
       style={{
+        background: '#F7F5F2',
         boxShadow: scrolled ? '0 2px 12px rgba(0,0,0,0.06)' : 'none',
-        borderBottom: scrolled ? 'none' : '1px solid rgba(0,0,0,0.04)',
       }}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="flex items-center justify-between" style={{ height: '88px' }}>
+        <div className="flex items-center justify-between" style={{ height: '96px' }}>
 
           {/* Logo */}
           <Link href="/" className="flex-shrink-0">
             <img
               src="/base-mortgages-logo.svg"
               alt="Base Mortgages"
-              className="h-14 w-auto"
+              className="h-16 w-auto"
             />
           </Link>
 
@@ -64,8 +64,10 @@ export default function Navigation() {
                 />
               </button>
               {mortgagesOpen && (
-                <div className="absolute top-full left-1/2 -translate-x-1/2 mt-1 w-64 bg-white border border-gray-100 rounded-2xl py-2 z-50"
-                  style={{ boxShadow: '0 12px 32px rgba(0,0,0,0.08)' }}>
+                <div
+                  className="absolute top-full left-1/2 -translate-x-1/2 mt-1 w-64 bg-white border border-gray-100 rounded-2xl py-2 z-50"
+                  style={{ boxShadow: '0 12px 32px rgba(0,0,0,0.08)' }}
+                >
                   {mortgageLinks.map(([label, href]) => (
                     <Link
                       key={href}
@@ -91,7 +93,7 @@ export default function Navigation() {
             <Link
               href="/contact"
               className="inline-flex items-center px-5 py-2.5 rounded-lg text-sm font-semibold text-white transition-all hover:opacity-90"
-              style={{ background: '#006D77' }}
+              style={{ background: '#FF8A5B' }}
             >
               Get in Touch
             </Link>
@@ -111,7 +113,10 @@ export default function Navigation() {
         {/* Mobile menu */}
         {mobileOpen && (
           <div className="md:hidden pb-4 pt-2 space-y-1 border-t border-gray-100">
-            <div className="px-4 pt-3 pb-1 text-xs font-bold uppercase tracking-wider" style={{ color: '#A8B8B2' }}>
+            <div
+              className="px-4 pt-3 pb-1 text-xs font-bold uppercase tracking-wider"
+              style={{ color: '#A8B8B2' }}
+            >
               Mortgages
             </div>
             {mortgageLinks.map(([label, href]) => (
@@ -133,7 +138,7 @@ export default function Navigation() {
               <Link
                 href="/contact"
                 className="block text-center w-full py-3 rounded-lg text-sm font-semibold text-white"
-                style={{ background: '#006D77' }}
+                style={{ background: '#FF8A5B' }}
               >
                 Get in Touch
               </Link>

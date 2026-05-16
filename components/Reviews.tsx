@@ -38,7 +38,7 @@ export default function Reviews() {
               <div className="flex items-center gap-3">
                 <div
                   className="w-9 h-9 rounded-full flex items-center justify-center text-white font-bold text-xs flex-shrink-0"
-                  style={{ background: '#006D77' }}
+                  style={{ background: '#0F4C4F' }}
                 >
                   {review.initials}
                 </div>

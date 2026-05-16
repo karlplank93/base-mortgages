@@ -11,34 +11,35 @@ const config: Config = {
       colors: {
         // ──────────────────────────────────────────────
         // Base Mortgages brand palette
-        // Primary Teal   Deep Teal     #006D77
-        // Premium Mint   Soft Mint     #D6E7E2
-        // Charcoal Text  Dark Slate    #24323D
-        // Background     Off White     #F8FAF9
-        // Secondary      Sage Grey     #A8B8B2
+        // Deep Teal     #0F4C4F   primary brand
+        // Mint          #C7E8DE   light tints
+        // Coral Orange  #FF8A5B   CTAs / accents
+        // Soft Cream    #F7F5F2   page background
         // ──────────────────────────────────────────────
 
-        // `navy` token = primary dark (headings, dark backgrounds) → Dark Slate
+        // `navy` token = primary dark (headings, dark backgrounds)
         navy: {
-          DEFAULT: '#24323D',   // Dark Slate (Charcoal Text)
-          deep:    '#1a252e',   // slightly darker for gradient depth
-          light:   '#3a4a58',   // slightly lighter for hover/contrast
+          DEFAULT: '#0F4C4F',
+          deep:    '#0A3537',
+          light:   '#2A6E72',
         },
 
-        // `teal` token = primary brand accent → Deep Teal
+        // `teal` token = primary brand → Deep Teal
         teal: {
-          DEFAULT: '#006D77',   // Deep Teal (Primary Teal)
-          dark:    '#005761',   // hover/active
-          darker:  '#003e45',
-          light:   '#D6E7E2',   // Soft Mint (Premium Mint)
-          mid:     '#4a9fa6',   // mid teal
+          DEFAULT: '#0F4C4F',
+          dark:    '#0A3537',
+          darker:  '#062528',
+          light:   '#C7E8DE',
+          mid:     '#5B9799',
         },
 
         // Brand-specific named tokens
-        mint:     { DEFAULT: '#D6E7E2' },   // Soft Mint
-        sage:     { DEFAULT: '#A8B8B2' },   // Sage Grey
-        charcoal: { DEFAULT: '#24323D' },   // Dark Slate
-        offwhite: { DEFAULT: '#F8FAF9' },   // Off White
+        mint:    { DEFAULT: '#C7E8DE' },
+        coral:   { DEFAULT: '#FF8A5B', dark: '#E8723E' },
+        sage:    { DEFAULT: '#A8B8B2' },
+        charcoal:{ DEFAULT: '#24323D' },
+        offwhite:{ DEFAULT: '#F7F5F2' },
+        cream:   { DEFAULT: '#F7F5F2', dark: '#E8E4DE' },
 
         border: {
           DEFAULT: '#E5E7EB',
@@ -46,23 +47,22 @@ const config: Config = {
 
         bg: {
           DEFAULT: '#FFFFFF',
-          light:   '#F8FAF9',   // Off White
-          soft:    '#D6E7E2',   // Soft Mint
-          trust:   '#F8FAF9',   // Off White
+          light:   '#F7F5F2',
+          soft:    '#C7E8DE',
+          trust:   '#F7F5F2',
         },
 
         text: {
-          primary:   '#24323D', // Dark Slate
+          primary:   '#24323D',
           secondary: '#6B7280',
-          muted:     '#A8B8B2', // Sage Grey
+          muted:     '#A8B8B2',
         },
 
-        // Backwards-compat aliases — redirected to brand palette
-        sand:   { DEFAULT: '#F8FAF9', dark: '#D6E7E2' },
-        cream:  { DEFAULT: '#F8FAF9', dark: '#D6E7E2' },
+        // Backwards-compat aliases
+        sand:   { DEFAULT: '#F7F5F2', dark: '#E8E4DE' },
         slate:  '#24323D',
-        // Old orange CTA → redirected to Deep Teal so existing code stays on-brand
-        orange: { DEFAULT: '#006D77', dark: '#005761' },
+        // Old orange CTA → keep as coral
+        orange: { DEFAULT: '#FF8A5B', dark: '#E8723E' },
       },
       fontFamily: {
         sans:    ['var(--font-outfit)', 'system-ui', 'sans-serif'],
@@ -72,7 +72,7 @@ const config: Config = {
         '4xl': '2rem',
       },
       boxShadow: {
-        cta:  '0 8px 24px rgba(0,109,119,0.28)',  // Deep Teal shadow
+        cta:  '0 8px 24px rgba(255,138,91,0.28)',
         card: '0 4px 16px rgba(0,0,0,0.07)',
       },
     },
