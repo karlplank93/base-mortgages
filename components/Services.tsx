@@ -1,106 +1,121 @@
 import Link from 'next/link';
-import { Home, RefreshCw, TrendingUp, BarChart3, Building2, AlertCircle } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
-const services = [
+const services: { title: string; description: string; href: string; cta: string }[] = [
   {
-    icon: Home,
     title: 'First Home Buyers',
-    description: 'We build your First Home Roadmap — from assessing your borrowing power to settlement day. KiwiSaver, First Home Loans, and every step in between.',
+    description:
+      'From helping you build your deposit and understand your borrowing power, to finding the right property and securing the best loan — right through to settlement.',
     href: '/services/first-home-buyers',
-    image: 'https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=600&h=280&q=80',
-    imageAlt: 'Young family outside their new home',
+    cta: 'Secure your first home loan',
   },
   {
-    icon: RefreshCw,
-    title: 'Refinancing',
-    description: 'Move lenders, unlock equity, or get a better rate. We compare all major banks and non-bank lenders and negotiate on your behalf.',
-    href: '/services/refinancing',
-    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=600&h=280&q=80',
-    imageAlt: 'Couple reviewing mortgage documents',
-  },
-  {
-    icon: BarChart3,
-    title: 'Refix & Restructure',
-    description: "Don't just roll over your rate. We review your full loan structure and advise on the best combination of fixed, floating, and term lengths.",
-    href: '/services/refix',
-    image: 'https://images.unsplash.com/photo-1611532736597-de2d4265fba3?auto=format&fit=crop&w=600&h=280&q=80',
-    imageAlt: 'Financial planning and charts',
-  },
-  {
-    icon: TrendingUp,
     title: 'Property Investors',
-    description: 'Grow your portfolio with strategic debt structuring, entity advice, and access to lenders who understand investment lending.',
+    description:
+      'We help investors understand their cashflow and rental yields, find the right properties, and secure the best funding — guiding you through every step of the investment journey.',
     href: '/services/investors',
-    image: 'https://images.unsplash.com/photo-1560520031-3a4dc4e9de0c?auto=format&fit=crop&w=600&h=280&q=80',
-    imageAlt: 'Investment property building',
+    cta: 'Finance your next investment',
   },
   {
-    icon: Building2,
+    title: 'Refinancing',
+    description:
+      'We help homeowners review their existing mortgage, reduce interest costs, unlock equity, and secure better lending terms that align with your current financial goals.',
+    href: '/services/refinancing',
+    cta: 'Refinance your home loan',
+  },
+  {
+    title: 'Refix & Restructure',
+    description:
+      "Don't just roll over your rate. Let us review your full loan structure and advise on the optimal combination of fixed, floating, and term lengths — proactively, before your rates expire.",
+    href: '/services/refix',
+    cta: 'Review your loan structure',
+  },
+  {
     title: 'New Build & Construction',
-    description: 'Building your dream home? We manage construction loan drawdowns, progress payments, and make sure your finances are in order at every stage.',
+    description:
+      'Building your dream home? We manage construction loan drawdowns, progress payments, and make sure your finances are in order at every stage — start to finish.',
     href: '/services/construction',
-    image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&h=280&q=80',
-    imageAlt: 'New home construction',
+    cta: 'Finance your build',
   },
   {
-    icon: AlertCircle,
-    title: 'Bank Said No?',
-    description: 'We have access to specialist and non-bank lenders for self-employed clients, complex income situations, or credit challenges.',
+    title: 'Alternative Lending',
+    description:
+      'We have access to non-bank lenders and specialist solutions for self-employed clients, complex income situations, or credit challenges. When the banks say no, we keep going.',
     href: '/services/alternative-lending',
-    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&h=280&q=80',
-    imageAlt: 'Mortgage adviser consultation',
+    cta: 'Explore alternative lending',
   },
 ];
 
 export default function Services() {
   return (
-    <section id="services" className="py-24 px-6 lg:px-8 bg-white">
-      <div className="max-w-7xl mx-auto">
-
-        <div className="max-w-2xl mb-14">
-          <p className="text-sm font-semibold text-teal uppercase tracking-widest mb-3">What We Do</p>
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-4" style={{ letterSpacing: '-0.02em' }}>
-            Mortgage advice for every stage of your journey
-          </h2>
-          <p className="text-lg text-gray-500">
-            From your first home to your fifth investment property — strategic advice that goes beyond just finding a rate.
+    <section
+      id="services"
+      className="py-20 lg:py-28 px-6 lg:px-8"
+      style={{ background: '#F7F5F2' }}
+    >
+      <div className="max-w-6xl mx-auto">
+        {/* Section header */}
+        <div className="mb-16 max-w-2xl">
+          <p
+            className="text-xs font-bold uppercase tracking-widest mb-3"
+            style={{ color: '#0F4C4F' }}
+          >
+            Our Services
           </p>
+          <h2
+            className="font-display font-bold leading-tight"
+            style={{
+              fontSize: 'clamp(32px, 4vw, 48px)',
+              letterSpacing: '-0.01em',
+              color: '#24323D',
+            }}
+          >
+            Smarter borrowing,<br />
+            <span style={{ color: '#0F4C4F' }}>tailored to your situation.</span>
+          </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-          {services.map((service) => {
-            const Icon = service.icon;
-            return (
-              <Link
-                key={service.title}
-                href={service.href}
-                className="group rounded-2xl overflow-hidden border border-gray-100 bg-white hover:border-teal hover:shadow-card transition-all duration-200 flex flex-col"
-                style={{ boxShadow: '0 1px 4px rgba(0,0,0,0.05)' }}
-              >
-                {/* Card image */}
-                <div className="relative h-44 overflow-hidden">
-                  <img
-                    src={service.image}
-                    alt={service.imageAlt}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                  {/* Icon badge over image */}
-                  <div className="absolute bottom-3 left-4 w-10 h-10 rounded-xl bg-white flex items-center justify-center shadow-md">
-                    <Icon className="w-5 h-5 text-teal" />
-                  </div>
-                </div>
+        {/* Editorial list */}
+        <div>
+          {services.map((service) => (
+            <div
+              key={service.title}
+              className="grid lg:grid-cols-12 gap-8 py-10 lg:py-12"
+              style={{ borderTop: '1px solid #E5E7EB' }}
+            >
+              {/* Title */}
+              <div className="lg:col-span-4">
+                <h3
+                  className="font-display font-bold leading-tight"
+                  style={{
+                    fontSize: 'clamp(24px, 2.4vw, 32px)',
+                    letterSpacing: '-0.01em',
+                    color: '#24323D',
+                  }}
+                >
+                  {service.title}
+                </h3>
+              </div>
 
-                {/* Card body */}
-                <div className="p-6 flex flex-col flex-1">
-                  <h3 className="text-lg font-semibold text-gray-900 mb-2">{service.title}</h3>
-                  <p className="text-sm text-gray-500 leading-relaxed flex-1">{service.description}</p>
-                  <div className="mt-4 text-sm font-semibold text-teal flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-                    Learn more →
-                  </div>
-                </div>
-              </Link>
-            );
-          })}
+              {/* Description + CTA */}
+              <div className="lg:col-span-8">
+                <p
+                  className="text-base lg:text-lg leading-relaxed mb-5 max-w-2xl"
+                  style={{ color: '#6B7280' }}
+                >
+                  {service.description}
+                </p>
+                <Link
+                  href={service.href}
+                  className="inline-flex items-center gap-2 text-sm font-semibold group transition-all"
+                  style={{ color: '#0F4C4F' }}
+                >
+                  {service.cta}
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </Link>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>
