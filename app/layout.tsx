@@ -1,14 +1,23 @@
 import type { Metadata } from "next";
-import { Outfit } from "next/font/google";
+import { Outfit, Fraunces } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import StickyCTA from "@/components/StickyCTA";
 
 const outfit = Outfit({
   subsets: ["latin"],
   variable: '--font-outfit',
   weight: ['300', '400', '500', '600', '700', '800'],
   display: 'swap',
+});
+
+const fraunces = Fraunces({
+  subsets: ["latin"],
+  variable: '--font-fraunces',
+  weight: ['400', '500', '600', '700', '800'],
+  display: 'swap',
+  axes: ['opsz'],
 });
 
 export const metadata: Metadata = {
@@ -23,15 +32,4 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={outfit.variable}>
-      <head>
-        <link rel="icon" href="/favicon.ico" />
-      </head>
-      <body className="font-sans antialiased">
-        <Navigation />
-        <main>{children}</main>
-        <Footer />
-      </body>
-    </html>
-  );
-}
+    <html lang="en" className={`${outfit.variable}

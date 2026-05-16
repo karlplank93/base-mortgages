@@ -93,7 +93,7 @@ export default function Navigation() {
             <Link
               href="/contact"
               className="inline-flex items-center px-5 py-2.5 rounded-lg text-sm font-semibold text-white transition-all hover:opacity-90"
-              style={{ background: '#FF8A5B' }}
+              style={{ background: '#0F4C4F' }}
             >
               Get in Touch
             </Link>
@@ -132,20 +132,4 @@ export default function Navigation() {
             <div className="border-t border-gray-100 my-2" />
             <Link href="/about"      className="block px-4 py-2.5 text-sm font-medium rounded-lg transition-colors hover:bg-gray-50" style={linkColor}>About Us</Link>
             <Link href="/resources"  className="block px-4 py-2.5 text-sm font-medium rounded-lg transition-colors hover:bg-gray-50" style={linkColor}>Guides</Link>
-            <Link href="/calculator" className="block px-4 py-2.5 text-sm font-medium rounded-lg transition-colors hover:bg-gray-50" style={linkColor}>Calculators</Link>
-            <Link href="/contact"    className="block px-4 py-2.5 text-sm font-medium rounded-lg transition-colors hover:bg-gray-50" style={linkColor}>Contact</Link>
-            <div className="pt-3 px-4">
-              <Link
-                href="/contact"
-                className="block text-center w-full py-3 rounded-lg text-sm font-semibold text-white"
-                style={{ background: '#FF8A5B' }}
-              >
-                Get in Touch
-              </Link>
-            </div>
-          </div>
-        )}
-      </div>
-    </nav>
-  );
-}
+            <Link href="/calculator" cl

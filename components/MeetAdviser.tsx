@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { Phone, Mail, Calendar } from 'lucide-react';
 
 const stats: { value: string; label: string }[] = [
@@ -125,8 +126,8 @@ export default function MeetAdviser() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-lg text-white font-semibold text-sm transition-all hover:opacity-90 sm:ml-auto"
                   style={{
-                    background: '#FF8A5B',
-                    boxShadow: '0 4px 16px rgba(255,138,91,0.22)',
+                    background: '#0F4C4F',
+                    boxShadow: '0 4px 16px rgba(15,76,79,0.22)',
                   }}
                 >
                   <Calendar className="w-4 h-4" />

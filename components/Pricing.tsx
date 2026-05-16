@@ -150,8 +150,8 @@ export default function Pricing() {
             rel="noopener noreferrer"
             className="inline-flex items-center px-7 py-3.5 rounded-lg text-white font-semibold text-base transition-all hover:opacity-90"
             style={{
-              background: '#FF8A5B',
-              boxShadow: '0 4px 16px rgba(255,138,91,0.28)',
+              background: '#0F4C4F',
+              boxShadow: '0 4px 16px rgba(15,76,79,0.28)',
             }}
           >
             Book a Free Consultation
