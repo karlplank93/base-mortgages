@@ -33,7 +33,7 @@ export default function MeetAdviser() {
             A name, a face, and a direct line.
           </h2>
           <p className="text-base" style={{ color: '#6B7280' }}>
-            Mortgages are a big decision — and you should know exactly who you&apos;re
+            Mortgages are a big decision &mdash; and you should know exactly who you&apos;re
             working with. No call centres, no handoffs.
           </p>
         </div>
@@ -43,7 +43,6 @@ export default function MeetAdviser() {
           style={{ boxShadow: '0 4px 24px rgba(0,0,0,0.05)' }}
         >
           <div className="flex flex-col sm:flex-row gap-6 lg:gap-8 items-start">
-            {/* Photo — fixed size, no stretching */}
             <div className="flex-shrink-0 w-full sm:w-48 lg:w-56">
               <div
                 className="relative rounded-xl overflow-hidden"
@@ -60,7 +59,6 @@ export default function MeetAdviser() {
               </div>
             </div>
 
-            {/* Bio + contact — flexible right column */}
             <div className="flex-1 min-w-0">
               <p
                 className="text-xs font-bold uppercase tracking-widest mb-2"
@@ -84,11 +82,10 @@ export default function MeetAdviser() {
                 style={{ color: '#6B7280' }}
               >
                 I&apos;m a licensed Financial Adviser based in Auckland, helping Kiwis
-                at every stage of their property journey — from first home buyers to
+                at every stage of their property journey &mdash; from first home buyers to
                 seasoned investors. Plain-English advice, proactive service, right outcome.
               </p>
 
-              {/* Credentials chips */}
               <div className="flex flex-wrap gap-1.5 mb-5">
                 {['Licensed Financial Adviser', 'FSP Registered', 'NZ-wide'].map((tag) => (
                   <span
@@ -101,7 +98,6 @@ export default function MeetAdviser() {
                 ))}
               </div>
 
-              {/* Contact + CTA — horizontal on larger screens */}
               <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-5">
                 <div className="flex flex-col gap-2 text-sm">
                   <a
@@ -140,7 +136,6 @@ export default function MeetAdviser() {
           </div>
         </div>
 
-        {/* Stats strip — kept underneath, slightly more compact */}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 mt-6">
           {stats.map((stat) => (
             <div

@@ -55,12 +55,12 @@ export default function Navigation() {
               onMouseLeave={() => setMortgagesOpen(false)}
             >
               <button
-                className={`${linkClass} flex items-center gap-1 rounded-lg hover:opacity-70`}
+                className={linkClass + ' flex items-center gap-1 rounded-lg hover:opacity-70'}
                 style={linkColor}
               >
                 Mortgages
                 <ChevronDown
-                  className={`w-4 h-4 transition-transform duration-200 ${mortgagesOpen ? 'rotate-180' : ''}`}
+                  className={'w-4 h-4 transition-transform duration-200 ' + (mortgagesOpen ? 'rotate-180' : '')}
                 />
               </button>
               {mortgagesOpen && (
@@ -82,10 +82,10 @@ export default function Navigation() {
               )}
             </div>
 
-            <Link href="/about"      className={`${linkClass} hover:opacity-70`} style={linkColor}>About Us</Link>
-            <Link href="/resources"  className={`${linkClass} hover:opacity-70`} style={linkColor}>Guides</Link>
-            <Link href="/calculator" className={`${linkClass} hover:opacity-70`} style={linkColor}>Calculators</Link>
-            <Link href="/contact"    className={`${linkClass} hover:opacity-70`} style={linkColor}>Contact</Link>
+            <Link href="/about"      className={linkClass + ' hover:opacity-70'} style={linkColor}>About Us</Link>
+            <Link href="/resources"  className={linkClass + ' hover:opacity-70'} style={linkColor}>Guides</Link>
+            <Link href="/calculator" className={linkClass + ' hover:opacity-70'} style={linkColor}>Calculators</Link>
+            <Link href="/contact"    className={linkClass + ' hover:opacity-70'} style={linkColor}>Contact</Link>
           </div>
 
           {/* CTA */}
@@ -132,4 +132,20 @@ export default function Navigation() {
             <div className="border-t border-gray-100 my-2" />
             <Link href="/about"      className="block px-4 py-2.5 text-sm font-medium rounded-lg transition-colors hover:bg-gray-50" style={linkColor}>About Us</Link>
             <Link href="/resources"  className="block px-4 py-2.5 text-sm font-medium rounded-lg transition-colors hover:bg-gray-50" style={linkColor}>Guides</Link>
-            <Link href="/calculator" cl
+            <Link href="/calculator" className="block px-4 py-2.5 text-sm font-medium rounded-lg transition-colors hover:bg-gray-50" style={linkColor}>Calculators</Link>
+            <Link href="/contact"    className="block px-4 py-2.5 text-sm font-medium rounded-lg transition-colors hover:bg-gray-50" style={linkColor}>Contact</Link>
+            <div className="pt-3 px-4">
+              <Link
+                href="/contact"
+                className="block text-center w-full py-3 rounded-lg text-sm font-semibold text-white"
+                style={{ background: '#0F4C4F' }}
+              >
+                Get in Touch
+              </Link>
+            </div>
+          </div>
+        )}
+      </div>
+    </nav>
+  );
+}
