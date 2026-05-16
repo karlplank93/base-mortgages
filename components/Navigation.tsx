@@ -29,10 +29,10 @@ export default function Navigation() {
 
   return (
     <nav
-      className="sticky top-0 z-50 transition-all duration-200"
+      className="sticky top-0 z-50 transition-all duration-200 bg-white"
       style={{
-        background: '#F7F5F2',
         boxShadow: scrolled ? '0 2px 12px rgba(0,0,0,0.06)' : 'none',
+        borderBottom: scrolled ? 'none' : '1px solid rgba(0,0,0,0.04)',
       }}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
