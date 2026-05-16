@@ -46,13 +46,15 @@ export default function MeetAdviser() {
             {/* Photo — fixed size, no stretching */}
             <div className="flex-shrink-0 w-full sm:w-48 lg:w-56">
               <div
-                className="rounded-xl overflow-hidden"
+                className="relative rounded-xl overflow-hidden"
                 style={{ aspectRatio: '4 / 5' }}
               >
-                <img
+                <Image
                   src="/karl-plank.jpg"
                   alt="Karl Plank, Mortgage Adviser at Base Mortgages"
-                  className="w-full h-full object-cover"
+                  fill
+                  sizes="(max-width: 640px) 100vw, 224px"
+                  className="object-cover"
                   style={{ objectPosition: 'center top' }}
                 />
               </div>
