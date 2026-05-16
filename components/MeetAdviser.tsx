@@ -10,11 +10,11 @@ const stats: { value: string; label: string }[] = [
 export default function MeetAdviser() {
   return (
     <section
-      className="py-20 lg:py-24 px-6 lg:px-8"
+      className="py-14 lg:py-20 px-6 lg:px-8"
       style={{ background: '#F7F5F2' }}
     >
-      <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-14 max-w-2xl mx-auto">
+      <div className="max-w-5xl mx-auto">
+        <div className="text-center mb-10 max-w-2xl mx-auto">
           <p
             className="text-xs font-bold uppercase tracking-widest mb-3"
             style={{ color: '#0F4C4F' }}
@@ -22,135 +22,133 @@ export default function MeetAdviser() {
             Meet your adviser
           </p>
           <h2
-            className="font-display font-bold mb-4 leading-tight"
+            className="font-display font-bold mb-3 leading-tight"
             style={{
-              fontSize: 'clamp(28px, 3.2vw, 40px)',
+              fontSize: 'clamp(26px, 2.8vw, 36px)',
               letterSpacing: '-0.01em',
               color: '#24323D',
             }}
           >
             A name, a face, and a direct line.
           </h2>
-          <p className="text-lg" style={{ color: '#6B7280' }}>
+          <p className="text-base" style={{ color: '#6B7280' }}>
             Mortgages are a big decision — and you should know exactly who you&apos;re
             working with. No call centres, no handoffs.
           </p>
         </div>
 
         <div
-          className="bg-white rounded-3xl overflow-hidden border border-gray-100 grid lg:grid-cols-5 gap-0"
+          className="bg-white rounded-2xl border border-gray-100 p-6 sm:p-8 lg:p-10"
           style={{ boxShadow: '0 4px 24px rgba(0,0,0,0.05)' }}
         >
-          {/* Photo */}
-          <div className="lg:col-span-2 relative">
-            <img
-              src="/karl-plank.jpg"
-              alt="Karl Plank, Mortgage Adviser at Base Mortgages"
-              className="w-full h-72 lg:h-full object-cover"
-            />
-          </div>
-
-          {/* Bio + contact */}
-          <div className="lg:col-span-3 p-8 lg:p-12 flex flex-col justify-center">
-            <p
-              className="text-xs font-bold uppercase tracking-widest mb-3"
-              style={{ color: '#0F4C4F' }}
-            >
-              Mortgage Adviser
-            </p>
-            <h3
-              className="font-display font-bold mb-5 leading-tight"
-              style={{
-                fontSize: 'clamp(28px, 3vw, 36px)',
-                letterSpacing: '-0.01em',
-                color: '#24323D',
-              }}
-            >
-              Karl Plank
-            </h3>
-
-            <p
-              className="text-base leading-relaxed mb-6"
-              style={{ color: '#6B7280' }}
-            >
-              I&apos;m a licensed Financial Adviser based in Auckland, helping Kiwis at every
-              stage of their property journey — from first home buyers to seasoned investors.
-              I take pride in plain-English advice, proactive service, and getting the right
-              outcome for the people I work with.
-            </p>
-
-            {/* Credentials chips */}
-            <div className="flex flex-wrap gap-2 mb-7">
-              {['Licensed Financial Adviser', 'FSP Registered', 'NZ-wide'].map((tag) => (
-                <span
-                  key={tag}
-                  className="text-xs font-medium px-3 py-1.5 rounded-full"
-                  style={{ background: '#C7E8DE', color: '#0F4C4F' }}
-                >
-                  {tag}
-                </span>
-              ))}
+          <div className="flex flex-col sm:flex-row gap-6 lg:gap-8 items-start">
+            {/* Photo — fixed size, no stretching */}
+            <div className="flex-shrink-0 w-full sm:w-48 lg:w-56">
+              <div
+                className="rounded-xl overflow-hidden"
+                style={{ aspectRatio: '4 / 5' }}
+              >
+                <img
+                  src="/karl-plank.jpg"
+                  alt="Karl Plank, Mortgage Adviser at Base Mortgages"
+                  className="w-full h-full object-cover"
+                  style={{ objectPosition: 'center top' }}
+                />
+              </div>
             </div>
 
-            {/* Contact rows */}
-            <div className="space-y-3 mb-7">
-              <a
-                href="tel:0272664925"
-                className="flex items-center gap-3 text-sm hover:opacity-80 transition-opacity"
-                style={{ color: '#24323D' }}
+            {/* Bio + contact — flexible right column */}
+            <div className="flex-1 min-w-0">
+              <p
+                className="text-xs font-bold uppercase tracking-widest mb-2"
+                style={{ color: '#0F4C4F' }}
               >
-                <span
-                  className="w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0"
-                  style={{ background: '#C7E8DE' }}
-                >
-                  <Phone className="w-4 h-4" style={{ color: '#0F4C4F' }} />
-                </span>
-                <span className="font-medium">027 266 4925</span>
-              </a>
-              <a
-                href="mailto:karl@basemortgages.co.nz"
-                className="flex items-center gap-3 text-sm hover:opacity-80 transition-opacity"
-                style={{ color: '#24323D' }}
+                Mortgage Adviser
+              </p>
+              <h3
+                className="font-display font-bold mb-3 leading-tight"
+                style={{
+                  fontSize: 'clamp(24px, 2.4vw, 30px)',
+                  letterSpacing: '-0.01em',
+                  color: '#24323D',
+                }}
               >
-                <span
-                  className="w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0"
-                  style={{ background: '#C7E8DE' }}
-                >
-                  <Mail className="w-4 h-4" style={{ color: '#0F4C4F' }} />
-                </span>
-                <span className="font-medium">karl@basemortgages.co.nz</span>
-              </a>
-            </div>
+                Karl Plank
+              </h3>
 
-            {/* CTA */}
-            <a
-              href="https://calendly.com/karl-mortgage-adviser/borrowing-review"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg text-white font-semibold text-base transition-all hover:opacity-90 self-start"
-              style={{
-                background: '#FF8A5B',
-                boxShadow: '0 4px 16px rgba(255,138,91,0.28)',
-              }}
-            >
-              <Calendar className="w-4 h-4" />
-              Book a Meeting with Karl
-            </a>
+              <p
+                className="text-sm leading-relaxed mb-4"
+                style={{ color: '#6B7280' }}
+              >
+                I&apos;m a licensed Financial Adviser based in Auckland, helping Kiwis
+                at every stage of their property journey — from first home buyers to
+                seasoned investors. Plain-English advice, proactive service, right outcome.
+              </p>
+
+              {/* Credentials chips */}
+              <div className="flex flex-wrap gap-1.5 mb-5">
+                {['Licensed Financial Adviser', 'FSP Registered', 'NZ-wide'].map((tag) => (
+                  <span
+                    key={tag}
+                    className="text-xs font-medium px-2.5 py-1 rounded-full"
+                    style={{ background: '#C7E8DE', color: '#0F4C4F' }}
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
+
+              {/* Contact + CTA — horizontal on larger screens */}
+              <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-5">
+                <div className="flex flex-col gap-2 text-sm">
+                  <a
+                    href="tel:0272664925"
+                    className="flex items-center gap-2 hover:opacity-80 transition-opacity"
+                    style={{ color: '#24323D' }}
+                  >
+                    <Phone className="w-4 h-4" style={{ color: '#0F4C4F' }} />
+                    <span className="font-medium">027 266 4925</span>
+                  </a>
+                  <a
+                    href="mailto:karl@basemortgages.co.nz"
+                    className="flex items-center gap-2 hover:opacity-80 transition-opacity"
+                    style={{ color: '#24323D' }}
+                  >
+                    <Mail className="w-4 h-4" style={{ color: '#0F4C4F' }} />
+                    <span className="font-medium">karl@basemortgages.co.nz</span>
+                  </a>
+                </div>
+
+                <a
+                  href="https://calendly.com/karl-mortgage-adviser/borrowing-review"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-lg text-white font-semibold text-sm transition-all hover:opacity-90 sm:ml-auto"
+                  style={{
+                    background: '#FF8A5B',
+                    boxShadow: '0 4px 16px rgba(255,138,91,0.22)',
+                  }}
+                >
+                  <Calendar className="w-4 h-4" />
+                  Book a Meeting
+                </a>
+              </div>
+            </div>
           </div>
         </div>
 
-        {/* Stats strip — moved from old WhyUs section */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mt-10">
+        {/* Stats strip — kept underneath, slightly more compact */}
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 mt-6">
           {stats.map((stat) => (
             <div
               key={stat.label}
-              className="rounded-2xl p-6 text-center"
+              className="rounded-xl p-4 text-center"
               style={{ background: '#0F4C4F' }}
             >
               <div
-                className="font-display font-bold mb-2"
+                className="font-display font-bold mb-1"
                 style={{
-                  fontSize: 'clamp(28px, 3vw, 40px)',
+                  fontSize: 'clamp(22px, 2.4vw, 30px)',
                   color: '#C7E8DE',
                   lineHeight: 1,
                 }}
