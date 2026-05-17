@@ -1,3 +1,13 @@
+const banks: { name: string; file: string }[] = [
+  { name: 'ANZ',      file: '/logos/anz.svg' },
+  { name: 'ASB',      file: '/logos/asb.svg' },
+  { name: 'BNZ',      file: '/logos/bnz.svg' },
+  { name: 'Westpac',  file: '/logos/westpac.svg' },
+  { name: 'Kiwibank', file: '/logos/kiwibank.svg' },
+  { name: 'TSB',      file: '/logos/tsb.svg' },
+  { name: 'SBS',      file: '/logos/sbs.svg' },
+];
+
 export default function BankStrip() {
   return (
     <section className="py-14 lg:py-16 px-6 lg:px-8" style={{ background: '#FAF7F0' }}>
@@ -10,27 +20,15 @@ export default function BankStrip() {
         </p>
 
         <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-6 lg:gap-x-14">
-          {[
-            { name: 'ANZ',      style: 'font-bold text-2xl', color: '#005596' },
-            { name: 'ASB',      style: 'italic font-bold text-2xl', color: '#FFB81C' },
-            { name: 'bnz',      style: 'font-bold text-2xl', color: '#0067B1' },
-            { name: 'Westpac',  style: 'font-bold text-2xl', color: '#D5002B' },
-            { name: 'Kiwibank', style: 'font-bold text-2xl', color: '#007837' },
-            { name: 'TSB',      style: 'font-bold text-2xl', color: '#00A551' },
-            { name: 'SBS',      style: 'font-bold text-2xl', color: '#E84B4B' },
-          ].map((bank) => (
-            <span
+          {banks.map((bank) => (
+            <img
               key={bank.name}
-              className={'opacity-80 hover:opacity-100 transition-opacity ' + bank.style}
-              style={{ color: bank.color }}
-            >
-              {bank.name}
-            </span>
+              src={bank.file}
+              alt={bank.name}
+              className="h-9 w-auto opacity-80 hover:opacity-100 transition-opacity"
+            />
           ))}
-          <span
-            className="text-sm font-medium"
-            style={{ color: '#A8B8B2' }}
-          >
+          <span className="text-sm font-medium" style={{ color: '#A8B8B2' }}>
             and more.
           </span>
         </div>

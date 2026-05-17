@@ -5,7 +5,7 @@ import Image from 'next/image';
 export default function Hero() {
   return (
     <section className="relative overflow-hidden" style={{ background: '#FAF7F0' }}>
-      <div className="relative max-w-7xl mx-auto px-6 lg:px-8 pt-14 pb-24 lg:pt-20 lg:pb-36">
+      <div className="relative max-w-7xl mx-auto px-6 lg:px-8 pt-14 pb-16 lg:pt-20 lg:pb-24">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
           {/* Text column */}
@@ -64,7 +64,7 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Curve graphic flowing into the next section */}
+      {/* Mint curve, visually bridges the hero (cream) into HowWeHelp (mint) below */}
       <svg
         className="absolute bottom-0 left-0 w-full pointer-events-none"
         viewBox="0 0 1440 180"
@@ -75,11 +75,6 @@ export default function Hero() {
         <path
           d="M 0,180 L 0,120 Q 360,20 720,70 T 1440,50 L 1440,180 Z"
           fill="#C7E8DE"
-        />
-        <path
-          d="M 720,180 L 720,140 Q 1080,60 1440,100 L 1440,180 Z"
-          fill="#C9A063"
-          opacity="0.9"
         />
       </svg>
     </section>

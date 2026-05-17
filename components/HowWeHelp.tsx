@@ -37,10 +37,10 @@ const helpCategories: {
 
 export default function HowWeHelp() {
   return (
-    <section className="py-20 lg:py-24 px-6 lg:px-8" style={{ background: '#C7E8DE' }}>
+    <section className="pt-10 lg:pt-12 pb-20 lg:pb-24 px-6 lg:px-8" style={{ background: '#C7E8DE' }}>
       <div className="max-w-6xl mx-auto">
         <h2
-          className="font-display font-bold text-center mb-14 lg:mb-16"
+          className="font-display font-bold text-center mb-10 lg:mb-12"
           style={{
             fontSize: 'clamp(28px, 3.2vw, 38px)',
             letterSpacing: '-0.01em',
