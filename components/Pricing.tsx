@@ -52,7 +52,7 @@ const tiers: { title: string; includes: string[] }[] = [
 export default function Pricing() {
   return (
     <section
-      className="py-20 lg:py-24 px-6 lg:px-8"
+      className="py-12 lg:py-16 px-6 lg:px-8"
       style={{ background: '#FAF7F0' }}
     >
       <div className="max-w-7xl mx-auto">

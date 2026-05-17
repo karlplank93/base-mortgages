@@ -5,7 +5,7 @@ import Image from 'next/image';
 export default function Hero() {
   return (
     <section className="relative overflow-hidden" style={{ background: '#FAF7F0' }}>
-      <div className="relative max-w-7xl mx-auto px-6 lg:px-8 pt-14 pb-16 lg:pt-20 lg:pb-24">
+      <div className="relative max-w-7xl mx-auto px-6 lg:px-8 pt-20 pb-12 lg:pt-28 lg:pb-20">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
           {/* Text column */}

@@ -9,7 +9,7 @@ const GOOGLE_REVIEWS_URL = 'https://share.google/ynwAl6ap2cyS4csY0';
 
 export default function Reviews() {
   return (
-    <section className="py-24 px-6 lg:px-8" style={{ background: '#FAF7F0' }}>
+    <section className="py-12 lg:py-16 px-6 lg:px-8" style={{ background: '#FAF7F0' }}>
       <div className="max-w-7xl mx-auto">
 
         <div className="flex items-end justify-between mb-12 flex-wrap gap-6">
