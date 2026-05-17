@@ -1,6 +1,6 @@
 export default function BankStrip() {
   return (
-    <section className="py-14 lg:py-16 px-6 lg:px-8" style={{ background: '#F7F5F2' }}>
+    <section className="py-14 lg:py-16 px-6 lg:px-8" style={{ background: '#FAF7F0' }}>
       <div className="max-w-6xl mx-auto">
         <p
           className="text-center text-sm uppercase tracking-widest font-semibold mb-10"

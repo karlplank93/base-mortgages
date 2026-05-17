@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden" style={{ background: '#F7F5F2' }}>
+    <section className="relative overflow-hidden" style={{ background: '#FAF7F0' }}>
       <div className="relative max-w-7xl mx-auto px-6 lg:px-8 pt-14 pb-24 lg:pt-20 lg:pb-36">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
@@ -15,7 +15,7 @@ export default function Hero() {
               style={{
                 fontSize: 'clamp(40px, 5.2vw, 64px)',
                 letterSpacing: '-0.02em',
-                color: '#24323D',
+                color: '#1F2933',
               }}
             >
               Mortgages<br />
@@ -78,8 +78,8 @@ export default function Hero() {
         />
         <path
           d="M 720,180 L 720,140 Q 1080,60 1440,100 L 1440,180 Z"
-          fill="#006D77"
-          opacity="0.92"
+          fill="#C9A063"
+          opacity="0.9"
         />
       </svg>
     </section>

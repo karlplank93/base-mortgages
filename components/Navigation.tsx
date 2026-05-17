@@ -25,13 +25,13 @@ export default function Navigation() {
   }, []);
 
   const linkClass = 'px-3 py-2 text-sm font-medium transition-colors';
-  const linkColor = { color: '#24323D' };
+  const linkColor = { color: '#1F2933' };
 
   return (
     <nav
       className="sticky top-0 z-50 transition-all duration-200"
       style={{
-        background: '#F7F5F2',
+        background: '#FAF7F0',
         boxShadow: scrolled ? '0 2px 12px rgba(0,0,0,0.06)' : 'none',
         borderBottom: 'none',
       }}
@@ -74,7 +74,7 @@ export default function Navigation() {
                       key={href}
                       href={href}
                       className="block px-4 py-2.5 text-sm transition-colors mx-1 rounded-lg hover:bg-mint/40"
-                      style={{ color: '#24323D' }}
+                      style={{ color: '#1F2933' }}
                     >
                       {label}
                     </Link>
@@ -105,7 +105,7 @@ export default function Navigation() {
             className="md:hidden p-2 rounded-lg transition-colors hover:bg-gray-100"
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label="Toggle menu"
-            style={{ color: '#24323D' }}
+            style={{ color: '#1F2933' }}
           >
             {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
           </button>
@@ -125,7 +125,7 @@ export default function Navigation() {
                 key={href}
                 href={href}
                 className="block px-4 py-2.5 text-sm font-medium rounded-lg transition-colors hover:bg-gray-50"
-                style={{ color: '#24323D' }}
+                style={{ color: '#1F2933' }}
               >
                 {label}
               </Link>

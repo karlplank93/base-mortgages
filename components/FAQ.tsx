@@ -41,13 +41,13 @@ export default function FAQ() {
   return (
     <section
       className="py-20 lg:py-24 px-6 lg:px-8"
-      style={{ background: '#F7F5F2' }}
+      style={{ background: '#FAF7F0' }}
     >
       <div className="max-w-3xl mx-auto">
         <div className="text-center mb-12">
           <p
             className="text-xs font-bold uppercase tracking-widest mb-3"
-            style={{ color: '#006D77' }}
+            style={{ color: '#C9A063' }}
           >
             FAQs
           </p>
@@ -56,7 +56,7 @@ export default function FAQ() {
             style={{
               fontSize: 'clamp(28px, 3.2vw, 40px)',
               letterSpacing: '-0.01em',
-              color: '#24323D',
+              color: '#1F2933',
             }}
           >
             Have a question?
@@ -90,7 +90,7 @@ export default function FAQ() {
                 >
                   <span
                     className="font-semibold text-base lg:text-lg"
-                    style={{ color: '#24323D' }}
+                    style={{ color: '#1F2933' }}
                   >
                     {faq.q}
                   </span>

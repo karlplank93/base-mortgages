@@ -5,7 +5,7 @@ export default function CTABanner() {
     <section className="py-24 px-6 lg:px-8 bg-navy">
       <div className="max-w-3xl mx-auto text-center">
 
-        <p className="text-sm font-semibold uppercase tracking-widest mb-5" style={{ color: '#006D77' }}>
+        <p className="text-sm font-semibold uppercase tracking-widest mb-5" style={{ color: '#C9A063' }}>
           Free, no-obligation
         </p>
 

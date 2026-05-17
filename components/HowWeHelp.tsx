@@ -44,7 +44,7 @@ export default function HowWeHelp() {
           style={{
             fontSize: 'clamp(28px, 3.2vw, 38px)',
             letterSpacing: '-0.01em',
-            color: '#24323D',
+            color: '#1F2933',
           }}
         >
           How we can help
@@ -66,7 +66,7 @@ export default function HowWeHelp() {
               </div>
               <h3
                 className="font-display font-semibold text-lg lg:text-xl mb-2"
-                style={{ color: '#24323D' }}
+                style={{ color: '#1F2933' }}
               >
                 {title}
               </h3>

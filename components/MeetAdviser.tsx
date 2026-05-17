@@ -12,13 +12,13 @@ export default function MeetAdviser() {
   return (
     <section
       className="py-14 lg:py-20 px-6 lg:px-8"
-      style={{ background: '#F7F5F2' }}
+      style={{ background: '#FAF7F0' }}
     >
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-10 max-w-2xl mx-auto">
           <p
             className="text-xs font-bold uppercase tracking-widest mb-3"
-            style={{ color: '#006D77' }}
+            style={{ color: '#C9A063' }}
           >
             Meet your adviser
           </p>
@@ -27,7 +27,7 @@ export default function MeetAdviser() {
             style={{
               fontSize: 'clamp(26px, 2.8vw, 36px)',
               letterSpacing: '-0.01em',
-              color: '#24323D',
+              color: '#1F2933',
             }}
           >
             A name, a face, and a direct line.
@@ -62,7 +62,7 @@ export default function MeetAdviser() {
             <div className="flex-1 min-w-0">
               <p
                 className="text-xs font-bold uppercase tracking-widest mb-2"
-                style={{ color: '#006D77' }}
+                style={{ color: '#C9A063' }}
               >
                 Mortgage Adviser
               </p>
@@ -71,7 +71,7 @@ export default function MeetAdviser() {
                 style={{
                   fontSize: 'clamp(24px, 2.4vw, 30px)',
                   letterSpacing: '-0.01em',
-                  color: '#24323D',
+                  color: '#1F2933',
                 }}
               >
                 Karl Plank
@@ -103,7 +103,7 @@ export default function MeetAdviser() {
                   <a
                     href="tel:0272664925"
                     className="flex items-center gap-2 hover:opacity-80 transition-opacity"
-                    style={{ color: '#24323D' }}
+                    style={{ color: '#1F2933' }}
                   >
                     <Phone className="w-4 h-4" style={{ color: '#006D77' }} />
                     <span className="font-medium">027 266 4925</span>
@@ -111,7 +111,7 @@ export default function MeetAdviser() {
                   <a
                     href="mailto:karl@basemortgages.co.nz"
                     className="flex items-center gap-2 hover:opacity-80 transition-opacity"
-                    style={{ color: '#24323D' }}
+                    style={{ color: '#1F2933' }}
                   >
                     <Mail className="w-4 h-4" style={{ color: '#006D77' }} />
                     <span className="font-medium">karl@basemortgages.co.nz</span>

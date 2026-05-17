@@ -23,7 +23,7 @@ const steps = [
 
 export default function Process() {
   return (
-    <section className="py-24 px-6 lg:px-8" style={{ background: '#F7F5F2' }}>
+    <section className="py-24 px-6 lg:px-8" style={{ background: '#FAF7F0' }}>
       <div className="max-w-7xl mx-auto">
 
         <div className="max-w-2xl mb-14">

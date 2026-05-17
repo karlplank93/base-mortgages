@@ -9,14 +9,14 @@ const GOOGLE_REVIEWS_URL = 'https://share.google/ynwAl6ap2cyS4csY0';
 
 export default function Reviews() {
   return (
-    <section className="py-24 px-6 lg:px-8" style={{ background: '#F7F5F2' }}>
+    <section className="py-24 px-6 lg:px-8" style={{ background: '#FAF7F0' }}>
       <div className="max-w-7xl mx-auto">
 
         <div className="flex items-end justify-between mb-12 flex-wrap gap-6">
           <div>
             <p
               className="text-xs font-bold uppercase tracking-widest mb-3"
-              style={{ color: '#006D77' }}
+              style={{ color: '#C9A063' }}
             >
               Client Reviews
             </p>
@@ -25,7 +25,7 @@ export default function Reviews() {
               style={{
                 fontSize: 'clamp(32px, 4vw, 48px)',
                 letterSpacing: '-0.01em',
-                color: '#24323D',
+                color: '#1F2933',
               }}
             >
               Real results for real<br />New Zealanders
@@ -64,7 +64,7 @@ export default function Reviews() {
                   {review.initials}
                 </div>
                 <div>
-                  <div className="font-semibold text-sm" style={{ color: '#24323D' }}>{review.name}</div>
+                  <div className="font-semibold text-sm" style={{ color: '#1F2933' }}>{review.name}</div>
                   <div className="text-xs" style={{ color: '#6B7280' }}>{review.type}</div>
                 </div>
               </div>

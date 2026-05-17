@@ -10,7 +10,7 @@ export default function ConstructionPage() {
   return (
     <div className="bg-white">
       {/* Header Section */}
-      <section className="bg-[#F7F5F2] py-16 md:py-24">
+      <section className="bg-[#FAF7F0] py-16 md:py-24">
         <div className="max-w-5xl mx-auto px-4 md:px-8">
           <p className="text-sm font-semibold text-[#006D77] uppercase tracking-widest mb-4">
             Construction Loans
@@ -50,7 +50,7 @@ export default function ConstructionPage() {
             {/* Card 1 */}
             <div className="border border-gray-100 rounded-2xl p-8 shadow-sm hover:shadow-md transition">
               <div className="bg-blue-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-                <Building2 className="w-6 h-6 text-[#24323D]" />
+                <Building2 className="w-6 h-6 text-[#1F2933]" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Progress payment setup</h3>
               <p className="text-gray-500">
@@ -72,7 +72,7 @@ export default function ConstructionPage() {
             {/* Card 3 */}
             <div className="border border-gray-100 rounded-2xl p-8 shadow-sm hover:shadow-md transition">
               <div className="bg-purple-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-                <CheckCircle className="w-6 h-6 text-[#24323D]" />
+                <CheckCircle className="w-6 h-6 text-[#1F2933]" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Builder contract review</h3>
               <p className="text-gray-500">
@@ -83,7 +83,7 @@ export default function ConstructionPage() {
             {/* Card 4 */}
             <div className="border border-gray-100 rounded-2xl p-8 shadow-sm hover:shadow-md transition">
               <div className="bg-yellow-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-                <AlertCircle className="w-6 h-6 text-[#24323D]" />
+                <AlertCircle className="w-6 h-6 text-[#1F2933]" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Access to all lenders</h3>
               <p className="text-gray-500">
@@ -95,7 +95,7 @@ export default function ConstructionPage() {
       </section>
 
       {/* Process section */}
-      <section className="py-16 md:py-24 bg-[#F7F5F2]">
+      <section className="py-16 md:py-24 bg-[#FAF7F0]">
         <div className="max-w-5xl mx-auto px-4 md:px-8">
           <h2
             className="text-3xl md:text-4xl font-bold text-gray-900 mb-12"
@@ -167,7 +167,7 @@ export default function ConstructionPage() {
 
           <div className="space-y-6">
             {/* FAQ 1 */}
-            <details className="border border-gray-100 rounded-2xl p-6 open:bg-[#F7F5F2] group cursor-pointer">
+            <details className="border border-gray-100 rounded-2xl p-6 open:bg-[#FAF7F0] group cursor-pointer">
               <summary className="flex items-center justify-between font-bold text-gray-900 text-lg select-none">
                 What's the deposit on a construction loan?
                 <ChevronDown className="w-5 h-5 text-gray-500 group-open:rotate-180 transition" />
@@ -178,7 +178,7 @@ export default function ConstructionPage() {
             </details>
 
             {/* FAQ 2 */}
-            <details className="border border-gray-100 rounded-2xl p-6 open:bg-[#F7F5F2] group cursor-pointer">
+            <details className="border border-gray-100 rounded-2xl p-6 open:bg-[#FAF7F0] group cursor-pointer">
               <summary className="flex items-center justify-between font-bold text-gray-900 text-lg select-none">
                 What if construction costs blow out?
                 <ChevronDown className="w-5 h-5 text-gray-500 group-open:rotate-180 transition" />
@@ -189,7 +189,7 @@ export default function ConstructionPage() {
             </details>
 
             {/* FAQ 3 */}
-            <details className="border border-gray-100 rounded-2xl p-6 open:bg-[#F7F5F2] group cursor-pointer">
+            <details className="border border-gray-100 rounded-2xl p-6 open:bg-[#FAF7F0] group cursor-pointer">
               <summary className="flex items-center justify-between font-bold text-gray-900 text-lg select-none">
                 How do progress payments work?
                 <ChevronDown className="w-5 h-5 text-gray-500 group-open:rotate-180 transition" />
@@ -200,7 +200,7 @@ export default function ConstructionPage() {
             </details>
 
             {/* FAQ 4 */}
-            <details className="border border-gray-100 rounded-2xl p-6 open:bg-[#F7F5F2] group cursor-pointer">
+            <details className="border border-gray-100 rounded-2xl p-6 open:bg-[#FAF7F0] group cursor-pointer">
               <summary className="flex items-center justify-between font-bold text-gray-900 text-lg select-none">
                 What happens when the build's finished?
                 <ChevronDown className="w-5 h-5 text-gray-500 group-open:rotate-180 transition" />
@@ -214,7 +214,7 @@ export default function ConstructionPage() {
       </section>
 
       {/* Final CTA Banner */}
-      <section className="bg-[#24323D] py-16 md:py-24">
+      <section className="bg-[#1F2933] py-16 md:py-24">
         <div className="max-w-4xl mx-auto px-4 md:px-8 text-center">
           <h2
             className="text-3xl md:text-4xl font-bold text-white mb-6"

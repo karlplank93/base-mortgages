@@ -51,14 +51,14 @@ export default function Services() {
     <section
       id="services"
       className="py-20 lg:py-28 px-6 lg:px-8"
-      style={{ background: '#F7F5F2' }}
+      style={{ background: '#FAF7F0' }}
     >
       <div className="max-w-6xl mx-auto">
         {/* Section header */}
         <div className="mb-16 max-w-2xl">
           <p
             className="text-xs font-bold uppercase tracking-widest mb-3"
-            style={{ color: '#006D77' }}
+            style={{ color: '#C9A063' }}
           >
             Our Services
           </p>
@@ -67,7 +67,7 @@ export default function Services() {
             style={{
               fontSize: 'clamp(32px, 4vw, 48px)',
               letterSpacing: '-0.01em',
-              color: '#24323D',
+              color: '#1F2933',
             }}
           >
             Smarter borrowing,<br />
@@ -90,7 +90,7 @@ export default function Services() {
                   style={{
                     fontSize: 'clamp(24px, 2.4vw, 32px)',
                     letterSpacing: '-0.01em',
-                    color: '#24323D',
+                    color: '#1F2933',
                   }}
                 >
                   {service.title}

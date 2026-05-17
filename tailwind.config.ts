@@ -14,7 +14,7 @@ const config: Config = {
         // Deep Teal     #0F4C4F   primary brand
         // Mint          #C7E8DE   light tints
         // Coral Orange  #FF8A5B   CTAs / accents
-        // Soft Cream    #F7F5F2   page background
+        // Warm Cream    #FAF7F0   page background
         // ──────────────────────────────────────────────
 
         // `navy` token = primary dark (headings, dark backgrounds)
@@ -36,10 +36,11 @@ const config: Config = {
         // Brand-specific named tokens
         mint:    { DEFAULT: '#C7E8DE' },
         coral:   { DEFAULT: '#FF8A5B', dark: '#E8723E' },
+        honey:   { DEFAULT: '#C9A063', dark: '#A6803F' },
         sage:    { DEFAULT: '#A8B8B2' },
-        charcoal:{ DEFAULT: '#24323D' },
-        offwhite:{ DEFAULT: '#F7F5F2' },
-        cream:   { DEFAULT: '#F7F5F2', dark: '#E8E4DE' },
+        charcoal:{ DEFAULT: '#1F2933' },
+        offwhite:{ DEFAULT: '#FAF7F0' },
+        cream:   { DEFAULT: '#FAF7F0', dark: '#E8E4DE' },
 
         border: {
           DEFAULT: '#E5E7EB',
@@ -47,20 +48,20 @@ const config: Config = {
 
         bg: {
           DEFAULT: '#FFFFFF',
-          light:   '#F7F5F2',
+          light:   '#FAF7F0',
           soft:    '#C7E8DE',
-          trust:   '#F7F5F2',
+          trust:   '#FAF7F0',
         },
 
         text: {
-          primary:   '#24323D',
+          primary:   '#1F2933',
           secondary: '#6B7280',
           muted:     '#A8B8B2',
         },
 
         // Backwards-compat aliases
-        sand:   { DEFAULT: '#F7F5F2', dark: '#E8E4DE' },
-        slate:  '#24323D',
+        sand:   { DEFAULT: '#FAF7F0', dark: '#E8E4DE' },
+        slate:  '#1F2933',
         // Old orange CTA → keep as coral
         orange: { DEFAULT: '#FF8A5B', dark: '#E8723E' },
       },

@@ -53,13 +53,13 @@ export default function Pricing() {
   return (
     <section
       className="py-20 lg:py-24 px-6 lg:px-8"
-      style={{ background: '#F7F5F2' }}
+      style={{ background: '#FAF7F0' }}
     >
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-14 max-w-2xl mx-auto">
           <p
             className="text-xs font-bold uppercase tracking-widest mb-3"
-            style={{ color: '#006D77' }}
+            style={{ color: '#C9A063' }}
           >
             How much does it cost?
           </p>
@@ -68,7 +68,7 @@ export default function Pricing() {
             style={{
               fontSize: 'clamp(28px, 3.2vw, 40px)',
               letterSpacing: '-0.01em',
-              color: '#24323D',
+              color: '#1F2933',
             }}
           >
             Straightforward, fee-free advice.
@@ -88,7 +88,7 @@ export default function Pricing() {
             >
               <h3
                 className="font-display font-semibold text-lg mb-4"
-                style={{ color: '#24323D' }}
+                style={{ color: '#1F2933' }}
               >
                 {tier.title}
               </h3>
@@ -132,7 +132,7 @@ export default function Pricing() {
                     </div>
                     <span
                       className="text-sm leading-snug"
-                      style={{ color: '#24323D' }}
+                      style={{ color: '#1F2933' }}
                     >
                       {item}
                     </span>

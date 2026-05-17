@@ -91,7 +91,7 @@ export default function AboutPage() {
       </section>
 
       {/* Credentials bar */}
-      <div className="border-y border-gray-100 py-5 px-6 lg:px-8" style={{ background: '#F7F5F2' }}>
+      <div className="border-y border-gray-100 py-5 px-6 lg:px-8" style={{ background: '#FAF7F0' }}>
         <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-sm">
           <div className="flex items-center gap-2 text-gray-500">
             <Shield className="w-4 h-4 text-teal" />
@@ -128,7 +128,7 @@ export default function AboutPage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             {values.map((value) => (
-              <div key={value.title} className="rounded-2xl p-8 border border-gray-100" style={{ background: '#F7F5F2' }}>
+              <div key={value.title} className="rounded-2xl p-8 border border-gray-100" style={{ background: '#FAF7F0' }}>
                 <div className="flex items-start gap-4">
                   <div className="flex-shrink-0 w-9 h-9 rounded-full bg-teal-light flex items-center justify-center mt-0.5">
                     <CheckCircle className="w-5 h-5 text-teal" />
