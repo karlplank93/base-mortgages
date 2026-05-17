@@ -44,10 +44,10 @@ export default function Hero() {
             </a>
           </div>
 
-          {/* Image column */}
-          <div className="relative order-first lg:order-last">
+          {/* Image column — text comes first on mobile, image right on desktop */}
+          <div className="relative">
             <div
-              className="relative w-full h-72 sm:h-96 lg:h-[480px] rounded-3xl overflow-hidden"
+              className="relative w-full h-64 sm:h-80 lg:h-[480px] rounded-3xl overflow-hidden"
               style={{ boxShadow: '0 20px 60px rgba(0,0,0,0.10)' }}
             >
               <Image
