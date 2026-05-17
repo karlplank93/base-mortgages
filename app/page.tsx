@@ -1,6 +1,7 @@
 import Hero from "@/components/Hero";
 import HowWeHelp from "@/components/HowWeHelp";
-import MeetAdviser from "@/components/MeetAdviser";
+import BankStrip from "@/components/BankStrip";
+import WhyBase from "@/components/WhyBase";
 import Reviews from "@/components/Reviews";
 import Pricing from "@/components/Pricing";
 import FAQ from "@/components/FAQ";
@@ -11,7 +12,8 @@ export default function Home() {
     <>
       <Hero />
       <HowWeHelp />
-      <MeetAdviser />
+      <BankStrip />
+      <WhyBase />
       <Reviews />
       <Pricing />
       <FAQ />

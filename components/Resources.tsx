@@ -7,7 +7,7 @@ const resources = [
   {
     icon: BookOpen,
     title: "First Home Buyer Guide",
-    description: "Everything you need to know about buying your first home in New Zealand — from KiwiSaver to settlement.",
+    description: "Everything you need to know about buying your first home in New Zealand, from KiwiSaver to settlement.",
     href: "/resources/first-home-buyer-guide",
     tag: "Guide",
   },
@@ -38,7 +38,7 @@ export default function Resources() {
               Learn before you decide
             </h2>
           </div>
-          <Link href="/resources" className="font-semibold text-sm flex items-center gap-2 hover:gap-3 transition-all" style={{ color: '#0F4C4F' }}>
+          <Link href="/resources" className="font-semibold text-sm flex items-center gap-2 hover:gap-3 transition-all" style={{ color: '#006D77' }}>
             View all resources <ArrowRight className="w-4 h-4" />
           </Link>
         </div>
@@ -59,7 +59,7 @@ export default function Resources() {
               </div>
               <h3 className="font-semibold text-navy text-lg mb-3">{title}</h3>
               <p className="text-sm leading-relaxed mb-5" style={{ color: '#6B7280' }}>{description}</p>
-              <div className="flex items-center gap-2 font-semibold text-sm group-hover:gap-3 transition-all" style={{ color: '#0F4C4F' }}>
+              <div className="flex items-center gap-2 font-semibold text-sm group-hover:gap-3 transition-all" style={{ color: '#006D77' }}>
                 Read more <span>→</span>
               </div>
             </Link>

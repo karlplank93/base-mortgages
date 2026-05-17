@@ -24,7 +24,7 @@ const resources: ResourceCard[] = [
     category: 'Guide',
     title: "First Home Buyer's Complete Guide to KiwiSaver",
     description:
-      'Everything you need to know about using your KiwiSaver to buy your first home — withdrawal rules, eligibility, and how much you can access.',
+      'Everything you need to know about using your KiwiSaver to buy your first home, withdrawal rules, eligibility, and how much you can access.',
     readTime: 8,
     href: '/resources/kiwisaver-first-home',
     gradientFrom: 'from-teal-400',
@@ -35,7 +35,7 @@ const resources: ResourceCard[] = [
     category: 'Article',
     title: 'How Cashback Works When Switching Banks',
     description:
-      "Many NZ banks offer cashback incentives when you take out a new mortgage. Here's how to make the most of it — and the catch to watch out for.",
+      "Many NZ banks offer cashback incentives when you take out a new mortgage. Here's how to make the most of it, and the catch to watch out for.",
     readTime: 5,
     href: '/resources/cashback-explained',
     gradientFrom: 'from-blue-400',
@@ -79,7 +79,7 @@ const resources: ResourceCard[] = [
     category: 'Guide',
     title: 'Refinancing Your Mortgage: Is It Worth It?',
     description:
-      "Switching lenders could save you thousands — but it's not always the right move. Here's how to weigh up the costs and benefits.",
+      "Switching lenders could save you thousands, but it's not always the right move. Here's how to weigh up the costs and benefits.",
     readTime: 6,
     href: '/resources/refinancing-guide',
     gradientFrom: 'from-pink-400',
@@ -126,7 +126,7 @@ export default function ResourcesPage() {
               {/* Content */}
               <div className="w-full bg-gradient-to-br from-gray-50 to-white p-8 sm:w-2/3">
                 <span className="mb-2 inline-block text-sm font-semibold text-teal-600 uppercase tracking-widest">
-                  Featured — {resources[0].category}
+                  Featured, {resources[0].category}
                 </span>
                 <h2
                   className="mb-3 font-bold text-gray-900"

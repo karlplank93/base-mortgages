@@ -19,7 +19,7 @@ export default function Hero() {
               }}
             >
               Mortgages<br />
-              made <span style={{ color: '#0F4C4F' }}>simple.</span><br />
+              made <span style={{ color: '#006D77' }}>simple.</span><br />
               Advice you can trust.
             </h1>
 
@@ -36,8 +36,8 @@ export default function Hero() {
               rel="noopener noreferrer"
               className="inline-flex items-center px-7 py-3.5 rounded-lg text-white font-semibold text-base transition-all hover:opacity-90"
               style={{
-                background: '#0F4C4F',
-                boxShadow: '0 4px 16px rgba(15,76,79,0.28)',
+                background: '#006D77',
+                boxShadow: '0 4px 16px rgba(0,109,119,0.28)',
               }}
             >
               Book a Free Consultation
@@ -78,7 +78,7 @@ export default function Hero() {
         />
         <path
           d="M 720,180 L 720,140 Q 1080,60 1440,100 L 1440,180 Z"
-          fill="#0F4C4F"
+          fill="#006D77"
           opacity="0.92"
         />
       </svg>

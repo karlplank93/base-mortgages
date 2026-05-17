@@ -19,15 +19,15 @@ const config: Config = {
 
         // `navy` token = primary dark (headings, dark backgrounds)
         navy: {
-          DEFAULT: '#0F4C4F',
-          deep:    '#0A3537',
+          DEFAULT: '#006D77',
+          deep:    '#005A63',
           light:   '#2A6E72',
         },
 
         // `teal` token = primary brand → Deep Teal
         teal: {
-          DEFAULT: '#0F4C4F',
-          dark:    '#0A3537',
+          DEFAULT: '#006D77',
+          dark:    '#005A63',
           darker:  '#062528',
           light:   '#C7E8DE',
           mid:     '#5B9799',

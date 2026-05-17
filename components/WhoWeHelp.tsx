@@ -8,14 +8,14 @@ const audiences = [
     icon: Home,
     tag: 'First Home',
     title: 'First Home Buyers',
-    description: 'Get your First Home Roadmap — from KiwiSaver to keys in hand. We make the complex simple and guide you every step of the way.',
+    description: 'Get your First Home Roadmap, from KiwiSaver to keys in hand. We make the complex simple and guide you every step of the way.',
     href: '/services/first-home-buyers',
   },
   {
     icon: RefreshCw,
     tag: 'Homeowner',
     title: 'Existing Homeowners',
-    description: 'Refinance, restructure, or top up — make your mortgage work harder for you and stop paying more than you need to.',
+    description: 'Refinance, restructure, or top up, make your mortgage work harder for you and stop paying more than you need to.',
     href: '/services/homeowners',
   },
   {

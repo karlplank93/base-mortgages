@@ -59,7 +59,7 @@ export default function Pricing() {
         <div className="text-center mb-14 max-w-2xl mx-auto">
           <p
             className="text-xs font-bold uppercase tracking-widest mb-3"
-            style={{ color: '#0F4C4F' }}
+            style={{ color: '#006D77' }}
           >
             How much does it cost?
           </p>
@@ -96,7 +96,7 @@ export default function Pricing() {
               <div className="flex items-baseline gap-2 mb-1">
                 <span
                   className="font-display font-bold"
-                  style={{ fontSize: '44px', color: '#0F4C4F', lineHeight: 1 }}
+                  style={{ fontSize: '44px', color: '#006D77', lineHeight: 1 }}
                 >
                   $0
                 </span>
@@ -127,7 +127,7 @@ export default function Pricing() {
                       <Check
                         className="w-2.5 h-2.5"
                         strokeWidth={3}
-                        style={{ color: '#0F4C4F' }}
+                        style={{ color: '#006D77' }}
                       />
                     </div>
                     <span
@@ -150,8 +150,8 @@ export default function Pricing() {
             rel="noopener noreferrer"
             className="inline-flex items-center px-7 py-3.5 rounded-lg text-white font-semibold text-base transition-all hover:opacity-90"
             style={{
-              background: '#0F4C4F',
-              boxShadow: '0 4px 16px rgba(15,76,79,0.28)',
+              background: '#006D77',
+              boxShadow: '0 4px 16px rgba(0,109,119,0.28)',
             }}
           >
             Book a Free Consultation

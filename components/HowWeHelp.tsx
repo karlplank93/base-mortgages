@@ -37,7 +37,7 @@ const helpCategories: {
 
 export default function HowWeHelp() {
   return (
-    <section className="py-20 lg:py-24 px-6 lg:px-8" style={{ background: '#F7F5F2' }}>
+    <section className="py-20 lg:py-24 px-6 lg:px-8" style={{ background: '#C7E8DE' }}>
       <div className="max-w-6xl mx-auto">
         <h2
           className="font-display font-bold text-center mb-14 lg:mb-16"
@@ -61,7 +61,7 @@ export default function HowWeHelp() {
                 <Icon
                   className="w-12 h-12 lg:w-14 lg:h-14"
                   strokeWidth={1.5}
-                  style={{ color: '#0F4C4F' }}
+                  style={{ color: '#006D77' }}
                 />
               </div>
               <h3

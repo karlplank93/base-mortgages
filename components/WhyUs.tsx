@@ -1,10 +1,10 @@
 import { CheckCircle, Target, MessageCircle, Zap, DollarSign } from 'lucide-react';
 
 const features = [
-  { icon: Target,        title: 'Whole-of-market access', description: 'We compare all five major banks and non-bank lenders to find the best fit for you — not just the easiest option.' },
+  { icon: Target,        title: 'Whole-of-market access', description: 'We compare all five major banks and non-bank lenders to find the best fit for you, not just the easiest option.' },
   { icon: MessageCircle, title: 'Plain English advice',   description: 'No jargon, no confusion. We explain everything clearly so you can make confident, informed decisions.' },
   { icon: Zap,           title: 'Fast & proactive',       description: 'We move quickly when you need to and proactively reach out before your rates expire so you\'re always in the best position.' },
-  { icon: DollarSign,    title: 'Free to you',            description: 'Our advice costs you nothing. We\'re paid by the bank when your mortgage settles — so our interests are aligned with yours.' },
+  { icon: DollarSign,    title: 'Free to you',            description: 'Our advice costs you nothing. We\'re paid by the bank when your mortgage settles, so our interests are aligned with yours.' },
 ];
 
 const bullets = [
@@ -58,7 +58,7 @@ export default function WhyUs() {
           <div className="bg-navy rounded-3xl p-10 text-white relative overflow-hidden">
             <div
               className="absolute top-0 right-0 w-64 h-64 rounded-full blur-3xl pointer-events-none"
-              style={{ background: 'rgba(15,76,79,0.18)', transform: 'translate(30%, -30%)' }}
+              style={{ background: 'rgba(0,109,119,0.18)', transform: 'translate(30%, -30%)' }}
             />
             <div className="relative grid grid-cols-2 gap-4 mb-6">
               {[
@@ -73,14 +73,14 @@ export default function WhyUs() {
                 </div>
               ))}
             </div>
-            <div className="relative rounded-2xl p-5 text-center" style={{ background: '#0F4C4F' }}>
+            <div className="relative rounded-2xl p-5 text-center" style={{ background: '#006D77' }}>
               <p className="text-sm mb-3 text-white/90">Ready to get started? Book a free call today.</p>
               <a
                 href="https://calendly.com/karl-mortgage-adviser/borrowing-review"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-white rounded-full px-6 py-2.5 font-bold text-sm hover:opacity-90 transition"
-                style={{ color: '#0A3537' }}
+                style={{ color: '#005A63' }}
               >
                 Book Discovery Call →
               </a>

@@ -94,7 +94,7 @@ export default function Navigation() {
             <Link
               href="/contact"
               className="inline-flex items-center px-5 py-2.5 rounded-lg text-sm font-semibold text-white transition-all hover:opacity-90"
-              style={{ background: '#0F4C4F' }}
+              style={{ background: '#006D77' }}
             >
               Get in Touch
             </Link>
@@ -139,7 +139,7 @@ export default function Navigation() {
               <Link
                 href="/contact"
                 className="block text-center w-full py-3 rounded-lg text-sm font-semibold text-white"
-                style={{ background: '#0F4C4F' }}
+                style={{ background: '#006D77' }}
               >
                 Get in Touch
               </Link>

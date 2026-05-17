@@ -7,7 +7,7 @@ import Link from 'next/link';
 const faqs: { q: string; a: string }[] = [
   {
     q: 'How much can I actually borrow?',
-    a: 'How much you can borrow depends on your income, expenses, deposit, and the banks’ lending criteria. We assess your full situation and give you a realistic borrowing range so you can search for property with confidence — not guesswork.',
+    a: 'How much you can borrow depends on your income, expenses, deposit, and the banks’ lending criteria. We assess your full situation and give you a realistic borrowing range so you can search for property with confidence, not guesswork.',
   },
   {
     q: 'Do you help with pre-approvals?',
@@ -23,15 +23,15 @@ const faqs: { q: string; a: string }[] = [
   },
   {
     q: 'Can you negotiate rates and terms with the bank?',
-    a: 'Yes. We work with the banks on your behalf to negotiate competitive rates, cashback where available, and loan terms that suit your financial goals — so you don’t have to manage the back-and-forth yourself.',
+    a: 'Yes. We work with the banks on your behalf to negotiate competitive rates, cashback where available, and loan terms that suit your financial goals, so you don’t have to manage the back-and-forth yourself.',
   },
   {
     q: 'What happens when my fixed rate expires?',
-    a: 'When your fixed rate is coming up for renewal, we proactively reach out and review your loan. We compare options with your current lender and others if needed, so your lending structure and rate stay competitive — you never leave money on the table.',
+    a: 'When your fixed rate is coming up for renewal, we proactively reach out and review your loan. We compare options with your current lender and others if needed, so your lending structure and rate stay competitive, you never leave money on the table.',
   },
   {
     q: 'Do you charge for your mortgage advice?',
-    a: 'In most cases, no. Our advice is paid for by the lender once your loan settles — and we’ll always explain how this works before we begin. Our interests are aligned with yours: we only get paid when you get the right outcome.',
+    a: 'In most cases, no. Our advice is paid for by the lender once your loan settles, and we’ll always explain how this works before we begin. Our interests are aligned with yours: we only get paid when you get the right outcome.',
   },
 ];
 
@@ -47,7 +47,7 @@ export default function FAQ() {
         <div className="text-center mb-12">
           <p
             className="text-xs font-bold uppercase tracking-widest mb-3"
-            style={{ color: '#0F4C4F' }}
+            style={{ color: '#006D77' }}
           >
             FAQs
           </p>
@@ -66,7 +66,7 @@ export default function FAQ() {
             <Link
               href="/contact"
               className="font-semibold underline-offset-4 hover:underline"
-              style={{ color: '#0F4C4F' }}
+              style={{ color: '#006D77' }}
             >
               Get in touch
             </Link>
@@ -96,12 +96,12 @@ export default function FAQ() {
                   </span>
                   <span
                     className="flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center"
-                    style={{ background: isOpen ? '#0F4C4F' : '#C7E8DE' }}
+                    style={{ background: isOpen ? '#006D77' : '#C7E8DE' }}
                   >
                     {isOpen ? (
                       <Minus className="w-4 h-4" style={{ color: '#FFFFFF' }} />
                     ) : (
-                      <Plus className="w-4 h-4" style={{ color: '#0F4C4F' }} />
+                      <Plus className="w-4 h-4" style={{ color: '#006D77' }} />
                     )}
                   </span>
                 </button>

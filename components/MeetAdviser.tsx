@@ -18,7 +18,7 @@ export default function MeetAdviser() {
         <div className="text-center mb-10 max-w-2xl mx-auto">
           <p
             className="text-xs font-bold uppercase tracking-widest mb-3"
-            style={{ color: '#0F4C4F' }}
+            style={{ color: '#006D77' }}
           >
             Meet your adviser
           </p>
@@ -62,7 +62,7 @@ export default function MeetAdviser() {
             <div className="flex-1 min-w-0">
               <p
                 className="text-xs font-bold uppercase tracking-widest mb-2"
-                style={{ color: '#0F4C4F' }}
+                style={{ color: '#006D77' }}
               >
                 Mortgage Adviser
               </p>
@@ -91,7 +91,7 @@ export default function MeetAdviser() {
                   <span
                     key={tag}
                     className="text-xs font-medium px-2.5 py-1 rounded-full"
-                    style={{ background: '#C7E8DE', color: '#0F4C4F' }}
+                    style={{ background: '#C7E8DE', color: '#006D77' }}
                   >
                     {tag}
                   </span>
@@ -105,7 +105,7 @@ export default function MeetAdviser() {
                     className="flex items-center gap-2 hover:opacity-80 transition-opacity"
                     style={{ color: '#24323D' }}
                   >
-                    <Phone className="w-4 h-4" style={{ color: '#0F4C4F' }} />
+                    <Phone className="w-4 h-4" style={{ color: '#006D77' }} />
                     <span className="font-medium">027 266 4925</span>
                   </a>
                   <a
@@ -113,7 +113,7 @@ export default function MeetAdviser() {
                     className="flex items-center gap-2 hover:opacity-80 transition-opacity"
                     style={{ color: '#24323D' }}
                   >
-                    <Mail className="w-4 h-4" style={{ color: '#0F4C4F' }} />
+                    <Mail className="w-4 h-4" style={{ color: '#006D77' }} />
                     <span className="font-medium">karl@basemortgages.co.nz</span>
                   </a>
                 </div>
@@ -124,8 +124,8 @@ export default function MeetAdviser() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-lg text-white font-semibold text-sm transition-all hover:opacity-90 sm:ml-auto"
                   style={{
-                    background: '#0F4C4F',
-                    boxShadow: '0 4px 16px rgba(15,76,79,0.22)',
+                    background: '#006D77',
+                    boxShadow: '0 4px 16px rgba(0,109,119,0.22)',
                   }}
                 >
                   <Calendar className="w-4 h-4" />
@@ -141,7 +141,7 @@ export default function MeetAdviser() {
             <div
               key={stat.label}
               className="rounded-xl p-4 text-center"
-              style={{ background: '#0F4C4F' }}
+              style={{ background: '#006D77' }}
             >
               <div
                 className="font-display font-bold mb-1"

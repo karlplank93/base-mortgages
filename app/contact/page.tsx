@@ -44,7 +44,7 @@ export default function ContactPage() {
             Get in touch
           </h1>
           <p className="text-lg text-gray-500 mt-4 max-w-xl">
-            Ready to start your mortgage journey? Book a free discovery call or send us a message — we&apos;ll get back to you within 24 hours.
+            Ready to start your mortgage journey? Book a free discovery call or send us a message, we&apos;ll get back to you within 24 hours.
           </p>
         </div>
       </section>
@@ -92,7 +92,7 @@ export default function ContactPage() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center w-full py-3 rounded-full text-white font-semibold text-sm transition-all hover:opacity-90"
-                  style={{ background: '#0F4C4F' }}
+                  style={{ background: '#006D77' }}
                 >
                   Book a Free Discovery Call
                 </a>
@@ -182,7 +182,7 @@ export default function ContactPage() {
                       type="submit"
                       disabled={submitting}
                       className="w-full py-3.5 rounded-full text-white font-semibold text-sm transition-all hover:opacity-90 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
-                      style={{ background: '#0F4C4F' }}
+                      style={{ background: '#006D77' }}
                     >
                       {submitting ? 'Sending...' : <><Send className="w-4 h-4" /> Send Message</>}
                     </button>

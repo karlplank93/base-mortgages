@@ -83,7 +83,7 @@ export default function Footer() {
 
         {/* Disclosure */}
         <div className="rounded-2xl p-5 text-xs text-gray-400 leading-relaxed mb-8 bg-gray-50 border border-gray-100">
-          <strong className="text-gray-500">Disclosure:</strong> Base Mortgages is a licensed financial advice provider under the Financial Markets Conduct Act 2013. Our financial advisers are authorised to provide mortgage and insurance advice. We receive commissions from lenders when a mortgage settles — full details are available in our disclosure statement. This website contains general information only and does not constitute personalised financial advice.
+          <strong className="text-gray-500">Disclosure:</strong> Base Mortgages is a licensed financial advice provider under the Financial Markets Conduct Act 2013. Our financial advisers are authorised to provide mortgage and insurance advice. We receive commissions from lenders when a mortgage settles, full details are available in our disclosure statement. This website contains general information only and does not constitute personalised financial advice.
         </div>
 
         {/* Bottom bar */}

@@ -27,7 +27,7 @@ export default function AboutPage() {
                 Meet your mortgage adviser, Karl.
               </h1>
               <p className="text-lg text-gray-500 mb-5 leading-relaxed">
-                Karl Plank is a Licensed Financial Adviser and the founder of Base Mortgages. He&apos;s passionate about helping New Zealanders navigate the home loan process with confidence — whether you&apos;re buying your first home, refinancing, or growing a property portfolio.
+                Karl Plank is a Licensed Financial Adviser and the founder of Base Mortgages. He&apos;s passionate about helping New Zealanders navigate the home loan process with confidence, whether you&apos;re buying your first home, refinancing, or growing a property portfolio.
               </p>
               <p className="text-lg text-gray-500 mb-8 leading-relaxed">
                 Base Mortgages was built on a simple belief: mortgage advice should be straightforward, personalised, and genuinely in your corner. Karl works with all five major NZ banks and a range of non-bank lenders to find the right solution for your situation.
@@ -52,7 +52,7 @@ export default function AboutPage() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center px-6 py-3 rounded-full text-white font-semibold text-sm transition-all hover:opacity-90"
-                  style={{ background: '#0F4C4F' }}
+                  style={{ background: '#006D77' }}
                 >
                   Book a Free Call
                 </a>
@@ -71,7 +71,7 @@ export default function AboutPage() {
                 <div className="rounded-3xl overflow-hidden w-full max-w-sm" style={{ boxShadow: '0 20px 60px rgba(0,0,0,0.10)' }}>
                   <img
                     src="/karl-plank.jpg"
-                    alt="Karl Plank — Financial Adviser, Base Mortgages"
+                    alt="Karl Plank, Financial Adviser, Base Mortgages"
                     className="w-full object-cover object-top"
                     style={{ aspectRatio: '3/4' }}
                   />
@@ -123,7 +123,7 @@ export default function AboutPage() {
               Built on a simple idea.
             </h2>
             <p className="text-lg text-gray-500">
-              Great mortgage advice should save you money, reduce stress, and set you up for the long term — not just get a deal done.
+              Great mortgage advice should save you money, reduce stress, and set you up for the long term, not just get a deal done.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
@@ -158,7 +158,7 @@ export default function AboutPage() {
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center px-8 py-3.5 rounded-full text-white font-semibold text-base transition-all hover:opacity-90"
-            style={{ background: '#0F4C4F', boxShadow: '0 4px 20px rgba(15,76,79,0.3)' }}
+            style={{ background: '#006D77', boxShadow: '0 4px 20px rgba(0,109,119,0.3)' }}
           >
             Book a Free Discovery Call
           </a>

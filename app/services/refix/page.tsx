@@ -12,7 +12,7 @@ export default function RefixPage() {
       {/* Header Section */}
       <section className="bg-[#F7F5F2] py-16 md:py-24">
         <div className="max-w-5xl mx-auto px-4 md:px-8">
-          <p className="text-sm font-semibold text-[#0F4C4F] uppercase tracking-widest mb-4">
+          <p className="text-sm font-semibold text-[#006D77] uppercase tracking-widest mb-4">
             Refixing & Restructuring
           </p>
           <h1
@@ -26,7 +26,7 @@ export default function RefixPage() {
           </p>
           <a
             href="https://calendly.com/karl-mortgage-adviser/borrowing-review"
-            className="inline-block bg-[#0F4C4F] text-white px-6 py-3 rounded-full font-medium hover:opacity-90 transition"
+            className="inline-block bg-[#006D77] text-white px-6 py-3 rounded-full font-medium hover:opacity-90 transition"
           >
             Schedule a rate review
           </a>
@@ -61,7 +61,7 @@ export default function RefixPage() {
             {/* Card 2 */}
             <div className="border border-gray-100 rounded-2xl p-8 shadow-sm hover:shadow-md transition">
               <div className="bg-green-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-                <Shield className="w-6 h-6 text-[#0F4C4F]" />
+                <Shield className="w-6 h-6 text-[#006D77]" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Mix it up—split loans</h3>
               <p className="text-gray-500">
@@ -108,7 +108,7 @@ export default function RefixPage() {
             {/* Step 1 */}
             <div className="flex gap-8">
               <div className="flex flex-col items-center">
-                <div className="bg-[#0F4C4F] text-white w-10 h-10 rounded-full flex items-center justify-center font-bold text-lg">
+                <div className="bg-[#006D77] text-white w-10 h-10 rounded-full flex items-center justify-center font-bold text-lg">
                   1
                 </div>
                 <div className="w-1 h-20 bg-gray-200 mt-4" />
@@ -124,7 +124,7 @@ export default function RefixPage() {
             {/* Step 2 */}
             <div className="flex gap-8">
               <div className="flex flex-col items-center">
-                <div className="bg-[#0F4C4F] text-white w-10 h-10 rounded-full flex items-center justify-center font-bold text-lg">
+                <div className="bg-[#006D77] text-white w-10 h-10 rounded-full flex items-center justify-center font-bold text-lg">
                   2
                 </div>
                 <div className="w-1 h-20 bg-gray-200 mt-4" />
@@ -140,7 +140,7 @@ export default function RefixPage() {
             {/* Step 3 */}
             <div className="flex gap-8">
               <div className="flex flex-col items-center">
-                <div className="bg-[#0F4C4F] text-white w-10 h-10 rounded-full flex items-center justify-center font-bold text-lg">
+                <div className="bg-[#006D77] text-white w-10 h-10 rounded-full flex items-center justify-center font-bold text-lg">
                   3
                 </div>
               </div>
@@ -227,7 +227,7 @@ export default function RefixPage() {
           </p>
           <a
             href="https://calendly.com/karl-mortgage-adviser/borrowing-review"
-            className="inline-block bg-[#0F4C4F] text-white px-8 py-3 rounded-full font-medium hover:opacity-90 transition flex items-center gap-2"
+            className="inline-block bg-[#006D77] text-white px-8 py-3 rounded-full font-medium hover:opacity-90 transition flex items-center gap-2"
           >
             Book a rate review
             <ArrowRight className="w-4 h-4" />

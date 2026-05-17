@@ -18,7 +18,7 @@ export default function StickyCTA() {
 
   return (
     <>
-      {/* Desktop — floating bottom-right pill */}
+      {/* Desktop, floating bottom-right pill */}
       <a
         href="https://calendly.com/karl-mortgage-adviser/borrowing-review"
         target="_blank"
@@ -30,15 +30,15 @@ export default function StickyCTA() {
             : 'opacity-0 translate-y-3 pointer-events-none'
         }`}
         style={{
-          background: '#0F4C4F',
-          boxShadow: '0 8px 24px rgba(15,76,79,0.32)',
+          background: '#006D77',
+          boxShadow: '0 8px 24px rgba(0,109,119,0.32)',
         }}
       >
         <Calendar className="w-4 h-4" />
         Book a Free Call
       </a>
 
-      {/* Mobile — full-width bottom banner */}
+      {/* Mobile, full-width bottom banner */}
       <div
         className={`md:hidden fixed bottom-0 left-0 right-0 z-40 px-4 pb-4 pt-3 transition-all duration-300 ${
           visible
@@ -58,8 +58,8 @@ export default function StickyCTA() {
           aria-label="Book a free call"
           className="flex items-center justify-center gap-2 w-full py-3.5 rounded-lg text-white font-semibold text-sm"
           style={{
-            background: '#0F4C4F',
-            boxShadow: '0 4px 16px rgba(15,76,79,0.28)',
+            background: '#006D77',
+            boxShadow: '0 4px 16px rgba(0,109,119,0.28)',
           }}
         >
           <Calendar className="w-4 h-4" />

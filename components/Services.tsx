@@ -5,14 +5,14 @@ const services: { title: string; description: string; href: string; cta: string 
   {
     title: 'First Home Buyers',
     description:
-      'From helping you build your deposit and understand your borrowing power, to finding the right property and securing the best loan — right through to settlement.',
+      'From helping you build your deposit and understand your borrowing power, to finding the right property and securing the best loan, right through to settlement.',
     href: '/services/first-home-buyers',
     cta: 'Secure your first home loan',
   },
   {
     title: 'Property Investors',
     description:
-      'We help investors understand their cashflow and rental yields, find the right properties, and secure the best funding — guiding you through every step of the investment journey.',
+      'We help investors understand their cashflow and rental yields, find the right properties, and secure the best funding, guiding you through every step of the investment journey.',
     href: '/services/investors',
     cta: 'Finance your next investment',
   },
@@ -26,14 +26,14 @@ const services: { title: string; description: string; href: string; cta: string 
   {
     title: 'Refix & Restructure',
     description:
-      "Don't just roll over your rate. Let us review your full loan structure and advise on the optimal combination of fixed, floating, and term lengths — proactively, before your rates expire.",
+      "Don't just roll over your rate. Let us review your full loan structure and advise on the optimal combination of fixed, floating, and term lengths, proactively, before your rates expire.",
     href: '/services/refix',
     cta: 'Review your loan structure',
   },
   {
     title: 'New Build & Construction',
     description:
-      'Building your dream home? We manage construction loan drawdowns, progress payments, and make sure your finances are in order at every stage — start to finish.',
+      'Building your dream home? We manage construction loan drawdowns, progress payments, and make sure your finances are in order at every stage, start to finish.',
     href: '/services/construction',
     cta: 'Finance your build',
   },
@@ -58,7 +58,7 @@ export default function Services() {
         <div className="mb-16 max-w-2xl">
           <p
             className="text-xs font-bold uppercase tracking-widest mb-3"
-            style={{ color: '#0F4C4F' }}
+            style={{ color: '#006D77' }}
           >
             Our Services
           </p>
@@ -71,7 +71,7 @@ export default function Services() {
             }}
           >
             Smarter borrowing,<br />
-            <span style={{ color: '#0F4C4F' }}>tailored to your situation.</span>
+            <span style={{ color: '#006D77' }}>tailored to your situation.</span>
           </h2>
         </div>
 
@@ -108,7 +108,7 @@ export default function Services() {
                 <Link
                   href={service.href}
                   className="inline-flex items-center gap-2 text-sm font-semibold group transition-all"
-                  style={{ color: '#0F4C4F' }}
+                  style={{ color: '#006D77' }}
                 >
                   {service.cta}
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
