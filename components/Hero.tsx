@@ -10,6 +10,12 @@ export default function Hero() {
 
           {/* Text column */}
           <div className="relative z-10">
+            <p
+              className="text-xs font-bold uppercase tracking-widest mb-5"
+              style={{ color: '#C9A063' }}
+            >
+              New Zealand Mortgage Advisers
+            </p>
             <h1
               className="font-display font-bold mb-6 leading-[1.05]"
               style={{
