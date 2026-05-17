@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Outfit, Fraunces } from "next/font/google";
+import { Outfit, Source_Serif_4 } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -12,10 +12,10 @@ const outfit = Outfit({
   display: "swap",
 });
 
-const fraunces = Fraunces({
+const sourceSerif = Source_Serif_4({
   subsets: ["latin"],
-  variable: "--font-fraunces",
-  weight: ["400", "500", "600", "700", "800"],
+  variable: "--font-source-serif",
+  weight: ["400", "500", "600", "700"],
   display: "swap",
 });
 
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     "mortgage adviser nz, first home buyer, refinancing, property investment, auckland mortgage broker",
 };
 
-const htmlClassName = outfit.variable + " " + fraunces.variable;
+const htmlClassName = outfit.variable + " " + sourceSerif.variable;
 
 export default function RootLayout({
   children,

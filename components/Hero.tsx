@@ -4,12 +4,12 @@ import Image from 'next/image';
 
 export default function Hero() {
   return (
-    <section className="relative" style={{ background: '#F7F5F2' }}>
-      <div className="relative max-w-7xl mx-auto px-6 lg:px-8 pt-14 pb-16 lg:pt-20 lg:pb-24">
+    <section className="relative overflow-hidden" style={{ background: '#F7F5F2' }}>
+      <div className="relative max-w-7xl mx-auto px-6 lg:px-8 pt-14 pb-24 lg:pt-20 lg:pb-36">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
           {/* Text column */}
-          <div>
+          <div className="relative z-10">
             <h1
               className="font-display font-bold mb-6 leading-[1.05]"
               style={{
@@ -44,8 +44,8 @@ export default function Hero() {
             </a>
           </div>
 
-          {/* Image column — text comes first on mobile, image right on desktop */}
-          <div className="relative">
+          {/* Image column */}
+          <div className="relative z-10">
             <div
               className="relative w-full h-64 sm:h-80 lg:h-[480px] rounded-3xl overflow-hidden"
               style={{ boxShadow: '0 20px 60px rgba(0,0,0,0.10)' }}
@@ -63,6 +63,25 @@ export default function Hero() {
 
         </div>
       </div>
+
+      {/* Curve graphic flowing into the next section */}
+      <svg
+        className="absolute bottom-0 left-0 w-full pointer-events-none"
+        viewBox="0 0 1440 180"
+        preserveAspectRatio="none"
+        style={{ height: 'clamp(80px, 12vw, 180px)' }}
+        aria-hidden="true"
+      >
+        <path
+          d="M 0,180 L 0,120 Q 360,20 720,70 T 1440,50 L 1440,180 Z"
+          fill="#C7E8DE"
+        />
+        <path
+          d="M 720,180 L 720,140 Q 1080,60 1440,100 L 1440,180 Z"
+          fill="#0F4C4F"
+          opacity="0.92"
+        />
+      </svg>
     </section>
   );
 }

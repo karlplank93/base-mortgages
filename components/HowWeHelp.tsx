@@ -23,13 +23,13 @@ const helpCategories: {
   },
   {
     icon: ClipboardList,
-    title: 'Remortgage',
+    title: 'Refinance',
     description: 'Looking for a better deal? We can help.',
     href: '/services/refix',
   },
   {
     icon: ShieldCheck,
-    title: 'Buy to Let',
+    title: 'Investors',
     description: 'Expert advice for property investors.',
     href: '/services/investors',
   },
@@ -65,7 +65,7 @@ export default function HowWeHelp() {
                 />
               </div>
               <h3
-                className="font-semibold text-base lg:text-lg mb-2"
+                className="font-display font-semibold text-lg lg:text-xl mb-2"
                 style={{ color: '#24323D' }}
               >
                 {title}

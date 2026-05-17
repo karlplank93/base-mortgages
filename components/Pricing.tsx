@@ -87,7 +87,7 @@ export default function Pricing() {
               style={{ boxShadow: '0 1px 4px rgba(0,0,0,0.04)' }}
             >
               <h3
-                className="font-semibold text-base mb-4"
+                className="font-display font-semibold text-lg mb-4"
                 style={{ color: '#24323D' }}
               >
                 {tier.title}
