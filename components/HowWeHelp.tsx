@@ -12,32 +12,32 @@ const helpCategories: {
   {
     icon: Home,
     title: 'First Time Buyer',
-    description: 'Taking your first step onto the property ladder.',
+    description: 'KiwiSaver, deposits, and pre-approvals made simple, so you can buy with confidence.',
     href: '/services/first-home-buyers',
   },
   {
     icon: Key,
     title: 'Home Mover',
-    description: "Moving home? We'll help make it happen.",
+    description: 'Bridging finance, equity unlocks, and a smooth settlement, all handled for you.',
     href: '/services/refinancing',
   },
   {
     icon: ClipboardList,
     title: 'Refinance',
-    description: 'Looking for a better deal? We can help.',
+    description: 'Lower rates, cashback offers, and smarter loan structures, without the runaround.',
     href: '/services/refix',
   },
   {
     icon: ShieldCheck,
     title: 'Investors',
-    description: 'Expert advice for property investors.',
+    description: 'Cashflow analysis, debt structuring, and lenders who understand investment.',
     href: '/services/investors',
   },
 ];
 
 export default function HowWeHelp() {
   return (
-    <section className="pt-10 lg:pt-12 pb-20 lg:pb-24 px-6 lg:px-8" style={{ background: '#C7E8DE' }}>
+    <section className="relative overflow-hidden pt-10 lg:pt-12 pb-28 lg:pb-32 px-6 lg:px-8" style={{ background: '#C7E8DE' }}>
       <div className="max-w-6xl mx-auto">
         <h2
           className="font-display font-bold text-center mb-10 lg:mb-12"
@@ -80,6 +80,20 @@ export default function HowWeHelp() {
           ))}
         </div>
       </div>
+
+      {/* Cream curve at bottom, bridges HowWeHelp (mint) back into Pricing (cream) */}
+      <svg
+        className="absolute bottom-0 left-0 w-full pointer-events-none"
+        viewBox="0 0 1440 120"
+        preserveAspectRatio="none"
+        style={{ height: 'clamp(60px, 8vw, 120px)' }}
+        aria-hidden="true"
+      >
+        <path
+          d="M 0,120 L 0,80 Q 360,10 720,50 T 1440,40 L 1440,120 Z"
+          fill="#FAF7F0"
+        />
+      </svg>
     </section>
   );
 }

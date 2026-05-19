@@ -5,7 +5,7 @@ import Image from 'next/image';
 export default function Hero() {
   return (
     <section className="relative overflow-hidden" style={{ background: '#FAF7F0' }}>
-      <div className="relative max-w-7xl mx-auto px-6 lg:px-8 pt-20 pb-12 lg:pt-28 lg:pb-20">
+      <div className="relative max-w-7xl mx-auto px-6 lg:px-8 pt-20 pb-14 lg:pt-28 lg:pb-16">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
           {/* Text column */}
@@ -33,7 +33,7 @@ export default function Hero() {
               className="text-lg mb-8 leading-relaxed max-w-md"
               style={{ color: '#6B7280' }}
             >
-              We&apos;ll help you find the right mortgage for your home and your future.
+              Expert, fee-free advice, trusted by Kiwi families.
             </p>
 
             <a
@@ -47,6 +47,20 @@ export default function Hero() {
               }}
             >
               Book a Free Consultation
+            </a>
+
+            {/* Google Reviews trust signal */}
+            <a
+              href="https://share.google/ynwAl6ap2cyS4csY0"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 mt-6 hover:opacity-80 transition-opacity"
+            >
+              <span className="text-yellow-400 text-base tracking-wider">★★★★★</span>
+              <span className="text-sm font-semibold" style={{ color: '#1F2933' }}>4.9</span>
+              <span className="text-sm" style={{ color: '#6B7280' }}>
+                from 39 Google Reviews
+              </span>
             </a>
           </div>
 
@@ -70,19 +84,6 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Mint curve, visually bridges the hero (cream) into HowWeHelp (mint) below */}
-      <svg
-        className="absolute bottom-0 left-0 w-full pointer-events-none"
-        viewBox="0 0 1440 180"
-        preserveAspectRatio="none"
-        style={{ height: 'clamp(80px, 12vw, 180px)' }}
-        aria-hidden="true"
-      >
-        <path
-          d="M 0,180 L 0,120 Q 360,20 720,70 T 1440,50 L 1440,180 Z"
-          fill="#C7E8DE"
-        />
-      </svg>
     </section>
   );
 }

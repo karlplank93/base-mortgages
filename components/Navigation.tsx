@@ -61,7 +61,9 @@ export default function Navigation() {
               >
                 Mortgages
                 <ChevronDown
-                  className={'w-4 h-4 transition-transform duration-200 ' + (mortgagesOpen ? 'rotate-180' : '')}
+                  strokeWidth={2.5}
+                  style={{ color: '#006D77' }}
+                  className={'w-5 h-5 transition-transform duration-200 ' + (mortgagesOpen ? 'rotate-180' : '')}
                 />
               </button>
               {mortgagesOpen && (
