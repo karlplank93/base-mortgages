@@ -40,7 +40,7 @@ export default function Hero() {
               href="https://calendly.com/karl-mortgage-adviser/borrowing-review"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center px-7 py-3.5 rounded-lg text-white font-semibold text-base transition-all hover:opacity-90"
+              className="inline-flex items-center px-8 py-4 rounded-lg text-white font-bold text-base transition-all hover:opacity-90"
               style={{
                 background: '#006D77',
                 boxShadow: '0 4px 16px rgba(0,109,119,0.28)',

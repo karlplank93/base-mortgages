@@ -12,25 +12,25 @@ const helpCategories: {
   {
     icon: Home,
     title: 'First Time Buyer',
-    description: 'KiwiSaver, deposits, and pre-approvals made simple, so you can buy with confidence.',
+    description: 'From KiwiSaver & deposits to pre-approvals, we help get you into your first home.',
     href: '/services/first-home-buyers',
   },
   {
     icon: Key,
     title: 'Home Mover',
-    description: 'Bridging finance, equity unlocks, and a smooth settlement, all handled for you.',
+    description: 'From equity unlocks to bridging finance, we make moving home seamless and stress-free.',
     href: '/services/refinancing',
   },
   {
     icon: ClipboardList,
     title: 'Refinance',
-    description: 'Lower rates, cashback offers, and smarter loan structures, without the runaround.',
+    description: 'Better rates, cashback offers, and smarter structures, we save you money on your mortgage.',
     href: '/services/refix',
   },
   {
     icon: ShieldCheck,
     title: 'Investors',
-    description: 'Cashflow analysis, debt structuring, and lenders who understand investment.',
+    description: 'From cashflow analysis to smart debt structuring, we help you grow your property portfolio.',
     href: '/services/investors',
   },
 ];
