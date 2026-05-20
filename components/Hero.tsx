@@ -1,25 +1,26 @@
 'use client';
 
 import Image from 'next/image';
+import { Users } from 'lucide-react';
 
 export default function Hero() {
   return (
     <section className="relative overflow-hidden" style={{ background: '#FAF7F0' }}>
-      <div className="relative max-w-7xl mx-auto px-6 lg:px-8 pt-20 pb-14 lg:pt-28 lg:pb-16">
+      <div className="relative max-w-7xl mx-auto px-6 lg:px-8 pt-8 pb-10 lg:pt-24 lg:pb-16">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
           {/* Text column */}
           <div className="relative z-10">
             <p
-              className="text-xs font-bold uppercase tracking-widest mb-5"
+              className="text-xs font-bold uppercase tracking-widest mb-3 lg:mb-5"
               style={{ color: '#C9A063' }}
             >
               New Zealand Mortgage Advisers
             </p>
             <h1
-              className="font-display font-bold mb-6 leading-[1.05]"
+              className="font-display font-bold mb-4 lg:mb-6 leading-[1.05]"
               style={{
-                fontSize: 'clamp(40px, 5.2vw, 64px)',
+                fontSize: 'clamp(36px, 5vw, 64px)',
                 letterSpacing: '-0.02em',
                 color: '#1F2933',
               }}
@@ -30,10 +31,10 @@ export default function Hero() {
             </h1>
 
             <p
-              className="text-lg mb-8 leading-relaxed max-w-md"
+              className="text-base lg:text-lg mb-6 lg:mb-8 leading-relaxed max-w-md"
               style={{ color: '#6B7280' }}
             >
-              Expert, fee-free advice, trusted by Kiwi families.
+              We compare NZ lenders to help you buy, refinance, invest or get a better deal.
             </p>
 
             <a
@@ -49,19 +50,34 @@ export default function Hero() {
               Book a Free Consultation
             </a>
 
-            {/* Google Reviews trust signal */}
-            <a
-              href="https://share.google/ynwAl6ap2cyS4csY0"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 mt-6 hover:opacity-80 transition-opacity"
-            >
-              <span className="text-yellow-400 text-base tracking-wider">★★★★★</span>
-              <span className="text-sm font-semibold" style={{ color: '#1F2933' }}>4.9</span>
-              <span className="text-sm" style={{ color: '#6B7280' }}>
-                from 39 Google Reviews
-              </span>
-            </a>
+            {/* Trust signal block, two-column layout, Google rating + Kiwi homeowners */}
+            <div className="flex flex-wrap items-center gap-x-6 gap-y-3 mt-7">
+              <a
+                href="https://share.google/ynwAl6ap2cyS4csY0"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 hover:opacity-80 transition-opacity"
+              >
+                <span className="text-yellow-400 text-base tracking-wider">★★★★★</span>
+                <div className="flex flex-col leading-tight">
+                  <span className="text-sm font-semibold" style={{ color: '#1F2933' }}>
+                    4.9 Google Rating
+                  </span>
+                  <span className="text-xs" style={{ color: '#6B7280' }}>
+                    From 39 reviews
+                  </span>
+                </div>
+              </a>
+
+              <div className="hidden sm:block h-8 w-px" style={{ background: '#E5E7EB' }} aria-hidden="true" />
+
+              <div className="flex items-center gap-2">
+                <Users className="w-5 h-5" strokeWidth={1.8} style={{ color: '#006D77' }} />
+                <span className="text-sm leading-tight" style={{ color: '#1F2933' }}>
+                  Trusted by Kiwi<br className="sm:hidden" /> homeowners across NZ
+                </span>
+              </div>
+            </div>
           </div>
 
           {/* Image column */}
