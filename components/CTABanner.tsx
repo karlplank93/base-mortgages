@@ -2,8 +2,22 @@ import Link from 'next/link';
 
 export default function CTABanner() {
   return (
-    <section className="py-24 px-6 lg:px-8 bg-navy">
-      <div className="max-w-3xl mx-auto text-center">
+    <section className="relative overflow-hidden pt-32 pb-24 px-6 lg:px-8 bg-navy">
+      {/* Cream curve at the top, bridges FAQ (cream) into the dark CTA close */}
+      <svg
+        className="absolute top-0 left-0 w-full pointer-events-none"
+        viewBox="0 0 1440 120"
+        preserveAspectRatio="none"
+        style={{ height: 'clamp(60px, 8vw, 120px)' }}
+        aria-hidden="true"
+      >
+        <path
+          d="M 0,0 L 0,40 Q 360,110 720,70 T 1440,80 L 1440,0 Z"
+          fill="#FAF7F0"
+        />
+      </svg>
+
+      <div className="relative max-w-3xl mx-auto text-center">
 
         <p className="text-sm font-semibold uppercase tracking-widest mb-5" style={{ color: '#C9A063' }}>
           Free, no-obligation

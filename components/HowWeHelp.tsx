@@ -18,7 +18,7 @@ const helpCategories: {
   {
     icon: Key,
     title: 'Home Mover',
-    description: 'From equity unlocks to bridging finance, we make moving home seamless and stress-free.',
+    description: 'Sell, buy, and move seamlessly with finance and expert timing.',
     href: '/services/refinancing',
   },
   {
