@@ -16,7 +16,7 @@ export default function AlternativeLendingPage() {
             Alternative Lending
           </p>
           <h1
-            className="text-4xl md:text-5xl font-bold text-gray-900 mb-6"
+            className="font-display text-4xl md:text-5xl font-bold text-gray-900 mb-6"
             style={{ letterSpacing: '-0.02em' }}
           >
             More options than the big banks
@@ -37,7 +37,7 @@ export default function AlternativeLendingPage() {
       <section className="py-16 md:py-24 bg-white">
         <div className="max-w-5xl mx-auto px-4 md:px-8">
           <h2
-            className="text-3xl md:text-4xl font-bold text-gray-900 mb-4"
+            className="font-display text-3xl md:text-4xl font-bold text-gray-900 mb-4"
             style={{ letterSpacing: '-0.02em' }}
           >
             Where traditional lenders struggle
@@ -52,7 +52,7 @@ export default function AlternativeLendingPage() {
               <div className="bg-blue-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                 <TrendingUp className="w-6 h-6 text-[#1F2933]" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Self-employed income</h3>
+              <h3 className="font-display text-xl font-bold text-gray-900 mb-3">Self-employed income</h3>
               <p className="text-gray-500">
                 Banks want two years of history. Specialist lenders look at your actual situation and might accept recent business owners, contractors, or those with variable income. We know who's flexible.
               </p>
@@ -63,7 +63,7 @@ export default function AlternativeLendingPage() {
               <div className="bg-green-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                 <Shield className="w-6 h-6 text-[#006D77]" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Credit challenges</h3>
+              <h3 className="font-display text-xl font-bold text-gray-900 mb-3">Credit challenges</h3>
               <p className="text-gray-500">
                 Old defaults, missed payments, or a rough patch? Specialist lenders understand that people bounce back. We can help you get a mortgage even with a less-than-perfect history.
               </p>
@@ -74,7 +74,7 @@ export default function AlternativeLendingPage() {
               <div className="bg-purple-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                 <Zap className="w-6 h-6 text-[#1F2933]" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Irregular income</h3>
+              <h3 className="font-display text-xl font-bold text-gray-900 mb-3">Irregular income</h3>
               <p className="text-gray-500">
                 Seasonal work, commission-based roles, or income that varies month to month? Banks hate it. Specialist lenders look at your last 12 months and can work with you.
               </p>
@@ -85,7 +85,7 @@ export default function AlternativeLendingPage() {
               <div className="bg-yellow-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                 <CheckCircle className="w-6 h-6 text-[#1F2933]" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Bridging loans</h3>
+              <h3 className="font-display text-xl font-bold text-gray-900 mb-3">Bridging loans</h3>
               <p className="text-gray-500">
                 Need a short-term loan to buy before you've sold? Or to cover a gap? Bridging finance gets you cash fast, then you refinance once things settle down.
               </p>
@@ -98,7 +98,7 @@ export default function AlternativeLendingPage() {
       <section className="py-16 md:py-24 bg-[#FAF7F0]">
         <div className="max-w-5xl mx-auto px-4 md:px-8">
           <h2
-            className="text-3xl md:text-4xl font-bold text-gray-900 mb-12"
+            className="font-display text-3xl md:text-4xl font-bold text-gray-900 mb-12"
             style={{ letterSpacing: '-0.02em' }}
           >
             Why work with us for alternative lending
@@ -114,7 +114,7 @@ export default function AlternativeLendingPage() {
                 <div className="w-1 h-20 bg-gray-200 mt-4" />
               </div>
               <div className="pb-8">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">We understand your situation</h3>
+                <h3 className="font-display text-xl font-bold text-gray-900 mb-2">We understand your situation</h3>
                 <p className="text-gray-500 max-w-2xl">
                   We don't judge. We get that life's messy. Maybe you had a rough patch, or your income looks weird on paper. We listen and find a lender that gets it too.
                 </p>
@@ -130,7 +130,7 @@ export default function AlternativeLendingPage() {
                 <div className="w-1 h-20 bg-gray-200 mt-4" />
               </div>
               <div className="pb-8">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">We know the specialist lenders</h3>
+                <h3 className="font-display text-xl font-bold text-gray-900 mb-2">We know the specialist lenders</h3>
                 <p className="text-gray-500 max-w-2xl">
                   We work with non-bank lenders, credit unions, and specialist mortgage lenders. We know who'll say yes and who's flexible. You don't have to shop blind.
                 </p>
@@ -145,7 +145,7 @@ export default function AlternativeLendingPage() {
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">We'll get you approved</h3>
+                <h3 className="font-display text-xl font-bold text-gray-900 mb-2">We'll get you approved</h3>
                 <p className="text-gray-500 max-w-2xl">
                   We'll prepare your application the right way, with the right documentation, for the right lender. That maximizes your chances of approval and might get you a better rate.
                 </p>
@@ -159,7 +159,7 @@ export default function AlternativeLendingPage() {
       <section className="py-16 md:py-24 bg-white">
         <div className="max-w-3xl mx-auto px-4 md:px-8">
           <h2
-            className="text-3xl md:text-4xl font-bold text-gray-900 mb-12"
+            className="font-display text-3xl md:text-4xl font-bold text-gray-900 mb-12"
             style={{ letterSpacing: '-0.02em' }}
           >
             Alternative lending questions
@@ -217,7 +217,7 @@ export default function AlternativeLendingPage() {
       <section className="bg-[#1F2933] py-16 md:py-24">
         <div className="max-w-4xl mx-auto px-4 md:px-8 text-center">
           <h2
-            className="text-3xl md:text-4xl font-bold text-white mb-6"
+            className="font-display text-3xl md:text-4xl font-bold text-white mb-6"
             style={{ letterSpacing: '-0.02em' }}
           >
             Think you've been turned down?

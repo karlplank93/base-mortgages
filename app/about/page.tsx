@@ -119,7 +119,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto">
           <div className="max-w-2xl mb-14">
             <p className="text-sm font-semibold text-teal uppercase tracking-widest mb-3">How We Work</p>
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-4" style={{ letterSpacing: '-0.02em' }}>
+            <h2 className="font-display text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-4" style={{ letterSpacing: '-0.02em' }}>
               Built on a simple idea.
             </h2>
             <p className="text-lg text-gray-500">
@@ -134,7 +134,7 @@ export default function AboutPage() {
                     <CheckCircle className="w-5 h-5 text-teal" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-900 text-lg mb-2">{value.title}</h3>
+                    <h3 className="font-display font-semibold text-gray-900 text-lg mb-2">{value.title}</h3>
                     <p className="text-gray-500 text-sm leading-relaxed">{value.description}</p>
                   </div>
                 </div>
@@ -147,7 +147,7 @@ export default function AboutPage() {
       {/* CTA */}
       <section className="py-20 px-6 lg:px-8 bg-navy">
         <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 leading-tight" style={{ letterSpacing: '-0.02em' }}>
+          <h2 className="font-display text-3xl md:text-4xl font-bold text-white mb-4 leading-tight" style={{ letterSpacing: '-0.02em' }}>
             Ready to work together?
           </h2>
           <p className="text-white/60 mb-8 text-lg">

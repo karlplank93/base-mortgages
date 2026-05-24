@@ -16,7 +16,7 @@ export default function FirstHomeBuyersPage() {
             First Home Buyers
           </p>
           <h1
-            className="text-4xl md:text-5xl font-bold text-gray-900 mb-6"
+            className="font-display text-4xl md:text-5xl font-bold text-gray-900 mb-6"
             style={{ letterSpacing: '-0.02em' }}
           >
             Your path to home ownership starts here
@@ -37,7 +37,7 @@ export default function FirstHomeBuyersPage() {
       <section className="py-16 md:py-24 bg-white">
         <div className="max-w-5xl mx-auto px-4 md:px-8">
           <h2
-            className="text-3xl md:text-4xl font-bold text-gray-900 mb-4"
+            className="font-display text-3xl md:text-4xl font-bold text-gray-900 mb-4"
             style={{ letterSpacing: '-0.02em' }}
           >
             What we'll help you with
@@ -52,7 +52,7 @@ export default function FirstHomeBuyersPage() {
               <div className="bg-blue-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                 <Home className="w-6 h-6 text-[#1F2933]" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">KiwiSaver & First Home Loan</h3>
+              <h3 className="font-display text-xl font-bold text-gray-900 mb-3">KiwiSaver & First Home Loan</h3>
               <p className="text-gray-500">
                 We'll show you how to access your KiwiSaver, understand the First Home Loan eligibility, and work out what deposit you actually need. Most first home buyers can buy sooner than they think.
               </p>
@@ -63,7 +63,7 @@ export default function FirstHomeBuyersPage() {
               <div className="bg-green-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                 <CheckCircle className="w-6 h-6 text-[#006D77]" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Bank pre-approval</h3>
+              <h3 className="font-display text-xl font-bold text-gray-900 mb-3">Bank pre-approval</h3>
               <p className="text-gray-500">
                 We'll get you pre-approved so you know your budget before you start house hunting. This shows sellers you're serious, and helps you stay focused on properties in your range.
               </p>
@@ -74,7 +74,7 @@ export default function FirstHomeBuyersPage() {
               <div className="bg-purple-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                 <TrendingUp className="w-6 h-6 text-[#1F2933]" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Access to all lenders</h3>
+              <h3 className="font-display text-xl font-bold text-gray-900 mb-3">Access to all lenders</h3>
               <p className="text-gray-500">
                 We work with every major NZ bank plus Kāinga Ora and specialist lenders. That means we find the best rate and terms for your situation, not just what your current bank offers.
               </p>
@@ -85,7 +85,7 @@ export default function FirstHomeBuyersPage() {
               <div className="bg-yellow-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                 <Heart className="w-6 h-6 text-[#1F2933]" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">It's completely free</h3>
+              <h3 className="font-display text-xl font-bold text-gray-900 mb-3">It's completely free</h3>
               <p className="text-gray-500">
                 We're paid by the lenders, not by you. So getting expert advice costs you nothing—and could save you thousands in interest over your mortgage life.
               </p>
@@ -98,7 +98,7 @@ export default function FirstHomeBuyersPage() {
       <section className="py-16 md:py-24 bg-[#FAF7F0]">
         <div className="max-w-5xl mx-auto px-4 md:px-8">
           <h2
-            className="text-3xl md:text-4xl font-bold text-gray-900 mb-12"
+            className="font-display text-3xl md:text-4xl font-bold text-gray-900 mb-12"
             style={{ letterSpacing: '-0.02em' }}
           >
             How it works
@@ -114,7 +114,7 @@ export default function FirstHomeBuyersPage() {
                 <div className="w-1 h-20 bg-gray-200 mt-4" />
               </div>
               <div className="pb-8">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Discovery call</h3>
+                <h3 className="font-display text-xl font-bold text-gray-900 mb-2">Discovery call</h3>
                 <p className="text-gray-500 max-w-2xl">
                   We'll chat about your situation, your goals, any challenges with credit or income, and what you've saved so far. This is just a friendly conversation to understand where you're at.
                 </p>
@@ -130,7 +130,7 @@ export default function FirstHomeBuyersPage() {
                 <div className="w-1 h-20 bg-gray-200 mt-4" />
               </div>
               <div className="pb-8">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Strategy & pre-approval</h3>
+                <h3 className="font-display text-xl font-bold text-gray-900 mb-2">Strategy & pre-approval</h3>
                 <p className="text-gray-500 max-w-2xl">
                   We'll work out the best way to use your KiwiSaver, apply for pre-approval from the lender that suits you best, and give you a clear picture of what you can borrow. This usually takes 3-5 working days.
                 </p>
@@ -145,7 +145,7 @@ export default function FirstHomeBuyersPage() {
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Settlement</h3>
+                <h3 className="font-display text-xl font-bold text-gray-900 mb-2">Settlement</h3>
                 <p className="text-gray-500 max-w-2xl">
                   You've found the right place. We'll manage the loan application with full paperwork, liaise with the bank and your lawyer, and make sure everything's ready for settlement day.
                 </p>
@@ -159,7 +159,7 @@ export default function FirstHomeBuyersPage() {
       <section className="py-16 md:py-24 bg-white">
         <div className="max-w-3xl mx-auto px-4 md:px-8">
           <h2
-            className="text-3xl md:text-4xl font-bold text-gray-900 mb-12"
+            className="font-display text-3xl md:text-4xl font-bold text-gray-900 mb-12"
             style={{ letterSpacing: '-0.02em' }}
           >
             Common questions
@@ -217,7 +217,7 @@ export default function FirstHomeBuyersPage() {
       <section className="bg-[#1F2933] py-16 md:py-24">
         <div className="max-w-4xl mx-auto px-4 md:px-8 text-center">
           <h2
-            className="text-3xl md:text-4xl font-bold text-white mb-6"
+            className="font-display text-3xl md:text-4xl font-bold text-white mb-6"
             style={{ letterSpacing: '-0.02em' }}
           >
             Ready to get started?

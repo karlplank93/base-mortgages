@@ -16,7 +16,7 @@ export default function InvestorsPage() {
             Property Investors
           </p>
           <h1
-            className="text-4xl md:text-5xl font-bold text-gray-900 mb-6"
+            className="font-display text-4xl md:text-5xl font-bold text-gray-900 mb-6"
             style={{ letterSpacing: '-0.02em' }}
           >
             Grow your portfolio strategically
@@ -37,7 +37,7 @@ export default function InvestorsPage() {
       <section className="py-16 md:py-24 bg-white">
         <div className="max-w-5xl mx-auto px-4 md:px-8">
           <h2
-            className="text-3xl md:text-4xl font-bold text-gray-900 mb-4"
+            className="font-display text-3xl md:text-4xl font-bold text-gray-900 mb-4"
             style={{ letterSpacing: '-0.02em' }}
           >
             We specialise in
@@ -52,7 +52,7 @@ export default function InvestorsPage() {
               <div className="bg-blue-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                 <Building2 className="w-6 h-6 text-[#1F2933]" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Debt structuring</h3>
+              <h3 className="font-display text-xl font-bold text-gray-900 mb-3">Debt structuring</h3>
               <p className="text-gray-500">
                 We help you arrange your loans so your interest payments are tax-deductible where they should be. Good structure can save you thousands in tax each year.
               </p>
@@ -63,7 +63,7 @@ export default function InvestorsPage() {
               <div className="bg-green-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                 <DollarSign className="w-6 h-6 text-[#006D77]" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Interest-only options</h3>
+              <h3 className="font-display text-xl font-bold text-gray-900 mb-3">Interest-only options</h3>
               <p className="text-gray-500">
                 Interest-only loans let you invest the capital instead of paying down principal. We'll help you figure out when this makes sense and when you should be building equity.
               </p>
@@ -74,7 +74,7 @@ export default function InvestorsPage() {
               <div className="bg-purple-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                 <PieChart className="w-6 h-6 text-[#1F2933]" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Entity structure advice</h3>
+              <h3 className="font-display text-xl font-bold text-gray-900 mb-3">Entity structure advice</h3>
               <p className="text-gray-500">
                 Should you buy through a trust, a company, or your own name? We'll talk through the pros and cons for your tax and legal situation. We work with accountants and lawyers for advice.
               </p>
@@ -85,7 +85,7 @@ export default function InvestorsPage() {
               <div className="bg-yellow-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                 <TrendingUp className="w-6 h-6 text-[#1F2933]" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Portfolio growth</h3>
+              <h3 className="font-display text-xl font-bold text-gray-900 mb-3">Portfolio growth</h3>
               <p className="text-gray-500">
                 Growing from one property to five requires different lending. We help you unlock equity, manage LVR requirements, and keep building without overextending.
               </p>
@@ -98,7 +98,7 @@ export default function InvestorsPage() {
       <section className="py-16 md:py-24 bg-[#FAF7F0]">
         <div className="max-w-5xl mx-auto px-4 md:px-8">
           <h2
-            className="text-3xl md:text-4xl font-bold text-gray-900 mb-12"
+            className="font-display text-3xl md:text-4xl font-bold text-gray-900 mb-12"
             style={{ letterSpacing: '-0.02em' }}
           >
             Getting investment mortgages sorted
@@ -114,7 +114,7 @@ export default function InvestorsPage() {
                 <div className="w-1 h-20 bg-gray-200 mt-4" />
               </div>
               <div className="pb-8">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Portfolio review</h3>
+                <h3 className="font-display text-xl font-bold text-gray-900 mb-2">Portfolio review</h3>
                 <p className="text-gray-500 max-w-2xl">
                   We'll look at what you own, what you owe, what each property earns, and where you're trying to go. This helps us understand your whole picture, not just one loan.
                 </p>
@@ -130,7 +130,7 @@ export default function InvestorsPage() {
                 <div className="w-1 h-20 bg-gray-200 mt-4" />
               </div>
               <div className="pb-8">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Structure strategy</h3>
+                <h3 className="font-display text-xl font-bold text-gray-900 mb-2">Structure strategy</h3>
                 <p className="text-gray-500 max-w-2xl">
                   We'll map out the best way to structure your debt for tax, recommend whether you should use a trust or company, and show you how to unlock equity as you grow. We'll coordinate with your accountant.
                 </p>
@@ -145,7 +145,7 @@ export default function InvestorsPage() {
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Application & approval</h3>
+                <h3 className="font-display text-xl font-bold text-gray-900 mb-2">Application & approval</h3>
                 <p className="text-gray-500 max-w-2xl">
                   Whether you're buying a new property, refinancing to unlock equity, or restructuring what you've got, we'll handle the full application and get you approved.
                 </p>
@@ -159,7 +159,7 @@ export default function InvestorsPage() {
       <section className="py-16 md:py-24 bg-white">
         <div className="max-w-3xl mx-auto px-4 md:px-8">
           <h2
-            className="text-3xl md:text-4xl font-bold text-gray-900 mb-12"
+            className="font-display text-3xl md:text-4xl font-bold text-gray-900 mb-12"
             style={{ letterSpacing: '-0.02em' }}
           >
             Investment mortgage FAQs
@@ -217,7 +217,7 @@ export default function InvestorsPage() {
       <section className="bg-[#1F2933] py-16 md:py-24">
         <div className="max-w-4xl mx-auto px-4 md:px-8 text-center">
           <h2
-            className="text-3xl md:text-4xl font-bold text-white mb-6"
+            className="font-display text-3xl md:text-4xl font-bold text-white mb-6"
             style={{ letterSpacing: '-0.02em' }}
           >
             Ready to optimize your portfolio?

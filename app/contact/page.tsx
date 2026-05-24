@@ -40,7 +40,7 @@ export default function ContactPage() {
       <section className="py-16 px-6 lg:px-8 border-b border-gray-100" style={{ background: '#FAF7F0' }}>
         <div className="max-w-7xl mx-auto">
           <p className="text-sm font-semibold text-teal uppercase tracking-widest mb-3">Contact</p>
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight" style={{ letterSpacing: '-0.02em' }}>
+          <h1 className="font-display text-4xl md:text-5xl font-bold text-gray-900 leading-tight" style={{ letterSpacing: '-0.02em' }}>
             Get in touch
           </h1>
           <p className="text-lg text-gray-500 mt-4 max-w-xl">
@@ -109,7 +109,7 @@ export default function ContactPage() {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
-                    <h3 className="text-2xl font-bold text-gray-900 mb-2">Message Sent!</h3>
+                    <h3 className="font-display text-2xl font-bold text-gray-900 mb-2">Message Sent!</h3>
                     <p className="text-gray-500 mb-6">We&apos;ll get back to you within 24 hours.</p>
                     <button onClick={() => setSubmitted(false)} className="text-teal hover:text-teal-dark font-semibold text-sm transition-colors">
                       Send another message

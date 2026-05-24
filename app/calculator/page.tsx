@@ -96,7 +96,7 @@ export default function CalculatorPage() {
             </span>
           </div>
           <h1
-            className="mb-4 font-bold text-gray-900"
+            className="font-display mb-4 font-bold text-gray-900"
             style={{
               fontSize: 'clamp(2rem, 8vw, 3.5rem)',
               letterSpacing: '-0.02em',

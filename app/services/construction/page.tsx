@@ -16,7 +16,7 @@ export default function ConstructionPage() {
             Construction Loans
           </p>
           <h1
-            className="text-4xl md:text-5xl font-bold text-gray-900 mb-6"
+            className="font-display text-4xl md:text-5xl font-bold text-gray-900 mb-6"
             style={{ letterSpacing: '-0.02em' }}
           >
             We'll manage the money side while you manage the build
@@ -37,7 +37,7 @@ export default function ConstructionPage() {
       <section className="py-16 md:py-24 bg-white">
         <div className="max-w-5xl mx-auto px-4 md:px-8">
           <h2
-            className="text-3xl md:text-4xl font-bold text-gray-900 mb-4"
+            className="font-display text-3xl md:text-4xl font-bold text-gray-900 mb-4"
             style={{ letterSpacing: '-0.02em' }}
           >
             What we help with
@@ -52,7 +52,7 @@ export default function ConstructionPage() {
               <div className="bg-blue-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                 <Building2 className="w-6 h-6 text-[#1F2933]" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Progress payment setup</h3>
+              <h3 className="font-display text-xl font-bold text-gray-900 mb-3">Progress payment setup</h3>
               <p className="text-gray-500">
                 We'll arrange funding that releases in stages as your build progresses. So you pay the builder as they hit milestones (foundations, framing, lockup, etc.), not all upfront.
               </p>
@@ -63,7 +63,7 @@ export default function ConstructionPage() {
               <div className="bg-green-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                 <Clock className="w-6 h-6 text-[#006D77]" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Drawdown management</h3>
+              <h3 className="font-display text-xl font-bold text-gray-900 mb-3">Drawdown management</h3>
               <p className="text-gray-500">
                 We coordinate with the builder and the bank. When you hit a stage, we arrange the drawdown so the money's there when you need it. No delays, no cash flow problems.
               </p>
@@ -74,7 +74,7 @@ export default function ConstructionPage() {
               <div className="bg-purple-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                 <CheckCircle className="w-6 h-6 text-[#1F2933]" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Builder contract review</h3>
+              <h3 className="font-display text-xl font-bold text-gray-900 mb-3">Builder contract review</h3>
               <p className="text-gray-500">
                 We'll review your fixed-price contract to make sure there aren't surprises in the funding. We'll spot potential cost issues early so you're not caught off-guard.
               </p>
@@ -85,7 +85,7 @@ export default function ConstructionPage() {
               <div className="bg-yellow-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                 <AlertCircle className="w-6 h-6 text-[#1F2933]" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Access to all lenders</h3>
+              <h3 className="font-display text-xl font-bold text-gray-900 mb-3">Access to all lenders</h3>
               <p className="text-gray-500">
                 Not every lender does construction finance, and rates and terms vary wildly. We shop around so you get the best option. This could save thousands over the build period.
               </p>
@@ -98,7 +98,7 @@ export default function ConstructionPage() {
       <section className="py-16 md:py-24 bg-[#FAF7F0]">
         <div className="max-w-5xl mx-auto px-4 md:px-8">
           <h2
-            className="text-3xl md:text-4xl font-bold text-gray-900 mb-12"
+            className="font-display text-3xl md:text-4xl font-bold text-gray-900 mb-12"
             style={{ letterSpacing: '-0.02em' }}
           >
             How we set up your construction loan
@@ -114,7 +114,7 @@ export default function ConstructionPage() {
                 <div className="w-1 h-20 bg-gray-200 mt-4" />
               </div>
               <div className="pb-8">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Pre-approval</h3>
+                <h3 className="font-display text-xl font-bold text-gray-900 mb-2">Pre-approval</h3>
                 <p className="text-gray-500 max-w-2xl">
                   We'll get you pre-approved for the amount you need, based on your plans and the land or deposit you've got. This usually takes 5-7 working days and gives you confidence to proceed.
                 </p>
@@ -130,7 +130,7 @@ export default function ConstructionPage() {
                 <div className="w-1 h-20 bg-gray-200 mt-4" />
               </div>
               <div className="pb-8">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Builder contract review</h3>
+                <h3 className="font-display text-xl font-bold text-gray-900 mb-2">Builder contract review</h3>
                 <p className="text-gray-500 max-w-2xl">
                   Once you've got a builder quote, we'll review the contract with you to spot any funding gaps. Fixed-price contracts are good, but we want to make sure there's no hidden surprises.
                 </p>
@@ -145,7 +145,7 @@ export default function ConstructionPage() {
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Drawdown management</h3>
+                <h3 className="font-display text-xl font-bold text-gray-900 mb-2">Drawdown management</h3>
                 <p className="text-gray-500 max-w-2xl">
                   As construction progresses, we'll coordinate each drawdown with the builder and the bank. We'll make sure funds are released on time at each milestone, and handle any changes to the plan.
                 </p>
@@ -159,7 +159,7 @@ export default function ConstructionPage() {
       <section className="py-16 md:py-24 bg-white">
         <div className="max-w-3xl mx-auto px-4 md:px-8">
           <h2
-            className="text-3xl md:text-4xl font-bold text-gray-900 mb-12"
+            className="font-display text-3xl md:text-4xl font-bold text-gray-900 mb-12"
             style={{ letterSpacing: '-0.02em' }}
           >
             Construction finance questions
@@ -217,7 +217,7 @@ export default function ConstructionPage() {
       <section className="bg-[#1F2933] py-16 md:py-24">
         <div className="max-w-4xl mx-auto px-4 md:px-8 text-center">
           <h2
-            className="text-3xl md:text-4xl font-bold text-white mb-6"
+            className="font-display text-3xl md:text-4xl font-bold text-white mb-6"
             style={{ letterSpacing: '-0.02em' }}
           >
             Planning a new build?

@@ -16,7 +16,7 @@ export default function RefixPage() {
             Refixing & Restructuring
           </p>
           <h1
-            className="text-4xl md:text-5xl font-bold text-gray-900 mb-6"
+            className="font-display text-4xl md:text-5xl font-bold text-gray-900 mb-6"
             style={{ letterSpacing: '-0.02em' }}
           >
             Don't let your mortgage roll over blindly
@@ -37,7 +37,7 @@ export default function RefixPage() {
       <section className="py-16 md:py-24 bg-white">
         <div className="max-w-5xl mx-auto px-4 md:px-8">
           <h2
-            className="text-3xl md:text-4xl font-bold text-gray-900 mb-4"
+            className="font-display text-3xl md:text-4xl font-bold text-gray-900 mb-4"
             style={{ letterSpacing: '-0.02em' }}
           >
             What we'll help with
@@ -52,7 +52,7 @@ export default function RefixPage() {
               <div className="bg-blue-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                 <TrendingUp className="w-6 h-6 text-[#1F2933]" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Rate strategy</h3>
+              <h3 className="font-display text-xl font-bold text-gray-900 mb-3">Rate strategy</h3>
               <p className="text-gray-500">
                 Fixed or floating? For how long? We look at your situation, the current market, and where rates might be heading. We'll help you think through the pros and cons so the choice is yours.
               </p>
@@ -63,7 +63,7 @@ export default function RefixPage() {
               <div className="bg-green-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                 <Shield className="w-6 h-6 text-[#006D77]" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Mix it up—split loans</h3>
+              <h3 className="font-display text-xl font-bold text-gray-900 mb-3">Mix it up—split loans</h3>
               <p className="text-gray-500">
                 You don't have to choose just one. Some clients split their mortgage 50/50 fixed and floating, or maybe 70/30. We'll show you how different splits would work for your situation.
               </p>
@@ -74,7 +74,7 @@ export default function RefixPage() {
               <div className="bg-purple-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                 <Clock className="w-6 h-6 text-[#1F2933]" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Right term length</h3>
+              <h3 className="font-display text-xl font-bold text-gray-900 mb-3">Right term length</h3>
               <p className="text-gray-500">
                 1 year, 2 years, 5 years? Different terms suit different situations. We'll talk through your timeline and what gives you the best balance of rate and flexibility.
               </p>
@@ -85,7 +85,7 @@ export default function RefixPage() {
               <div className="bg-yellow-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                 <AlertCircle className="w-6 h-6 text-[#1F2933]" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Proactive service</h3>
+              <h3 className="font-display text-xl font-bold text-gray-900 mb-3">Proactive service</h3>
               <p className="text-gray-500">
                 We'll reach out about 3 months before your rate expires so you have time to think and decide, not rush into a roll-over. No surprises, no missed opportunities.
               </p>
@@ -98,7 +98,7 @@ export default function RefixPage() {
       <section className="py-16 md:py-24 bg-[#FAF7F0]">
         <div className="max-w-5xl mx-auto px-4 md:px-8">
           <h2
-            className="text-3xl md:text-4xl font-bold text-gray-900 mb-12"
+            className="font-display text-3xl md:text-4xl font-bold text-gray-900 mb-12"
             style={{ letterSpacing: '-0.02em' }}
           >
             How we handle refixing
@@ -114,7 +114,7 @@ export default function RefixPage() {
                 <div className="w-1 h-20 bg-gray-200 mt-4" />
               </div>
               <div className="pb-8">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Rate review</h3>
+                <h3 className="font-display text-xl font-bold text-gray-900 mb-2">Rate review</h3>
                 <p className="text-gray-500 max-w-2xl">
                   We'll pull your current rate, look at what's available now across the market, and talk about where interest rates might go. This gives us a foundation for the strategy chat.
                 </p>
@@ -130,7 +130,7 @@ export default function RefixPage() {
                 <div className="w-1 h-20 bg-gray-200 mt-4" />
               </div>
               <div className="pb-8">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Strategy session</h3>
+                <h3 className="font-display text-xl font-bold text-gray-900 mb-2">Strategy session</h3>
                 <p className="text-gray-500 max-w-2xl">
                   We'll chat about your priorities—whether you want rate certainty, flexibility, or something in between. We'll show you how different splits, terms, and lenders could work. This usually takes one conversation.
                 </p>
@@ -145,7 +145,7 @@ export default function RefixPage() {
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Refix with us</h3>
+                <h3 className="font-display text-xl font-bold text-gray-900 mb-2">Refix with us</h3>
                 <p className="text-gray-500 max-w-2xl">
                   Once you've decided, we'll apply for the new rate with your bank or switch if there's a better option. You'll be settled onto your new rate before your current one ends.
                 </p>
@@ -159,7 +159,7 @@ export default function RefixPage() {
       <section className="py-16 md:py-24 bg-white">
         <div className="max-w-3xl mx-auto px-4 md:px-8">
           <h2
-            className="text-3xl md:text-4xl font-bold text-gray-900 mb-12"
+            className="font-display text-3xl md:text-4xl font-bold text-gray-900 mb-12"
             style={{ letterSpacing: '-0.02em' }}
           >
             Refix questions
@@ -217,7 +217,7 @@ export default function RefixPage() {
       <section className="bg-[#1F2933] py-16 md:py-24">
         <div className="max-w-4xl mx-auto px-4 md:px-8 text-center">
           <h2
-            className="text-3xl md:text-4xl font-bold text-white mb-6"
+            className="font-display text-3xl md:text-4xl font-bold text-white mb-6"
             style={{ letterSpacing: '-0.02em' }}
           >
             Your rate's ending soon?

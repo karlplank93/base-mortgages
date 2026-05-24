@@ -16,7 +16,7 @@ export default function RefinancingPage() {
             Refinancing
           </p>
           <h1
-            className="text-4xl md:text-5xl font-bold text-gray-900 mb-6"
+            className="font-display text-4xl md:text-5xl font-bold text-gray-900 mb-6"
             style={{ letterSpacing: '-0.02em' }}
           >
             Switch lenders and get ahead
@@ -37,7 +37,7 @@ export default function RefinancingPage() {
       <section className="py-16 md:py-24 bg-white">
         <div className="max-w-5xl mx-auto px-4 md:px-8">
           <h2
-            className="text-3xl md:text-4xl font-bold text-gray-900 mb-4"
+            className="font-display text-3xl md:text-4xl font-bold text-gray-900 mb-4"
             style={{ letterSpacing: '-0.02em' }}
           >
             Why refinance?
@@ -52,7 +52,7 @@ export default function RefinancingPage() {
               <div className="bg-green-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                 <DollarSign className="w-6 h-6 text-[#006D77]" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Save money on interest</h3>
+              <h3 className="font-display text-xl font-bold text-gray-900 mb-3">Save money on interest</h3>
               <p className="text-gray-500">
                 Rates move all the time. If other banks are offering better rates than you're on, switching could save you hundreds or thousands in interest. We'll calculate your break fees and show you the real savings.
               </p>
@@ -63,7 +63,7 @@ export default function RefinancingPage() {
               <div className="bg-blue-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                 <TrendingUp className="w-6 h-6 text-[#1F2933]" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Unlock equity</h3>
+              <h3 className="font-display text-xl font-bold text-gray-900 mb-3">Unlock equity</h3>
               <p className="text-gray-500">
                 Your home's gone up in value. You might be able to borrow more at better rates, giving you cash to renovate, invest, or clear other debt. We'll explore this without overextending you.
               </p>
@@ -74,7 +74,7 @@ export default function RefinancingPage() {
               <div className="bg-purple-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                 <Zap className="w-6 h-6 text-[#1F2933]" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Better loan structure</h3>
+              <h3 className="font-display text-xl font-bold text-gray-900 mb-3">Better loan structure</h3>
               <p className="text-gray-500">
                 Maybe your current loan doesn't suit your life anymore. We might split your mortgage into fixed and floating, add a revolving credit facility, or set up offset accounts to cut interest faster.
               </p>
@@ -85,7 +85,7 @@ export default function RefinancingPage() {
               <div className="bg-yellow-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                 <Gift className="w-6 h-6 text-[#1F2933]" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Cashback and perks</h3>
+              <h3 className="font-display text-xl font-bold text-gray-900 mb-3">Cashback and perks</h3>
               <p className="text-gray-500">
                 Many banks offer cashback on refinances. We'll hunt down the best offers available and make sure you get paid to switch. It's like free money in your pocket.
               </p>
@@ -98,7 +98,7 @@ export default function RefinancingPage() {
       <section className="py-16 md:py-24 bg-[#FAF7F0]">
         <div className="max-w-5xl mx-auto px-4 md:px-8">
           <h2
-            className="text-3xl md:text-4xl font-bold text-gray-900 mb-12"
+            className="font-display text-3xl md:text-4xl font-bold text-gray-900 mb-12"
             style={{ letterSpacing: '-0.02em' }}
           >
             The refinance process
@@ -114,7 +114,7 @@ export default function RefinancingPage() {
                 <div className="w-1 h-20 bg-gray-200 mt-4" />
               </div>
               <div className="pb-8">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Review your current mortgage</h3>
+                <h3 className="font-display text-xl font-bold text-gray-900 mb-2">Review your current mortgage</h3>
                 <p className="text-gray-500 max-w-2xl">
                   Send us a copy of your latest mortgage statement or give us permission to pull your details. We'll look at your current loan, interest rate, remaining term, any break fees, and what you're paying.
                 </p>
@@ -130,7 +130,7 @@ export default function RefinancingPage() {
                 <div className="w-1 h-20 bg-gray-200 mt-4" />
               </div>
               <div className="pb-8">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Compare lenders</h3>
+                <h3 className="font-display text-xl font-bold text-gray-900 mb-2">Compare lenders</h3>
                 <p className="text-gray-500 max-w-2xl">
                   We'll shop around and get you rates from all the lenders in the market. We'll show you the real savings after break fees are paid, and highlight any cashback or special offers you're eligible for.
                 </p>
@@ -145,7 +145,7 @@ export default function RefinancingPage() {
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Switch and save</h3>
+                <h3 className="font-display text-xl font-bold text-gray-900 mb-2">Switch and save</h3>
                 <p className="text-gray-500 max-w-2xl">
                   Once you've decided, we'll handle the full application with the new lender, manage the discharge from your current bank, and coordinate with your lawyer. You'll be switched within 2-3 weeks.
                 </p>
@@ -159,7 +159,7 @@ export default function RefinancingPage() {
       <section className="py-16 md:py-24 bg-white">
         <div className="max-w-3xl mx-auto px-4 md:px-8">
           <h2
-            className="text-3xl md:text-4xl font-bold text-gray-900 mb-12"
+            className="font-display text-3xl md:text-4xl font-bold text-gray-900 mb-12"
             style={{ letterSpacing: '-0.02em' }}
           >
             Refinance questions
@@ -217,7 +217,7 @@ export default function RefinancingPage() {
       <section className="bg-[#1F2933] py-16 md:py-24">
         <div className="max-w-4xl mx-auto px-4 md:px-8 text-center">
           <h2
-            className="text-3xl md:text-4xl font-bold text-white mb-6"
+            className="font-display text-3xl md:text-4xl font-bold text-white mb-6"
             style={{ letterSpacing: '-0.02em' }}
           >
             Could you be saving money?

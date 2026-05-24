@@ -99,7 +99,7 @@ export default function ResourcesPage() {
             </span>
           </div>
           <h1
-            className="mb-4 font-bold text-gray-900"
+            className="font-display mb-4 font-bold text-gray-900"
             style={{
               fontSize: 'clamp(2rem, 8vw, 3.5rem)',
               letterSpacing: '-0.02em',
@@ -129,7 +129,7 @@ export default function ResourcesPage() {
                   Featured, {resources[0].category}
                 </span>
                 <h2
-                  className="mb-3 font-bold text-gray-900"
+                  className="font-display mb-3 font-bold text-gray-900"
                   style={{ letterSpacing: '-0.02em', fontSize: '1.5rem' }}
                 >
                   {resources[0].title}
@@ -168,7 +168,7 @@ export default function ResourcesPage() {
                     </span>
 
                     <h3
-                      className="mb-3 font-bold text-gray-900"
+                      className="font-display mb-3 font-bold text-gray-900"
                       style={{
                         letterSpacing: '-0.02em',
                         fontSize: '1.125rem',
@@ -201,7 +201,7 @@ export default function ResourcesPage() {
       <div className="bg-white px-4 py-16 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
           <h2
-            className="mb-4 font-bold text-gray-900"
+            className="font-display mb-4 font-bold text-gray-900"
             style={{
               fontSize: 'clamp(1.5rem, 6vw, 2.25rem)',
               letterSpacing: '-0.02em',
