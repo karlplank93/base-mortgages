@@ -14,7 +14,7 @@ const config: Config = {
         // Deep Teal     #0F4C4F   primary brand
         // Mint          #C7E8DE   light tints
         // Coral Orange  #FF8A5B   CTAs / accents
-        // Warm Cream    #FAF7F0   page background
+        // Warm Linen    #F7F4EE   page background
         // ──────────────────────────────────────────────
 
         // `navy` token = primary dark (headings, dark backgrounds)
@@ -39,8 +39,8 @@ const config: Config = {
         honey:   { DEFAULT: '#C9A063', dark: '#A6803F' },
         sage:    { DEFAULT: '#A8B8B2' },
         charcoal:{ DEFAULT: '#1F2933' },
-        offwhite:{ DEFAULT: '#FAF7F0' },
-        cream:   { DEFAULT: '#FAF7F0', dark: '#E8E4DE' },
+        offwhite:{ DEFAULT: '#F7F4EE' },
+        cream:   { DEFAULT: '#F7F4EE', dark: '#E8E4DE' },
 
         border: {
           DEFAULT: '#E5E7EB',
@@ -48,9 +48,9 @@ const config: Config = {
 
         bg: {
           DEFAULT: '#FFFFFF',
-          light:   '#FAF7F0',
+          light:   '#F7F4EE',
           soft:    '#C7E8DE',
-          trust:   '#FAF7F0',
+          trust:   '#F7F4EE',
         },
 
         text: {
@@ -60,7 +60,7 @@ const config: Config = {
         },
 
         // Backwards-compat aliases
-        sand:   { DEFAULT: '#FAF7F0', dark: '#E8E4DE' },
+        sand:   { DEFAULT: '#F7F4EE', dark: '#E8E4DE' },
         slate:  '#1F2933',
         // Old orange CTA → keep as coral
         orange: { DEFAULT: '#FF8A5B', dark: '#E8723E' },
