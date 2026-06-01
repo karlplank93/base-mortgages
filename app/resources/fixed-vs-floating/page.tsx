@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 
 export const metadata: Metadata = {
@@ -35,6 +36,17 @@ export default function FixedVsFloatingPage() {
             One of the most common questions we get asked. Here's a plain-English breakdown of both options and how to think about the decision.
           </p>
         </div>
+      </div>
+
+      {/* Hero image */}
+      <div className="relative h-72 w-full sm:h-96">
+        <Image
+          src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&q=80"
+          alt="Financial charts and graphs"
+          fill
+          className="object-cover"
+          priority
+        />
       </div>
 
       {/* Content */}

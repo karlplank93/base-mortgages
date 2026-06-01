@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { ArrowRight } from 'lucide-react';
 
 export const metadata: Metadata = {
@@ -14,8 +15,8 @@ interface ResourceCard {
   description: string;
   readTime: number;
   href: string;
-  gradientFrom: string;
-  gradientTo: string;
+  image: string;
+  imageAlt: string;
 }
 
 const resources: ResourceCard[] = [
@@ -27,8 +28,8 @@ const resources: ResourceCard[] = [
       'Everything you need to know about using your KiwiSaver to buy your first home, withdrawal rules, eligibility, and how much you can access.',
     readTime: 8,
     href: '/resources/kiwisaver-first-home',
-    gradientFrom: 'from-teal-400',
-    gradientTo: 'to-teal-600',
+    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
+    imageAlt: 'House keys on a wooden table',
   },
   {
     id: 2,
@@ -38,8 +39,8 @@ const resources: ResourceCard[] = [
       "Many NZ banks offer cashback incentives when you take out a new mortgage. Here's how to make the most of it, and the catch to watch out for.",
     readTime: 5,
     href: '/resources/cashback-explained',
-    gradientFrom: 'from-blue-400',
-    gradientTo: 'to-blue-600',
+    image: 'https://images.unsplash.com/photo-1601597111158-2fceff292cdc?w=800&q=80',
+    imageAlt: 'New Zealand banknotes',
   },
   {
     id: 3,
@@ -49,8 +50,8 @@ const resources: ResourceCard[] = [
       "One of the most common questions we get. Here's a plain-English breakdown of both options and how to decide what suits your situation.",
     readTime: 6,
     href: '/resources/fixed-vs-floating',
-    gradientFrom: 'from-cyan-400',
-    gradientTo: 'to-cyan-600',
+    image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&q=80',
+    imageAlt: 'Financial charts and graphs',
   },
   {
     id: 4,
@@ -60,8 +61,8 @@ const resources: ResourceCard[] = [
       'Your borrowing power depends on more than just your income. We explain the key factors NZ banks use to assess how much you can borrow.',
     readTime: 7,
     href: '/resources/borrowing-power',
-    gradientFrom: 'from-emerald-400',
-    gradientTo: 'to-emerald-600',
+    image: 'https://images.unsplash.com/photo-1554224154-22dec7ec8818?w=800&q=80',
+    imageAlt: 'Calculator and financial documents',
   },
   {
     id: 5,
@@ -71,8 +72,8 @@ const resources: ResourceCard[] = [
       "Thinking about buying an investment property? From LVR rules to entity structures, here's what you need to know before you start.",
     readTime: 10,
     href: '/resources/property-investment-guide',
-    gradientFrom: 'from-violet-400',
-    gradientTo: 'to-violet-600',
+    image: 'https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&q=80',
+    imageAlt: 'Modern apartment buildings',
   },
   {
     id: 6,
@@ -82,8 +83,8 @@ const resources: ResourceCard[] = [
       "Switching lenders could save you thousands, but it's not always the right move. Here's how to weigh up the costs and benefits.",
     readTime: 6,
     href: '/resources/refinancing-guide',
-    gradientFrom: 'from-pink-400',
-    gradientTo: 'to-pink-600',
+    image: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80',
+    imageAlt: 'Person signing a document',
   },
   {
     id: 7,
@@ -93,8 +94,8 @@ const resources: ResourceCard[] = [
       "Pre-approval lets you house hunt with a clear budget and act fast when you find the right property. Here's what the process actually involves.",
     readTime: 5,
     href: '/resources/mortgage-pre-approval',
-    gradientFrom: 'from-orange-400',
-    gradientTo: 'to-orange-600',
+    image: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=800&q=80',
+    imageAlt: 'Handshake between two people',
   },
   {
     id: 8,
@@ -104,8 +105,8 @@ const resources: ResourceCard[] = [
       "When your fixed term expires, you have more options than just accepting your bank's rollover rate. Here's how to get the best outcome.",
     readTime: 5,
     href: '/resources/refix-guide',
-    gradientFrom: 'from-indigo-400',
-    gradientTo: 'to-indigo-600',
+    image: 'https://images.unsplash.com/photo-1506784983877-45594efa4cbe?w=800&q=80',
+    imageAlt: 'Planning calendar and notebook',
   },
 ];
 
@@ -140,10 +141,16 @@ export default function ResourcesPage() {
         <div className="mx-auto max-w-4xl">
           <Link href={resources[0].href}>
             <div className="flex overflow-hidden rounded-2xl border border-gray-100 transition-all hover:shadow-lg">
-              {/* Gradient background */}
-              <div
-                className={`hidden w-1/3 bg-gradient-to-b ${resources[0].gradientFrom} ${resources[0].gradientTo} sm:block`}
-              />
+              {/* Image */}
+              <div className="hidden w-1/3 sm:block relative">
+                <Image
+                  src={resources[0].image}
+                  alt={resources[0].imageAlt}
+                  fill
+                  className="object-cover"
+                  sizes="33vw"
+                />
+              </div>
 
               {/* Content */}
               <div className="w-full bg-gradient-to-br from-gray-50 to-white p-8 sm:w-2/3">
@@ -178,10 +185,16 @@ export default function ResourcesPage() {
             {resources.slice(1).map((resource) => (
               <Link key={resource.id} href={resource.href}>
                 <div className="group h-full overflow-hidden rounded-2xl border border-gray-100 bg-white transition-all hover:shadow-md">
-                  {/* Image placeholder */}
-                  <div
-                    className={`h-40 bg-gradient-to-br ${resource.gradientFrom} ${resource.gradientTo}`}
-                  />
+                  {/* Image */}
+                  <div className="relative h-48">
+                    <Image
+                      src={resource.image}
+                      alt={resource.imageAlt}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                    />
+                  </div>
 
                   {/* Content */}
                   <div className="p-6">

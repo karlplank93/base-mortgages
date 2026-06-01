@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 
 export const metadata: Metadata = {
@@ -35,6 +36,17 @@ export default function MortgagePreApprovalPage() {
             Pre-approval lets you house hunt with a clear budget and act fast when you find the right property. Here's what the process actually involves.
           </p>
         </div>
+      </div>
+
+      {/* Hero image */}
+      <div className="relative h-72 w-full sm:h-96">
+        <Image
+          src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=1200&q=80"
+          alt="Handshake between two people"
+          fill
+          className="object-cover"
+          priority
+        />
       </div>
 
       {/* Content */}

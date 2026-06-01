@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 
 export const metadata: Metadata = {
@@ -35,6 +36,17 @@ export default function CashbackExplainedPage() {
             Refinancing to a new bank can put thousands of dollars back in your pocket — but there's more to the story than the headline number.
           </p>
         </div>
+      </div>
+
+      {/* Hero image */}
+      <div className="relative h-72 w-full sm:h-96">
+        <Image
+          src="https://images.unsplash.com/photo-1601597111158-2fceff292cdc?w=1200&q=80"
+          alt="New Zealand banknotes"
+          fill
+          className="object-cover"
+          priority
+        />
       </div>
 
       {/* Content */}

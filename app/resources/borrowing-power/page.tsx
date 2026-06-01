@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 
 export const metadata: Metadata = {
@@ -35,6 +36,17 @@ export default function BorrowingPowerPage() {
             Your borrowing power depends on a lot more than your salary. Here's what New Zealand banks actually look at when they assess your application.
           </p>
         </div>
+      </div>
+
+      {/* Hero image */}
+      <div className="relative h-72 w-full sm:h-96">
+        <Image
+          src="https://images.unsplash.com/photo-1554224154-22dec7ec8818?w=1200&q=80"
+          alt="Calculator and financial documents"
+          fill
+          className="object-cover"
+          priority
+        />
       </div>
 
       {/* Content */}

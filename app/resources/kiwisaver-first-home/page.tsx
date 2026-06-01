@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 
 export const metadata: Metadata = {
@@ -35,6 +36,17 @@ export default function KiwiSaverGuidePage() {
             Your KiwiSaver could be the key to unlocking your first home deposit. Here's exactly how it works, who qualifies, and what to watch out for.
           </p>
         </div>
+      </div>
+
+      {/* Hero image */}
+      <div className="relative h-72 w-full sm:h-96">
+        <Image
+          src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80"
+          alt="House keys on a wooden table"
+          fill
+          className="object-cover"
+          priority
+        />
       </div>
 
       {/* Content */}

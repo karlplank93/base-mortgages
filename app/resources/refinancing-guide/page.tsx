@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 
 export const metadata: Metadata = {
@@ -35,6 +36,17 @@ export default function RefinancingGuidePage() {
             Switching lenders could save you thousands — but it's not always the right move. Here's how to think through the decision.
           </p>
         </div>
+      </div>
+
+      {/* Hero image */}
+      <div className="relative h-72 w-full sm:h-96">
+        <Image
+          src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200&q=80"
+          alt="Person signing a document"
+          fill
+          className="object-cover"
+          priority
+        />
       </div>
 
       {/* Content */}

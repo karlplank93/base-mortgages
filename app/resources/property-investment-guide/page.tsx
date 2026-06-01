@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 
 export const metadata: Metadata = {
@@ -35,6 +36,17 @@ export default function PropertyInvestmentGuidePage() {
             From LVR rules to entity structures, here's what you need to understand before buying your first investment property in New Zealand.
           </p>
         </div>
+      </div>
+
+      {/* Hero image */}
+      <div className="relative h-72 w-full sm:h-96">
+        <Image
+          src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1200&q=80"
+          alt="Modern apartment buildings"
+          fill
+          className="object-cover"
+          priority
+        />
       </div>
 
       {/* Content */}

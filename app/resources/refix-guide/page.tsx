@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 
 export const metadata: Metadata = {
@@ -35,6 +36,17 @@ export default function RefixGuidePage() {
             When your fixed term expires, you have more options than just accepting your bank's rollover rate. Here's how to get the best outcome.
           </p>
         </div>
+      </div>
+
+      {/* Hero image */}
+      <div className="relative h-72 w-full sm:h-96">
+        <Image
+          src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?w=1200&q=80"
+          alt="Planning calendar and notebook"
+          fill
+          className="object-cover"
+          priority
+        />
       </div>
 
       {/* Content */}
