@@ -85,6 +85,28 @@ const resources: ResourceCard[] = [
     gradientFrom: 'from-pink-400',
     gradientTo: 'to-pink-600',
   },
+  {
+    id: 7,
+    category: 'Guide',
+    title: 'Mortgage Pre-Approval: What It Is and How to Get It',
+    description:
+      "Pre-approval lets you house hunt with a clear budget and act fast when you find the right property. Here's what the process actually involves.",
+    readTime: 5,
+    href: '/resources/mortgage-pre-approval',
+    gradientFrom: 'from-orange-400',
+    gradientTo: 'to-orange-600',
+  },
+  {
+    id: 8,
+    category: 'Guide',
+    title: 'Your Mortgage Is Refixing: What to Do Next',
+    description:
+      "When your fixed term expires, you have more options than just accepting your bank's rollover rate. Here's how to get the best outcome.",
+    readTime: 5,
+    href: '/resources/refix-guide',
+    gradientFrom: 'from-indigo-400',
+    gradientTo: 'to-indigo-600',
+  },
 ];
 
 export default function ResourcesPage() {
