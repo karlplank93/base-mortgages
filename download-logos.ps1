@@ -1,32 +1,47 @@
-# Downloads official bank logo SVGs into public/logos/
-# Run from the project root: powershell -ExecutionPolicy Bypass -File .\download-logos.ps1
-
-$logos = @(
-    @{ name = "anz";      url = "https://upload.wikimedia.org/wikipedia/commons/a/a3/ANZ_logo.svg" },
-    @{ name = "asb";      url = "https://upload.wikimedia.org/wikipedia/commons/7/71/ASB_Bank_logo.svg" },
-    @{ name = "bnz";      url = "https://upload.wikimedia.org/wikipedia/commons/8/8e/BNZ_logo.svg" },
-    @{ name = "westpac";  url = "https://upload.wikimedia.org/wikipedia/commons/5/57/Westpac_logo.svg" },
-    @{ name = "kiwibank"; url = "https://upload.wikimedia.org/wikipedia/commons/a/ab/Kiwibank_logo.svg" },
-    @{ name = "tsb";      url = "https://upload.wikimedia.org/wikipedia/commons/6/69/TSB_Bank_New_Zealand_logo.svg" },
-    @{ name = "sbs";      url = "https://upload.wikimedia.org/wikipedia/commons/3/3f/SBS_Bank_logo.svg" }
-)
+# Downloads real bank logos into public/logos/
+# Run: powershell -ExecutionPolicy Bypass -File .\download-logos.ps1
 
 $dest = Join-Path $PSScriptRoot "public\logos"
 
-foreach ($logo in $logos) {
+# SVG logos (direct from bank websites)
+$svgLogos = @(
+    @{ name = "tsb"; url = "https://www.tsb.co.nz/themes/TSB/logo.svg" }
+)
+
+# PNG logos (will be saved as .png, component updated accordingly)
+$pngLogos = @(
+    @{ name = "westpac"; url = "https://www.westpac.co.nz/_resources/themes/app/dist/images/westpac-logo.png" },
+    @{ name = "anz";     url = "https://www.anz.co.nz/content/dam/anzconz/images/global/anz-logo-blue.png" },
+    @{ name = "asb";     url = "https://www.asb.co.nz/content/dam/asb/images/logo/asb-logo.png" },
+    @{ name = "bnz";     url = "https://www.bnz.co.nz/assets/images/bnz-logo.png" },
+    @{ name = "kiwibank"; url = "https://www.kiwibank.co.nz/assets/images/kiwibank-logo.png" },
+    @{ name = "sbs";     url = "https://www.sbsbank.co.nz/assets/Uploads/sbs-bank-logo.png" }
+)
+
+foreach ($logo in $svgLogos) {
     $outFile = Join-Path $dest "$($logo.name).svg"
-    Write-Host "Downloading $($logo.name)..." -NoNewline
+    Write-Host "Downloading $($logo.name).svg..." -NoNewline
     try {
         Invoke-WebRequest -Uri $logo.url -OutFile $outFile -UseBasicParsing -TimeoutSec 10
         $bytes = (Get-Item $outFile).Length
-        if ($bytes -gt 500) {
-            Write-Host " OK ($bytes bytes)" -ForegroundColor Green
-        } else {
-            Write-Host " SMALL - may have failed ($bytes bytes)" -ForegroundColor Yellow
-        }
-    } catch {
-        Write-Host " FAILED: $_" -ForegroundColor Red
-    }
+        Write-Host " OK ($bytes bytes)" -ForegroundColor Green
+    } catch { Write-Host " FAILED: $_" -ForegroundColor Red }
 }
 
-Write-Host "`nDone. Check public\logos\ for the downloaded files."
+foreach ($logo in $pngLogos) {
+    $outFile = Join-Path $dest "$($logo.name).png"
+    Write-Host "Downloading $($logo.name).png..." -NoNewline
+    try {
+        Invoke-WebRequest -Uri $logo.url -OutFile $outFile -UseBasicParsing -TimeoutSec 10
+        $bytes = (Get-Item $outFile).Length
+        if ($bytes -gt 1000) {
+            Write-Host " OK ($bytes bytes)" -ForegroundColor Green
+        } else {
+            Write-Host " Too small - URL may be wrong ($bytes bytes)" -ForegroundColor Yellow
+            Remove-Item $outFile -ErrorAction SilentlyContinue
+        }
+    } catch { Write-Host " FAILED: $_" -ForegroundColor Red }
+}
+
+Write-Host "`nDone. Files in public\logos\:"
+Get-ChildItem $dest | Select-Object Name, Length | Format-Table
