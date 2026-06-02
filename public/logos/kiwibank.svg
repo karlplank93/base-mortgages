@@ -1,10 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 190 36">
-  <!-- Kiwibank: green kiwi bird silhouette + black wordmark -->
-  <!-- Kiwi bird simplified shape -->
-  <g transform="translate(2,4) scale(0.28)">
-    <path d="M 72 0 C 48 0 24 16 12 40 C 4 56 0 72 0 88 C 0 104 8 114 20 114 C 28 114 34 110 38 104 C 34 96 32 86 32 76 C 32 52 44 30 64 18 C 68 14 70 8 68 4 Z" fill="#00A651"/>
-    <path d="M 60 16 C 40 26 28 50 28 76 C 28 90 32 104 40 112 C 46 106 54 102 64 102 C 80 102 94 112 100 128 C 106 120 110 108 110 94 C 110 60 88 30 60 16 Z" fill="#00A651"/>
-    <ellipse cx="68" cy="8" rx="4" ry="5" fill="#1A1A1A"/>
-  </g>
-  <text x="40" y="29" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="24" fill="#1A1A1A">Kiwibank</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 40" fill="none">
+  <rect width="160" height="40" rx="6" fill="#00704A"/>
+  <text x="80" y="27" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="white" text-anchor="middle" letter-spacing="1">Kiwibank</text>
 </svg>

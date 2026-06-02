@@ -33,7 +33,7 @@ export default function BankStrip() {
               key={bank.name}
               src={bank.src}
               alt={bank.name}
-              className={`${bank.height} w-auto opacity-75 hover:opacity-100 transition-opacity`}
+              className={`${bank.height} w-auto opacity-90 hover:opacity-100 transition-opacity`}
             />
           ))}
           <span className="text-sm font-medium" style={{ color: '#A8B8B2' }}>
