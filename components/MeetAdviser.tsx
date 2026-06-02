@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { Phone, Mail, Calendar } from 'lucide-react';
 
 const stats: { value: string; label: string }[] = [
-  { value: '4.9★', label: 'Google Reviews from NZ homeowners' },
+  { value: '5.0★', label: 'Google Reviews from NZ homeowners' },
   { value: '30+',  label: 'Lenders on our panel' },
   { value: '24hr', label: 'Average response time' },
   { value: '$0',   label: 'Cost to you for our advice' },

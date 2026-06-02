@@ -61,10 +61,10 @@ export default function Hero() {
                 <span className="text-yellow-400 text-base tracking-wider">★★★★★</span>
                 <div className="flex flex-col leading-tight">
                   <span className="text-sm font-semibold" style={{ color: '#1F2933' }}>
-                    4.9 Google Rating
+                    5.0 Google Rating
                   </span>
                   <span className="text-xs" style={{ color: '#6B7280' }}>
-                    From 39 reviews
+                    From 43 reviews
                   </span>
                 </div>
               </a>

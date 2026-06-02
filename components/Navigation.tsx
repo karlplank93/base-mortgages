@@ -36,7 +36,7 @@ export default function Navigation() {
         borderBottom: 'none',
       }}
     >
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto pl-3 pr-6 lg:pl-4 lg:pr-8">
         <div className="flex items-center justify-between" style={{ height: '96px' }}>
 
           {/* Logo */}

@@ -62,7 +62,7 @@ export default function WhyUs() {
             />
             <div className="relative grid grid-cols-2 gap-4 mb-6">
               {[
-                { stat: '4.9★', label: '39 Google Reviews from NZ homeowners' },
+                { stat: '5.0★', label: '43 Google Reviews from NZ homeowners' },
                 { stat: '30+',  label: 'Lenders on our panel' },
                 { stat: '24hr', label: 'Average response time' },
                 { stat: '$0',   label: 'Cost to you for our advice' },

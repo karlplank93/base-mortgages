@@ -1,7 +1,7 @@
 const metrics = [
   { value: '$36M+', label: 'Loans Arranged' },
   { value: '30+',   label: 'Banks & Lenders' },
-  { value: '4.9★',  label: 'Google Rating' },
+  { value: '5.0★',  label: 'Google Rating' },
 ];
 
 const banks = ['ANZ', 'ASB', 'BNZ', 'Westpac', 'Kiwibank'];

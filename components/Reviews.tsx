@@ -37,7 +37,7 @@ export default function Reviews() {
             rel="noopener noreferrer"
             className="flex items-center gap-3 hover:opacity-80 transition-opacity"
           >
-            <div className="text-3xl font-display font-bold" style={{ color: '#006D77' }}>4.9</div>
+            <div className="text-3xl font-display font-bold" style={{ color: '#006D77' }}>5.0</div>
             <div>
               <div className="text-yellow-400 text-sm tracking-wider">★★★★★</div>
               <div className="text-xs" style={{ color: '#6B7280' }}>View on Google &rarr;</div>
