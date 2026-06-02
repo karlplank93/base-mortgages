@@ -1,39 +1,19 @@
 const banks: { name: string; src: string; height: string }[] = [
-  {
-    name: 'ANZ',
-    src: 'https://www.anz.co.nz/content/dam/anzconz/images/logos/anz-logo.svg',
-    height: 'h-7',
-  },
-  {
-    name: 'ASB',
-    src: 'https://www.asb.co.nz/etc/designs/asb-global/asb/images/logo.svg',
-    height: 'h-8',
-  },
-  {
-    name: 'BNZ',
-    src: 'https://www.bnz.co.nz/assets/images/bnz-logo.svg',
-    height: 'h-7',
-  },
+  { name: 'ANZ',      src: '/logos/anz.svg',      height: 'h-7' },
+  { name: 'ASB',      src: '/logos/asb.svg',      height: 'h-7' },
+  { name: 'BNZ',      src: '/logos/bnz.svg',      height: 'h-7' },
   {
     name: 'Westpac',
     src: 'https://www.westpac.co.nz/_resources/themes/app/dist/images/westpac-logo.png',
     height: 'h-8',
   },
-  {
-    name: 'Kiwibank',
-    src: 'https://www.kiwibank.co.nz/assets/images/kiwibank-logo.svg',
-    height: 'h-8',
-  },
+  { name: 'Kiwibank', src: '/logos/kiwibank.svg', height: 'h-7' },
   {
     name: 'TSB',
     src: 'https://www.tsb.co.nz/themes/TSB/logo.svg',
-    height: 'h-8',
+    height: 'h-9',
   },
-  {
-    name: 'SBS Bank',
-    src: 'https://www.sbsbank.co.nz/assets/Uploads/sbs-bank-logo-colour.png',
-    height: 'h-7',
-  },
+  { name: 'SBS Bank', src: '/logos/sbs.svg',      height: 'h-7' },
 ];
 
 export default function BankStrip() {
