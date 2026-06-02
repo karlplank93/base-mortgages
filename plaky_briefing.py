@@ -177,17 +177,32 @@ def main():
 
     print(f"Fetching Plaky data...")
 
-    # Try to discover the correct endpoint
-    for test_path in ["/workspaces", "/workspace", "/spaces", "/boards", "/me"]:
+    # Try different auth header formats
+    auth_attempts = [
+        {"Authorization": f"Bearer {PLAKY_API_KEY}"},
+        {"Authorization": f"Token {PLAKY_API_KEY}"},
+        {"X-API-Key": PLAKY_API_KEY},
+        {"api-key": PLAKY_API_KEY},
+        {"Authorization": PLAKY_API_KEY},
+    ]
+    working_headers = None
+    for attempt in auth_attempts:
         try:
-            result = get(test_path)
-            print(f"✅ Found working endpoint: {test_path}")
-            print(json.dumps(result, indent=2)[:500])
-            break
+            r = requests.get(f"{BASE_URL}/workspaces", headers={**attempt, "Content-Type": "application/json"}, timeout=15)
+            if r.status_code == 200:
+                print(f"✅ Auth works with: {list(attempt.keys())[0]}")
+                print(r.text[:500])
+                working_headers = attempt
+                break
+            else:
+                print(f"   {list(attempt.keys())[0]} → {r.status_code}")
         except Exception as e:
-            print(f"   {test_path} → {e}")
+            print(f"   {list(attempt.keys())[0]} → {e}")
 
-    return  # Remove this line once correct endpoint is found
+    if not working_headers:
+        print("\n❌ No auth format worked. The API key may be incorrect or expired.")
+        print("   Please check your Plaky API key in: Plaky → Profile → Preferences → Advanced → Manage API keys")
+        return
 
     try:
         workspaces = get("/workspaces")
