@@ -14,6 +14,7 @@ To schedule it daily at 8am, run:
 """
 
 import requests
+import json
 import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
@@ -22,12 +23,12 @@ from datetime import datetime, timezone, timedelta
 # ── CONFIG ────────────────────────────────────────────────
 PLAKY_API_KEY    = "plk_ee6fc9214f424b4d8fdbe59d5823bae9"
 OUTLOOK_ADDRESS  = "karl@basemortgages.co.nz"
-OUTLOOK_PASSWORD = "PASTE_YOUR_OUTLOOK_PASSWORD_HERE" # Your Outlook/Microsoft 365 password
+OUTLOOK_PASSWORD = "Mabel@123" # Your Outlook/Microsoft 365 password
 TO_EMAIL         = "karl@basemortgages.co.nz"
 # ─────────────────────────────────────────────────────────
 
 BASE_URL = "https://api.plaky.com/v1"
-HEADERS  = {"Authorization": f"Token {PLAKY_API_KEY}", "Content-Type": "application/json"}
+HEADERS  = {"X-API-Key": PLAKY_API_KEY, "Content-Type": "application/json"}
 
 TEAL  = "#006D77"
 RED   = "#DC2626"
@@ -175,6 +176,18 @@ def main():
     week_end  = now + timedelta(days=7)
 
     print(f"Fetching Plaky data...")
+
+    # Try to discover the correct endpoint
+    for test_path in ["/workspaces", "/workspace", "/spaces", "/boards", "/me"]:
+        try:
+            result = get(test_path)
+            print(f"✅ Found working endpoint: {test_path}")
+            print(json.dumps(result, indent=2)[:500])
+            break
+        except Exception as e:
+            print(f"   {test_path} → {e}")
+
+    return  # Remove this line once correct endpoint is found
 
     try:
         workspaces = get("/workspaces")
