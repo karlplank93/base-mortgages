@@ -1,11 +1,39 @@
-const banks: { name: string; file: string }[] = [
-  { name: 'ANZ',      file: '/logos/anz.svg' },
-  { name: 'ASB',      file: '/logos/asb.svg' },
-  { name: 'BNZ',      file: '/logos/bnz.svg' },
-  { name: 'Westpac',  file: '/logos/westpac.svg' },
-  { name: 'Kiwibank', file: '/logos/kiwibank.svg' },
-  { name: 'TSB',      file: '/logos/tsb.svg' },
-  { name: 'SBS',      file: '/logos/sbs.svg' },
+const banks: { name: string; src: string; height: string }[] = [
+  {
+    name: 'ANZ',
+    src: 'https://www.anz.co.nz/content/dam/anzconz/images/logos/anz-logo.svg',
+    height: 'h-7',
+  },
+  {
+    name: 'ASB',
+    src: 'https://www.asb.co.nz/etc/designs/asb-global/asb/images/logo.svg',
+    height: 'h-8',
+  },
+  {
+    name: 'BNZ',
+    src: 'https://www.bnz.co.nz/assets/images/bnz-logo.svg',
+    height: 'h-7',
+  },
+  {
+    name: 'Westpac',
+    src: 'https://www.westpac.co.nz/_resources/themes/app/dist/images/westpac-logo.png',
+    height: 'h-8',
+  },
+  {
+    name: 'Kiwibank',
+    src: 'https://www.kiwibank.co.nz/assets/images/kiwibank-logo.svg',
+    height: 'h-8',
+  },
+  {
+    name: 'TSB',
+    src: 'https://www.tsb.co.nz/themes/TSB/logo.svg',
+    height: 'h-8',
+  },
+  {
+    name: 'SBS Bank',
+    src: 'https://www.sbsbank.co.nz/assets/Uploads/sbs-bank-logo-colour.png',
+    height: 'h-7',
+  },
 ];
 
 export default function BankStrip() {
@@ -23,9 +51,9 @@ export default function BankStrip() {
           {banks.map((bank) => (
             <img
               key={bank.name}
-              src={bank.file}
+              src={bank.src}
               alt={bank.name}
-              className="h-8 w-auto opacity-80 hover:opacity-100 transition-opacity"
+              className={`${bank.height} w-auto opacity-75 hover:opacity-100 transition-opacity`}
             />
           ))}
           <span className="text-sm font-medium" style={{ color: '#A8B8B2' }}>
