@@ -4,32 +4,39 @@ import { useEffect, useRef, useState } from 'react';
 
 const reviews = [
   {
-    name: 'James & Tara',
-    role: 'First Home Buyers, Auckland',
-    text: 'Karl made the whole process so straightforward. We were completely overwhelmed as first home buyers — he broke everything down, got us a great rate, and was always available to answer questions.',
-    initials: 'JT',
+    name: 'Atene Andrews',
+    role: 'Property Buyer',
+    initials: 'AA',
     featured: true,
+    text: 'Karl was committed and passionate about what services, experience and opportunities he could offer to make our property options become a reality. Karl was responsive and always proactive in presenting thoughts and alternatives that we had not previously considered. I would highly recommend Karl to any and all property seekers for his insightful, respectful and professional advice.',
   },
   {
-    name: 'Mark C.',
-    role: 'Property Investor, Wellington',
-    text: 'We refinanced three properties with Base Mortgages and saved significantly across the portfolio. The strategic advice on splitting fixed terms was something no bank had ever offered us.',
-    initials: 'MC',
+    name: 'Vinay Panicker',
+    role: 'Local Guide',
+    initials: 'VP',
     featured: false,
+    text: 'I would like to sincerely thank Karl Plank for his honest and genuine advice. What really stood out to me was that he took the time to guide me in the right direction, even when there was no personal or financial benefit for him. Karl demonstrated integrity, transparency, and a true commitment to helping people make informed decisions.',
   },
   {
-    name: 'Sarah R.',
-    role: 'Self-Employed, Christchurch',
-    text: "I'd been turned down by two banks and thought my chances were gone. Base Mortgages found a solution I didn't know existed and had me approved within a week. Incredible service.",
-    initials: 'SR',
+    name: 'Kelly Smith',
+    role: 'First Home Buyer',
+    initials: 'KS',
     featured: false,
+    text: 'First time home buyers and the process was initially a bit daunting, until Karl started helping us. We got pre-approval fast, a good interest rate and a better cashback on our mortgage. The process was easy and stress free. Very happy customers!',
   },
   {
-    name: 'David & Amy',
-    role: 'Refinancing, Auckland',
-    text: 'Switched lenders through Base Mortgages and saved over $4,000 in the first year alone. Fast, excellent communication, and Karl clearly knew his stuff.',
-    initials: 'DA',
+    name: 'Riaz Unwala',
+    role: 'Local Guide',
+    initials: 'RU',
     featured: false,
+    text: 'Awesome service, great knowledge and extremely friendly.',
+  },
+  {
+    name: 'Timothy Mccallum',
+    role: 'Local Guide',
+    initials: 'TM',
+    featured: false,
+    text: 'Karl is easy to deal with and makes the process quick and trouble free. Would recommend to everyone as I have done already with our friends.',
   },
 ];
 
@@ -37,7 +44,7 @@ function Stars() {
   return (
     <div style={{ display: 'flex', gap: 2 }}>
       {[...Array(5)].map((_, i) => (
-        <svg key={i} width="14" height="14" viewBox="0 0 24 24" fill="#FBBF24">
+        <svg key={i} width="13" height="13" viewBox="0 0 24 24" fill="#FBBF24">
           <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
         </svg>
       ))}
@@ -63,7 +70,7 @@ export default function Reviews() {
   useEffect(() => {
     const obs = new IntersectionObserver(
       ([entry]) => { if (entry.isIntersecting) setVisible(true); },
-      { threshold: 0.15 }
+      { threshold: 0.1 }
     );
     if (ref.current) obs.observe(ref.current);
     return () => obs.disconnect();
@@ -74,7 +81,7 @@ export default function Reviews() {
       background: 'linear-gradient(160deg, #0D1F2D 0%, #0A3040 50%, #0D1F2D 100%)',
       padding: '80px 24px',
     }}>
-      <div style={{ maxWidth: 1100, margin: '0 auto' }}>
+      <div style={{ maxWidth: 1200, margin: '0 auto' }}>
 
         {/* Header */}
         <div style={{
@@ -97,13 +104,7 @@ export default function Reviews() {
             <Stars />
           </div>
 
-          <h2 style={{
-            color: '#fff',
-            fontSize: 'clamp(28px, 4vw, 42px)',
-            fontWeight: 800,
-            lineHeight: 1.15,
-            margin: '0 0 14px',
-          }}>
+          <h2 className="text-4xl md:text-5xl font-bold text-white leading-tight" style={{ letterSpacing: '-0.02em', marginBottom: 14 }}>
             {"Don't just take our word for it"}
           </h2>
           <p style={{ color: 'rgba(255,255,255,0.5)', fontSize: 17, maxWidth: 440, margin: '0 auto' }}>
@@ -114,8 +115,8 @@ export default function Reviews() {
         {/* Cards */}
         <div style={{
           display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))',
-          gap: 20,
+          gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
+          gap: 18,
         }}>
           {reviews.map((r, i) => (
             <div
@@ -124,10 +125,10 @@ export default function Reviews() {
                 background: r.featured ? 'rgba(39,193,183,0.1)' : 'rgba(255,255,255,0.04)',
                 border: r.featured ? '1px solid rgba(39,193,183,0.35)' : '1px solid rgba(255,255,255,0.08)',
                 borderRadius: 20,
-                padding: '26px 24px',
+                padding: '24px 22px',
                 display: 'flex',
                 flexDirection: 'column',
-                gap: 14,
+                gap: 12,
                 opacity: visible ? 1 : 0,
                 transform: visible ? 'translateY(0)' : 'translateY(28px)',
                 transition: `opacity 0.55s ease ${0.1 + i * 0.1}s, transform 0.55s ease ${0.1 + i * 0.1}s`,
@@ -135,10 +136,10 @@ export default function Reviews() {
             >
               <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
                 <div style={{
-                  width: 46, height: 46, borderRadius: '50%',
+                  width: 44, height: 44, borderRadius: '50%',
                   background: r.featured ? '#27C1B7' : 'rgba(255,255,255,0.12)',
                   display: 'flex', alignItems: 'center', justifyContent: 'center',
-                  fontSize: 14, fontWeight: 700,
+                  fontSize: 13, fontWeight: 700,
                   color: r.featured ? '#0D1F2D' : '#fff',
                   flexShrink: 0,
                   border: r.featured ? 'none' : '1.5px solid rgba(255,255,255,0.15)',
@@ -151,19 +152,19 @@ export default function Reviews() {
                 </div>
               </div>
 
-              <div style={{ color: '#27C1B7', fontSize: 36, lineHeight: 1, opacity: 0.4, marginBottom: -8 }}>&ldquo;</div>
+              <div style={{ color: '#27C1B7', fontSize: 32, lineHeight: 1, opacity: 0.35, marginBottom: -6 }}>&ldquo;</div>
 
               <p style={{
                 color: 'rgba(255,255,255,0.72)',
-                fontSize: 13.5,
-                lineHeight: 1.72,
+                fontSize: 13,
+                lineHeight: 1.75,
                 flex: 1,
                 margin: 0,
               }}>
                 {r.text}
               </p>
 
-              <div style={{ color: 'rgba(255,255,255,0.3)', fontSize: 12 }}>{r.role}</div>
+              <div style={{ color: 'rgba(255,255,255,0.28)', fontSize: 11 }}>{r.role}</div>
             </div>
           ))}
         </div>
@@ -172,7 +173,7 @@ export default function Reviews() {
         <div style={{
           textAlign: 'center', marginTop: 48,
           opacity: visible ? 1 : 0,
-          transition: 'opacity 0.6s ease 0.6s',
+          transition: 'opacity 0.6s ease 0.65s',
         }}>
           <a
             href="https://share.google/yRmM1i4FL0kiBMf5O"
