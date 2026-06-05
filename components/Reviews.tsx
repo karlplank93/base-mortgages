@@ -13,30 +13,35 @@ const photos: Record<string, string> = {
 const reviews = [
   {
     name: 'Atene Andrews',
+    descriptor: 'Property Investor',
     photo: 'atene',
     text: 'Proactive, insightful and genuinely committed to making our property goals a reality. Always responsive and presenting alternatives we had not previously considered.',
     featured: false,
   },
   {
     name: 'Riaz Unwala',
+    descriptor: 'Property Investor',
     photo: 'riaz',
     text: 'Awesome service, great knowledge and extremely friendly.',
     featured: false,
   },
   {
     name: 'Kelly Smith',
+    descriptor: 'First Home Buyer',
     photo: 'kelly',
-    text: 'First time home buyers — Karl got us pre-approval fast, a great interest rate and better cashback. The process was easy and stress free. Very happy customers!',
+    text: 'Karl got us pre-approval fast, a great interest rate and better cashback. The process was easy and stress free. Very happy customers!',
     featured: false,
   },
   {
     name: 'Vinay Panicker',
+    descriptor: 'Refinancing',
     photo: 'vinay',
     text: "Karl guided me in the right direction even when there was no financial benefit for him. Integrity, transparency, and genuine commitment to his clients.",
     featured: true,
   },
   {
     name: 'Timothy Mccallum',
+    descriptor: 'Refinancing',
     photo: 'timothy',
     text: 'Easy to deal with, makes the process quick and trouble free. Would recommend to everyone — already have with our friends.',
     featured: false,
@@ -80,17 +85,17 @@ export default function Reviews() {
   }, []);
 
   return (
-    <section ref={ref} style={{ position: 'relative', background: '#FBF0D9', overflow: 'hidden' }}>
+    <section ref={ref} style={{ position: 'relative', background: '#C9A063', overflow: 'hidden' }}>
       {/* Top curve */}
       <div style={{ position: 'absolute', top: 0, left: 0, right: 0, lineHeight: 0 }}>
         <svg viewBox="0 0 1440 60" preserveAspectRatio="none" style={{ width: '100%', height: 60, display: 'block' }}>
-          <path d="M0,0 C360,60 1080,60 1440,0 L1440,0 L0,0 Z" fill="#F7F4EE" />
+          <path d="M0,0 C360,60 1080,60 1440,0 L1440,0 L0,0 Z" fill="#FAF7F0" />
         </svg>
       </div>
       {/* Bottom curve */}
       <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, lineHeight: 0 }}>
         <svg viewBox="0 0 1440 60" preserveAspectRatio="none" style={{ width: '100%', height: 60, display: 'block' }}>
-          <path d="M0,60 C360,0 1080,0 1440,60 L1440,60 L0,60 Z" fill="#F7F4EE" />
+          <path d="M0,60 C360,0 1080,0 1440,60 L1440,60 L0,60 Z" fill="#FAF7F0" />
         </svg>
       </div>
 
@@ -110,7 +115,7 @@ export default function Reviews() {
           }}>
             <GoogleIcon />
             <span style={{ color: '#1F2933', fontSize: 13, fontWeight: 700 }}>
-              Rated <strong>5.0</strong> from 44 reviews
+              5.0 stars · 44 Google reviews
             </span>
             <Stars />
           </div>
