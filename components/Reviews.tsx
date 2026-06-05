@@ -161,6 +161,9 @@ export default function Reviews() {
               <p style={{ color: r.featured ? 'rgba(255,255,255,0.85)' : '#4B5563', fontSize: 13, lineHeight: 1.75, flex: 1, margin: 0 }}>
                 {r.text}
               </p>
+              <div style={{ color: r.featured ? 'rgba(255,255,255,0.45)' : '#C9A063', fontSize: 11, fontWeight: 700, letterSpacing: '0.06em', textTransform: 'uppercase' }}>
+                {r.descriptor}
+              </div>
             </div>
           ))}
         </div>
