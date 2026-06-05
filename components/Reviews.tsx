@@ -14,7 +14,7 @@ const reviews = [
   {
     name: 'Atene Andrews',
     photo: 'atene',
-    text: 'Proactive, insightful and genuinely committed to making our property goals a reality. Karl was responsive and always presenting alternatives we had not previously considered.',
+    text: 'Proactive, insightful and genuinely committed to making our property goals a reality. Always responsive and presenting alternatives we had not previously considered.',
     featured: false,
   },
   {
@@ -26,19 +26,19 @@ const reviews = [
   {
     name: 'Kelly Smith',
     photo: 'kelly',
-    text: 'First time home buyers and the process was initially a bit daunting, until Karl started helping us. We got pre-approval fast, a good interest rate and a better cashback. The process was easy and stress free.',
+    text: 'First time home buyers — Karl got us pre-approval fast, a great interest rate and better cashback. The process was easy and stress free. Very happy customers!',
     featured: false,
   },
   {
     name: 'Vinay Panicker',
     photo: 'vinay',
-    text: 'Karl took the time to guide me in the right direction, even when there was no financial benefit for him. Rare to find someone who puts the client'\''s best interests above everything else. Integrity, transparency, and genuine commitment.',
+    text: "Karl guided me in the right direction even when there was no financial benefit for him. Integrity, transparency, and genuine commitment to his clients.",
     featured: true,
   },
   {
     name: 'Timothy Mccallum',
     photo: 'timothy',
-    text: 'Karl is easy to deal with and makes the process quick and trouble free. Would recommend to everyone — already have with our friends.',
+    text: 'Easy to deal with, makes the process quick and trouble free. Would recommend to everyone — already have with our friends.',
     featured: false,
   },
 ];
@@ -80,14 +80,13 @@ export default function Reviews() {
   }, []);
 
   return (
-    <section ref={ref} style={{ position: 'relative', background: '#FDF3E3', overflow: 'hidden' }}>
+    <section ref={ref} style={{ position: 'relative', background: '#FBF0D9', overflow: 'hidden' }}>
       {/* Top curve */}
       <div style={{ position: 'absolute', top: 0, left: 0, right: 0, lineHeight: 0 }}>
         <svg viewBox="0 0 1440 60" preserveAspectRatio="none" style={{ width: '100%', height: 60, display: 'block' }}>
           <path d="M0,0 C360,60 1080,60 1440,0 L1440,0 L0,0 Z" fill="#F7F4EE" />
         </svg>
       </div>
-
       {/* Bottom curve */}
       <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, lineHeight: 0 }}>
         <svg viewBox="0 0 1440 60" preserveAspectRatio="none" style={{ width: '100%', height: 60, display: 'block' }}>
@@ -96,7 +95,6 @@ export default function Reviews() {
       </div>
 
       <div style={{ maxWidth: 1200, margin: '0 auto', padding: '80px 24px', position: 'relative' }}>
-
         {/* Header */}
         <div style={{
           textAlign: 'center', marginBottom: 52,
@@ -106,10 +104,8 @@ export default function Reviews() {
         }}>
           <div style={{
             display: 'inline-flex', alignItems: 'center', gap: 8,
-            background: 'white',
-            border: '1px solid rgba(0,0,0,0.08)',
-            borderRadius: 999, padding: '7px 18px',
-            marginBottom: 20,
+            background: 'white', border: '1px solid rgba(0,0,0,0.08)',
+            borderRadius: 999, padding: '7px 18px', marginBottom: 20,
             boxShadow: '0 1px 4px rgba(0,0,0,0.07)',
           }}>
             <GoogleIcon />
@@ -118,12 +114,9 @@ export default function Reviews() {
             </span>
             <Stars />
           </div>
-
           <h2 className="font-display font-bold text-gray-900" style={{
-            fontSize: 'clamp(28px, 4vw, 42px)',
-            lineHeight: 1.15,
-            letterSpacing: '-0.02em',
-            margin: '0 0 14px',
+            fontSize: 'clamp(28px, 4vw, 42px)', lineHeight: 1.15,
+            letterSpacing: '-0.02em', margin: '0 0 14px',
           }}>
             {"Don't just take our word for it"}
           </h2>
@@ -139,56 +132,28 @@ export default function Reviews() {
           gap: 18,
         }}>
           {reviews.map((r, i) => (
-            <div
-              key={r.name}
-              style={{
-                background: r.featured ? '#006D77' : 'white',
-                borderRadius: 20,
-                padding: '24px 22px',
-                display: 'flex',
-                flexDirection: 'column',
-                gap: 12,
-                boxShadow: r.featured
-                  ? '0 8px 32px rgba(0,109,119,0.25)'
-                  : '0 2px 12px rgba(0,0,0,0.07)',
-                opacity: visible ? 1 : 0,
-                transform: visible ? 'translateY(0)' : 'translateY(28px)',
-                transition: `opacity 0.55s ease ${0.1 + i * 0.1}s, transform 0.55s ease ${0.1 + i * 0.1}s`,
-              }}
-            >
+            <div key={r.name} style={{
+              background: r.featured ? '#006D77' : 'white',
+              borderRadius: 20, padding: '24px 22px',
+              display: 'flex', flexDirection: 'column', gap: 12,
+              boxShadow: r.featured ? '0 8px 32px rgba(0,109,119,0.25)' : '0 2px 12px rgba(0,0,0,0.07)',
+              opacity: visible ? 1 : 0,
+              transform: visible ? 'translateY(0)' : 'translateY(28px)',
+              transition: `opacity 0.55s ease ${0.1 + i * 0.1}s, transform 0.55s ease ${0.1 + i * 0.1}s`,
+            }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-                <img
-                  src={photos[r.photo]}
-                  alt={r.name}
-                  style={{
-                    width: 46, height: 46,
-                    borderRadius: '50%',
-                    objectFit: 'cover',
-                    border: r.featured ? '2px solid rgba(255,255,255,0.3)' : '2px solid #E5E7EB',
-                    flexShrink: 0,
-                  }}
-                />
+                <img src={photos[r.photo]} alt={r.name} style={{
+                  width: 46, height: 46, borderRadius: '50%', objectFit: 'cover',
+                  border: r.featured ? '2px solid rgba(255,255,255,0.3)' : '2px solid #E5E7EB',
+                  flexShrink: 0,
+                }} />
                 <div>
-                  <div style={{
-                    color: r.featured ? 'white' : '#1F2933',
-                    fontSize: 14, fontWeight: 700, marginBottom: 3,
-                  }}>{r.name}</div>
+                  <div style={{ color: r.featured ? 'white' : '#1F2933', fontSize: 14, fontWeight: 700, marginBottom: 3 }}>{r.name}</div>
                   <Stars />
                 </div>
               </div>
-
-              <div style={{
-                color: r.featured ? 'rgba(255,255,255,0.4)' : '#C9A063',
-                fontSize: 32, lineHeight: 1, marginBottom: -6,
-              }}>&ldquo;</div>
-
-              <p style={{
-                color: r.featured ? 'rgba(255,255,255,0.85)' : '#4B5563',
-                fontSize: 13,
-                lineHeight: 1.75,
-                flex: 1,
-                margin: 0,
-              }}>
+              <div style={{ color: r.featured ? 'rgba(255,255,255,0.4)' : '#C9A063', fontSize: 32, lineHeight: 1, marginBottom: -6 }}>&ldquo;</div>
+              <p style={{ color: r.featured ? 'rgba(255,255,255,0.85)' : '#4B5563', fontSize: 13, lineHeight: 1.75, flex: 1, margin: 0 }}>
                 {r.text}
               </p>
             </div>
@@ -196,24 +161,13 @@ export default function Reviews() {
         </div>
 
         {/* CTA */}
-        <div style={{
-          textAlign: 'center', marginTop: 48,
-          opacity: visible ? 1 : 0,
-          transition: 'opacity 0.6s ease 0.65s',
-        }}>
-          <a
-            href="https://share.google/yRmM1i4FL0kiBMf5O"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{
-              display: 'inline-flex', alignItems: 'center', gap: 8,
-              background: '#006D77', color: 'white',
-              fontSize: 15, fontWeight: 600,
-              textDecoration: 'none',
-              borderRadius: 40, padding: '13px 28px',
-              boxShadow: '0 4px 16px rgba(0,109,119,0.3)',
-            }}
-          >
+        <div style={{ textAlign: 'center', marginTop: 48, opacity: visible ? 1 : 0, transition: 'opacity 0.6s ease 0.65s' }}>
+          <a href="https://share.google/yRmM1i4FL0kiBMf5O" target="_blank" rel="noopener noreferrer" style={{
+            display: 'inline-flex', alignItems: 'center', gap: 8,
+            background: '#006D77', color: 'white', fontSize: 15, fontWeight: 600,
+            textDecoration: 'none', borderRadius: 40, padding: '13px 28px',
+            boxShadow: '0 4px 16px rgba(0,109,119,0.3)',
+          }}>
             <GoogleIcon />
             Read all 44 reviews on Google
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5">
@@ -221,7 +175,6 @@ export default function Reviews() {
             </svg>
           </a>
         </div>
-
       </div>
     </section>
   );
