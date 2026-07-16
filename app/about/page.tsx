@@ -18,7 +18,7 @@ export default function AboutPage() {
     <div className="bg-white">
 
       {/* Hero */}
-      <section className="py-20 px-6 lg:px-8 bg-white">
+      <section className="py-20 px-6 lg:px-8" style={{ background: '#FAF7F0' }}>
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-14">
             <p className="text-sm font-semibold text-teal uppercase tracking-widest mb-4">About Us</p>
@@ -33,70 +33,78 @@ export default function AboutPage() {
           <div className="grid lg:grid-cols-2 gap-8">
 
             {/* Karl */}
-            <div className="rounded-3xl border border-gray-100 p-8 bg-white" style={{ boxShadow: '0 20px 60px rgba(0,0,0,0.07)' }}>
-              <div className="flex flex-col items-center text-center sm:flex-row sm:items-center sm:text-left gap-5 mb-5">
+            <div className="rounded-3xl border border-gray-100 overflow-hidden bg-white" style={{ boxShadow: '0 20px 60px rgba(0,0,0,0.07)' }}>
+              <div className="flex">
                 <img
                   src="/karl-plank.jpg"
-                  alt="Karl Plank, Financial Adviser, Base Mortgages"
-                  className="w-36 h-36 rounded-full object-cover object-top flex-shrink-0"
+                  alt="Karl Plank, Mortgage Adviser, Base Mortgages"
+                  className="w-40 object-cover object-top flex-shrink-0"
                 />
-                <div>
+                <div className="p-6 flex flex-col justify-center">
                   <div className="text-xl font-bold text-gray-900">Karl Plank</div>
-                  <div className="text-gray-400 text-sm mt-0.5">Founder & Financial Adviser</div>
+                  <div className="text-gray-400 text-sm mt-0.5">Mortgage and Investment Adviser</div>
                   <div className="flex items-center gap-1.5 text-xs text-teal font-medium mt-1.5">
                     <Shield className="w-3.5 h-3.5" />
-                    Licensed Financial Adviser
+                    FSP1007409
                   </div>
                 </div>
               </div>
-              <p className="text-gray-500 text-sm leading-relaxed mb-5">
-                Karl is the founder of Base Mortgages and is passionate about helping New Zealanders navigate the home loan process with confidence, whether you&apos;re buying your first home, refinancing, or growing a property portfolio.
-              </p>
-              <div className="space-y-2">
-                <a href="mailto:karl@basemortgages.co.nz" className="flex items-center gap-3 text-gray-600 hover:text-teal transition-colors font-medium text-sm">
-                  <Mail className="w-4 h-4 text-teal flex-shrink-0" />
-                  karl@basemortgages.co.nz
-                </a>
-                <a href="tel:0272664925" className="flex items-center gap-3 text-gray-600 hover:text-teal transition-colors font-medium text-sm">
-                  <Phone className="w-4 h-4 text-teal flex-shrink-0" />
-                  027 266 4925
-                </a>
-                <a href="/disclosures" className="flex items-center gap-3 text-gray-600 hover:text-teal transition-colors font-medium text-sm">
-                  <FileText className="w-4 h-4 text-teal flex-shrink-0" />
-                  Disclosure Statement
-                </a>
+              <div className="px-6 pb-6 pt-4 border-t border-gray-100">
+                <p className="text-gray-500 text-sm leading-relaxed mb-4">
+                  Karl is the founder of Base Mortgages and is passionate about helping New Zealanders navigate the home loan process with confidence, whether you&apos;re buying your first home, refinancing, or growing a property portfolio.
+                </p>
+                <div className="space-y-2">
+                  <a href="mailto:karl@basemortgages.co.nz" className="flex items-center gap-3 text-gray-600 hover:text-teal transition-colors font-medium text-sm">
+                    <Mail className="w-4 h-4 text-teal flex-shrink-0" />
+                    karl@basemortgages.co.nz
+                  </a>
+                  <a href="tel:0272664925" className="flex items-center gap-3 text-gray-600 hover:text-teal transition-colors font-medium text-sm">
+                    <Phone className="w-4 h-4 text-teal flex-shrink-0" />
+                    027 266 4925
+                  </a>
+                  <a href="/disclosures" className="flex items-center gap-3 text-gray-600 hover:text-teal transition-colors font-medium text-sm">
+                    <FileText className="w-4 h-4 text-teal flex-shrink-0" />
+                    Disclosure Statement
+                  </a>
+                </div>
               </div>
             </div>
 
             {/* Vincent */}
-            <div className="rounded-3xl border border-gray-100 p-8 bg-white" style={{ boxShadow: '0 20px 60px rgba(0,0,0,0.07)' }}>
-              <div className="flex flex-col items-center text-center sm:flex-row sm:items-center sm:text-left gap-5 mb-5">
+            <div className="rounded-3xl border border-gray-100 overflow-hidden bg-white" style={{ boxShadow: '0 20px 60px rgba(0,0,0,0.07)' }}>
+              <div className="flex">
                 <img
                   src="/vincent-uys.jpg"
                   alt="Vincent Uys, Mortgage Adviser, Base Mortgages"
-                  className="w-36 h-36 rounded-full object-cover object-top flex-shrink-0"
+                  className="w-40 object-cover object-top flex-shrink-0"
                 />
-                <div>
+                <div className="p-6 flex flex-col justify-center">
                   <div className="text-xl font-bold text-gray-900">Vincent Uys</div>
                   <div className="text-gray-400 text-sm mt-0.5">Mortgage Adviser</div>
                   <div className="flex items-center gap-1.5 text-xs text-teal font-medium mt-1.5">
                     <Shield className="w-3.5 h-3.5" />
-                    Licensed Financial Adviser
+                    FSP1012855
                   </div>
                 </div>
               </div>
-              <p className="text-gray-500 text-sm leading-relaxed mb-5">
-                With over 5 years of banking experience across BNZ and ASB, Vincent brings deep lender knowledge and a client-first approach to every mortgage. He&apos;s dedicated to finding the right solution and making the process as smooth as possible.
-              </p>
-              <div className="space-y-2">
-                <a href="mailto:vincent@basemortgages.co.nz" className="flex items-center gap-3 text-gray-600 hover:text-teal transition-colors font-medium text-sm">
-                  <Mail className="w-4 h-4 text-teal flex-shrink-0" />
-                  vincent@basemortgages.co.nz
-                </a>
-                <a href="tel:0204045012" className="flex items-center gap-3 text-gray-600 hover:text-teal transition-colors font-medium text-sm">
-                  <Phone className="w-4 h-4 text-teal flex-shrink-0" />
-                  020 404 5012
-                </a>
+              <div className="px-6 pb-6 pt-4 border-t border-gray-100">
+                <p className="text-gray-500 text-sm leading-relaxed mb-4">
+                  With over 5 years of banking experience across BNZ and ASB, Vincent brings deep lender knowledge and a client-first approach to every mortgage. He&apos;s dedicated to finding the right solution and making the process as smooth as possible.
+                </p>
+                <div className="space-y-2">
+                  <a href="mailto:vincent@basemortgages.co.nz" className="flex items-center gap-3 text-gray-600 hover:text-teal transition-colors font-medium text-sm">
+                    <Mail className="w-4 h-4 text-teal flex-shrink-0" />
+                    vincent@basemortgages.co.nz
+                  </a>
+                  <a href="tel:0204045012" className="flex items-center gap-3 text-gray-600 hover:text-teal transition-colors font-medium text-sm">
+                    <Phone className="w-4 h-4 text-teal flex-shrink-0" />
+                    020 404 5012
+                  </a>
+                  <a href="/disclosures" className="flex items-center gap-3 text-gray-600 hover:text-teal transition-colors font-medium text-sm">
+                    <FileText className="w-4 h-4 text-teal flex-shrink-0" />
+                    Disclosure Statement
+                  </a>
+                </div>
               </div>
             </div>
 
