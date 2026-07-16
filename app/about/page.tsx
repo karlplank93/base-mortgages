@@ -30,16 +30,18 @@ export default function AboutPage() {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-8">
+          <div className="grid lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
 
             {/* Karl */}
             <div className="rounded-3xl border border-gray-100 overflow-hidden bg-white" style={{ boxShadow: '0 20px 60px rgba(0,0,0,0.07)' }}>
               <div className="flex">
-                <img
-                  src="/karl-plank.jpg"
-                  alt="Karl Plank, Mortgage Adviser, Base Mortgages"
-                  className="w-40 object-cover object-top flex-shrink-0"
-                />
+                <div className="flex-shrink-0 p-4 pb-0">
+                  <img
+                    src="/karl-plank.jpg"
+                    alt="Karl Plank, Mortgage Adviser, Base Mortgages"
+                    className="w-52 object-cover object-top rounded-2xl"
+                  />
+                </div>
                 <div className="p-6 flex flex-col justify-center">
                   <div className="text-xl font-bold text-gray-900">Karl Plank</div>
                   <div className="text-gray-400 text-sm mt-0.5">Mortgage and Investment Adviser</div>
@@ -73,11 +75,13 @@ export default function AboutPage() {
             {/* Vincent */}
             <div className="rounded-3xl border border-gray-100 overflow-hidden bg-white" style={{ boxShadow: '0 20px 60px rgba(0,0,0,0.07)' }}>
               <div className="flex">
-                <img
-                  src="/vincent-uys.jpg"
-                  alt="Vincent Uys, Mortgage Adviser, Base Mortgages"
-                  className="w-40 object-cover object-top flex-shrink-0"
-                />
+                <div className="flex-shrink-0 p-4 pb-0">
+                  <img
+                    src="/vincent-uys.jpg"
+                    alt="Vincent Uys, Mortgage Adviser, Base Mortgages"
+                    className="w-52 object-cover object-top rounded-2xl"
+                  />
+                </div>
                 <div className="p-6 flex flex-col justify-center">
                   <div className="text-xl font-bold text-gray-900">Vincent Uys</div>
                   <div className="text-gray-400 text-sm mt-0.5">Mortgage Adviser</div>
