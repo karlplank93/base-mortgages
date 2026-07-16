@@ -33,68 +33,70 @@ export default function AboutPage() {
           <div className="grid lg:grid-cols-2 gap-8">
 
             {/* Karl */}
-            <div className="rounded-3xl overflow-hidden border border-gray-100" style={{ boxShadow: '0 20px 60px rgba(0,0,0,0.07)' }}>
-              <img
-                src="/karl-plank.jpg"
-                alt="Karl Plank, Financial Adviser, Base Mortgages"
-                className="w-full object-cover object-top"
-                style={{ aspectRatio: '4/3' }}
-              />
-              <div className="p-8 bg-white">
-                <div className="text-xl font-bold text-gray-900">Karl Plank</div>
-                <div className="text-gray-400 text-sm mt-0.5 mb-3">Founder & Financial Adviser</div>
-                <div className="flex items-center gap-2 text-sm text-teal font-medium mb-4">
-                  <Shield className="w-4 h-4" />
-                  Licensed Financial Adviser
+            <div className="rounded-3xl border border-gray-100 p-8 bg-white" style={{ boxShadow: '0 20px 60px rgba(0,0,0,0.07)' }}>
+              <div className="flex items-center gap-5 mb-5">
+                <img
+                  src="/karl-plank.jpg"
+                  alt="Karl Plank, Financial Adviser, Base Mortgages"
+                  className="w-20 h-20 rounded-full object-cover object-top flex-shrink-0"
+                />
+                <div>
+                  <div className="text-xl font-bold text-gray-900">Karl Plank</div>
+                  <div className="text-gray-400 text-sm mt-0.5">Founder & Financial Adviser</div>
+                  <div className="flex items-center gap-1.5 text-xs text-teal font-medium mt-1.5">
+                    <Shield className="w-3.5 h-3.5" />
+                    Licensed Financial Adviser
+                  </div>
                 </div>
-                <p className="text-gray-500 text-sm leading-relaxed mb-5">
-                  Karl is the founder of Base Mortgages and is passionate about helping New Zealanders navigate the home loan process with confidence, whether you&apos;re buying your first home, refinancing, or growing a property portfolio.
-                </p>
-                <div className="space-y-2">
-                  <a href="mailto:karl@basemortgages.co.nz" className="flex items-center gap-3 text-gray-600 hover:text-teal transition-colors font-medium text-sm">
-                    <Mail className="w-4 h-4 text-teal flex-shrink-0" />
-                    karl@basemortgages.co.nz
-                  </a>
-                  <a href="tel:0272664925" className="flex items-center gap-3 text-gray-600 hover:text-teal transition-colors font-medium text-sm">
-                    <Phone className="w-4 h-4 text-teal flex-shrink-0" />
-                    027 266 4925
-                  </a>
-                  <a href="/disclosures" className="flex items-center gap-3 text-gray-600 hover:text-teal transition-colors font-medium text-sm">
-                    <FileText className="w-4 h-4 text-teal flex-shrink-0" />
-                    Disclosure Statement
-                  </a>
-                </div>
+              </div>
+              <p className="text-gray-500 text-sm leading-relaxed mb-5">
+                Karl is the founder of Base Mortgages and is passionate about helping New Zealanders navigate the home loan process with confidence, whether you&apos;re buying your first home, refinancing, or growing a property portfolio.
+              </p>
+              <div className="space-y-2">
+                <a href="mailto:karl@basemortgages.co.nz" className="flex items-center gap-3 text-gray-600 hover:text-teal transition-colors font-medium text-sm">
+                  <Mail className="w-4 h-4 text-teal flex-shrink-0" />
+                  karl@basemortgages.co.nz
+                </a>
+                <a href="tel:0272664925" className="flex items-center gap-3 text-gray-600 hover:text-teal transition-colors font-medium text-sm">
+                  <Phone className="w-4 h-4 text-teal flex-shrink-0" />
+                  027 266 4925
+                </a>
+                <a href="/disclosures" className="flex items-center gap-3 text-gray-600 hover:text-teal transition-colors font-medium text-sm">
+                  <FileText className="w-4 h-4 text-teal flex-shrink-0" />
+                  Disclosure Statement
+                </a>
               </div>
             </div>
 
             {/* Vincent */}
-            <div className="rounded-3xl overflow-hidden border border-gray-100" style={{ boxShadow: '0 20px 60px rgba(0,0,0,0.07)' }}>
-              <img
-                src="/vincent-uys.jpg"
-                alt="Vincent Uys, Mortgage Adviser, Base Mortgages"
-                className="w-full object-cover object-top"
-                style={{ aspectRatio: '4/3' }}
-              />
-              <div className="p-8 bg-white">
-                <div className="text-xl font-bold text-gray-900">Vincent Uys</div>
-                <div className="text-gray-400 text-sm mt-0.5 mb-3">Mortgage Adviser</div>
-                <div className="flex items-center gap-2 text-sm text-teal font-medium mb-4">
-                  <Shield className="w-4 h-4" />
-                  Licensed Financial Adviser
+            <div className="rounded-3xl border border-gray-100 p-8 bg-white" style={{ boxShadow: '0 20px 60px rgba(0,0,0,0.07)' }}>
+              <div className="flex items-center gap-5 mb-5">
+                <img
+                  src="/vincent-uys.jpg"
+                  alt="Vincent Uys, Mortgage Adviser, Base Mortgages"
+                  className="w-20 h-20 rounded-full object-cover object-top flex-shrink-0"
+                />
+                <div>
+                  <div className="text-xl font-bold text-gray-900">Vincent Uys</div>
+                  <div className="text-gray-400 text-sm mt-0.5">Mortgage Adviser</div>
+                  <div className="flex items-center gap-1.5 text-xs text-teal font-medium mt-1.5">
+                    <Shield className="w-3.5 h-3.5" />
+                    Licensed Financial Adviser
+                  </div>
                 </div>
-                <p className="text-gray-500 text-sm leading-relaxed mb-5">
-                  With over 5 years of banking experience across BNZ and ASB, Vincent brings deep lender knowledge and a client-first approach to every mortgage. He&apos;s dedicated to finding the right solution and making the process as smooth as possible.
-                </p>
-                <div className="space-y-2">
-                  <a href="mailto:vincent@basemortgages.co.nz" className="flex items-center gap-3 text-gray-600 hover:text-teal transition-colors font-medium text-sm">
-                    <Mail className="w-4 h-4 text-teal flex-shrink-0" />
-                    vincent@basemortgages.co.nz
-                  </a>
-                  <a href="tel:0204045012" className="flex items-center gap-3 text-gray-600 hover:text-teal transition-colors font-medium text-sm">
-                    <Phone className="w-4 h-4 text-teal flex-shrink-0" />
-                    020 404 5012
-                  </a>
-                </div>
+              </div>
+              <p className="text-gray-500 text-sm leading-relaxed mb-5">
+                With over 5 years of banking experience across BNZ and ASB, Vincent brings deep lender knowledge and a client-first approach to every mortgage. He&apos;s dedicated to finding the right solution and making the process as smooth as possible.
+              </p>
+              <div className="space-y-2">
+                <a href="mailto:vincent@basemortgages.co.nz" className="flex items-center gap-3 text-gray-600 hover:text-teal transition-colors font-medium text-sm">
+                  <Mail className="w-4 h-4 text-teal flex-shrink-0" />
+                  vincent@basemortgages.co.nz
+                </a>
+                <a href="tel:0204045012" className="flex items-center gap-3 text-gray-600 hover:text-teal transition-colors font-medium text-sm">
+                  <Phone className="w-4 h-4 text-teal flex-shrink-0" />
+                  020 404 5012
+                </a>
               </div>
             </div>
 
