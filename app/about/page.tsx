@@ -34,11 +34,11 @@ export default function AboutPage() {
 
             {/* Karl */}
             <div className="rounded-3xl border border-gray-100 p-8 bg-white" style={{ boxShadow: '0 20px 60px rgba(0,0,0,0.07)' }}>
-              <div className="flex items-center gap-5 mb-5">
+              <div className="flex flex-col items-center text-center sm:flex-row sm:items-center sm:text-left gap-5 mb-5">
                 <img
                   src="/karl-plank.jpg"
                   alt="Karl Plank, Financial Adviser, Base Mortgages"
-                  className="w-20 h-20 rounded-full object-cover object-top flex-shrink-0"
+                  className="w-36 h-36 rounded-full object-cover object-top flex-shrink-0"
                 />
                 <div>
                   <div className="text-xl font-bold text-gray-900">Karl Plank</div>
@@ -70,11 +70,11 @@ export default function AboutPage() {
 
             {/* Vincent */}
             <div className="rounded-3xl border border-gray-100 p-8 bg-white" style={{ boxShadow: '0 20px 60px rgba(0,0,0,0.07)' }}>
-              <div className="flex items-center gap-5 mb-5">
+              <div className="flex flex-col items-center text-center sm:flex-row sm:items-center sm:text-left gap-5 mb-5">
                 <img
                   src="/vincent-uys.jpg"
                   alt="Vincent Uys, Mortgage Adviser, Base Mortgages"
-                  className="w-20 h-20 rounded-full object-cover object-top flex-shrink-0"
+                  className="w-36 h-36 rounded-full object-cover object-top flex-shrink-0"
                 />
                 <div>
                   <div className="text-xl font-bold text-gray-900">Vincent Uys</div>
