@@ -43,8 +43,8 @@ export default function AboutPage() {
                   />
                 </div>
                 <div className="p-6 flex flex-col justify-center">
-                  <div className="text-xl font-bold text-gray-900">Karl Plank</div>
-                  <div className="text-gray-400 text-sm mt-0.5">Mortgage and Investment Adviser</div>
+                  <div className="font-display text-2xl font-bold uppercase tracking-wide text-teal">Karl Plank</div>
+                  <div className="text-gray-500 text-sm mt-1">Mortgage and Investment Adviser</div>
                   <div className="flex items-center gap-1.5 text-xs text-teal font-medium mt-1.5">
                     <Shield className="w-3.5 h-3.5" />
                     FSP1007409
@@ -83,8 +83,8 @@ export default function AboutPage() {
                   />
                 </div>
                 <div className="p-6 flex flex-col justify-center">
-                  <div className="text-xl font-bold text-gray-900">Vincent Uys</div>
-                  <div className="text-gray-400 text-sm mt-0.5">Mortgage Adviser</div>
+                  <div className="font-display text-2xl font-bold uppercase tracking-wide text-teal">Vincent Uys</div>
+                  <div className="text-gray-500 text-sm mt-1">Mortgage Adviser</div>
                   <div className="flex items-center gap-1.5 text-xs text-teal font-medium mt-1.5">
                     <Shield className="w-3.5 h-3.5" />
                     FSP1012855
