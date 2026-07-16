@@ -77,7 +77,7 @@ export default function AboutPage() {
               <div className="flex">
                 <div className="flex-shrink-0 p-4 pb-0">
                   <img
-                    src="/vincent-uys.jpg"
+                    src="/vincent-uys.png"
                     alt="Vincent Uys, Mortgage Adviser, Base Mortgages"
                     className="w-52 object-cover object-top rounded-2xl"
                   />
