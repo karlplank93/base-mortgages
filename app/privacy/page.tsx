@@ -66,7 +66,7 @@ export default function PrivacyPage() {
               <p>Generally we will collect your personal information directly from you. For example, we collect your personal information directly from your use of our website and the information that you submit to the website. We also collect your personal information if you use the "contact us" functionality on our website and you provide the personal information during conversations between you and us.</p>
               <p className="mt-3">We may also collect your personal information from:</p>
               <ul className="list-disc pl-6 mt-3 space-y-2">
-                <li>NZ Financial Services Group Limited (NZFSG) and its related bodies corporate;</li>
+                <li>Kiwi Adviser Network (KAN) and its related bodies corporate;</li>
                 <li>credit reporting agencies;</li>
                 <li>with your authorisation, banks (e.g. through the use of illion Bank Statements) and employers;</li>
                 <li>Product Providers (e.g. during the term of any loan or insurance we have arranged on your behalf, in order to answer your queries or assist you with your financial arrangements as your circumstances change). If applicable, the Product Providers may also periodically disclose your loan balance or premium to us in connection with the payment of ongoing commission to us over the term of your loan or insurance; and</li>
@@ -90,15 +90,15 @@ export default function PrivacyPage() {
               <p>We may disclose your personal information to the following people if we consider it necessary to do so for the purposes described in section 6 above:</p>
               <ul className="list-disc pl-6 mt-3 space-y-3">
                 <li>
-                  <strong>NZFSG and its related bodies corporate:</strong> We share personal information with NZ Financial Services Group Limited (NZFSG), in the course of our being a member of their financial services group. This includes information that you provide to us directly, and information we collect or create during the course of our engagement with you including your identity, contact details, and sensitive financial data. This sharing enables us to provide you with our services and allows NZFSG to meet its monitoring, oversight, and assurance obligations under the Financial Markets Conduct Act 2013 and the Privacy Act. NZFSG acts as an agency collecting and holding this information. You can view their full Privacy Policy, including their physical address and details on how to exercise your rights to access and correct your information, at{' '}
-                  <a href="https://www.nzfsg.co.nz/privacy-policy" target="_blank" rel="noopener noreferrer" className="text-teal hover:underline">www.nzfsg.co.nz/privacy-policy</a>. Please note that this sharing is a condition of our service; if you do not agree, we cannot provide services to you because NZFSG's oversight is a condition of our membership within their financial services group.
+                  <strong>KAN and its related bodies corporate:</strong> We share personal information with Kiwi Adviser Network (KAN), in the course of our being a member of their financial services group. This includes information that you provide to us directly, and information we collect or create during the course of our engagement with you including your identity, contact details, and sensitive financial data. This sharing enables us to provide you with our services and allows KAN to meet its monitoring, oversight, and assurance obligations under the Financial Markets Conduct Act 2013 and the Privacy Act. KAN acts as an agency collecting and holding this information. You can view their full Privacy Policy, including their physical address and details on how to exercise your rights to access and correct your information, at{' '}
+                  <a href="https://www.kiwiadvisernet.co.nz/privacy-policy" target="_blank" rel="noopener noreferrer" className="text-teal hover:underline">www.kiwiadvisernet.co.nz/privacy-policy</a>. Please note that this sharing is a condition of our service; if you do not agree, we cannot provide services to you because KAN's oversight is a condition of our membership within their financial services group.
                 </li>
                 <li>Product Providers and other prospective lenders, third parties or other intermediaries in relation to your finance or insurance requirements (including a prospective lender's mortgage insurer (if any), any person with whom a lender or insurer proposes to enter into contractual arrangements, any person who provides a guarantee or security and any trustee and any assignee or potential assignee of a lender's or insurer's rights);</li>
                 <li>our referral partners who can help you with other services;</li>
                 <li>contractors or service providers;</li>
                 <li>investors, or any entity that has an interest in our business or any entity to whom we consider assigning or transferring any of our rights or obligations or selling all or part of our business;</li>
                 <li>anyone who we are legally required or authorised to share your information with, including regulators and government agencies;</li>
-                <li>to auditors (such as NZFSG) to ensure we are providing services to you that are in your best interests, and in accordance with current regulations;</li>
+                <li>to auditors (such as KAN) to ensure we are providing services to you that are in your best interests, and in accordance with current regulations;</li>
                 <li>your employer and referees, as well as credit reporting and identity verification agencies; and</li>
                 <li>any other person or entity authorised by you or the Privacy Act.</li>
               </ul>
@@ -109,7 +109,7 @@ export default function PrivacyPage() {
             <div>
               <h2 className="font-display text-xl font-bold text-gray-900 mb-3">10. Do we disclose your personal information to anyone outside New Zealand?</h2>
               <p>We may use cloud storage to store the personal information we hold about you. The cloud storage and the IT servers may be located outside New Zealand.</p>
-              <p className="mt-3">We may also disclose personal information to NZFSG and its related bodies corporate, and third party suppliers and service providers located overseas for some of the purposes listed above.</p>
+              <p className="mt-3">We may also disclose personal information to KAN and its related bodies corporate, and third party suppliers and service providers located overseas for some of the purposes listed above.</p>
             </div>
 
             <div>
