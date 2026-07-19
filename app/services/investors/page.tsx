@@ -173,7 +173,7 @@ export default function InvestorsPage() {
                 <ChevronDown className="w-5 h-5 text-gray-500 group-open:rotate-180 transition" />
               </summary>
               <p className="text-gray-500 mt-4">
-                Most lenders cap investment lending at 80% LVR (loan-to-value). That means you need at least 20% equity. Some specialist lenders go to 85%, but rates are higher. We work within RBNZ requirements and help you structure your properties to maximize borrowing capacity while staying safe.
+                Investment property lending typically requires a 10–20% deposit depending on your situation and the lender. We work within RBNZ requirements and help you structure your properties to maximise borrowing capacity while staying safe.
               </p>
             </details>
 

@@ -195,7 +195,7 @@ export default function RefinancingPage() {
                 <ChevronDown className="w-5 h-5 text-gray-500 group-open:rotate-180 transition" />
               </summary>
               <p className="text-gray-500 mt-4">
-                Many lenders offer cashback promotions—sometimes it's 2-5% of your loan amount. These change regularly, so we stay on top of what's available. We'll make sure you get the best deal, which might include cashback on top of a good rate.
+                Many lenders offer cashback promotions—typically 0.9–1.25% of your loan amount. These change regularly, so we stay on top of what's available. We'll make sure you get the best deal, which might include cashback on top of a good rate.
               </p>
             </details>
 

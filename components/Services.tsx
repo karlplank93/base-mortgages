@@ -37,13 +37,6 @@ const services: { title: string; description: string; href: string; cta: string 
     href: '/services/construction',
     cta: 'Finance your build',
   },
-  {
-    title: 'Alternative Lending',
-    description:
-      'We have access to non-bank lenders and specialist solutions for self-employed clients, complex income situations, or credit challenges. When the banks say no, we keep going.',
-    href: '/services/alternative-lending',
-    cta: 'Explore alternative lending',
-  },
 ];
 
 export default function Services() {

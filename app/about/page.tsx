@@ -64,7 +64,7 @@ export default function AboutPage() {
                     <Phone className="w-4 h-4 text-teal flex-shrink-0" />
                     027 266 4925
                   </a>
-                  <a href="/disclosures" className="flex items-center gap-3 text-gray-600 hover:text-teal transition-colors font-medium text-sm">
+                  <a href="/terms" className="flex items-center gap-3 text-gray-600 hover:text-teal transition-colors font-medium text-sm">
                     <FileText className="w-4 h-4 text-teal flex-shrink-0" />
                     Disclosure Statement
                   </a>
@@ -104,7 +104,7 @@ export default function AboutPage() {
                     <Phone className="w-4 h-4 text-teal flex-shrink-0" />
                     020 404 5012
                   </a>
-                  <a href="/disclosures" className="flex items-center gap-3 text-gray-600 hover:text-teal transition-colors font-medium text-sm">
+                  <a href="/terms" className="flex items-center gap-3 text-gray-600 hover:text-teal transition-colors font-medium text-sm">
                     <FileText className="w-4 h-4 text-teal flex-shrink-0" />
                     Disclosure Statement
                   </a>

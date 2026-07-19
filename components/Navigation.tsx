@@ -10,7 +10,6 @@ const mortgageLinks: [string, string][] = [
   ['Property Investors',       '/services/investors'],
   ['Refix & Restructure',      '/services/refix'],
   ['New Build & Construction', '/services/construction'],
-  ['Alternative Lending',      '/services/alternative-lending'],
 ];
 
 export default function Navigation() {

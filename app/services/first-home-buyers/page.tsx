@@ -132,7 +132,7 @@ export default function FirstHomeBuyersPage() {
               <div className="pb-8">
                 <h3 className="font-display text-xl font-bold text-gray-900 mb-2">Strategy & pre-approval</h3>
                 <p className="text-gray-500 max-w-2xl">
-                  We'll work out the best way to use your KiwiSaver, apply for pre-approval from the lender that suits you best, and give you a clear picture of what you can borrow. This usually takes 3-5 working days.
+                  We'll work out the best way to use your KiwiSaver, apply for pre-approval from the lender that suits you best, and give you a clear picture of what you can borrow. This usually takes 5–10 working days.
                 </p>
               </div>
             </div>
@@ -184,29 +184,18 @@ export default function FirstHomeBuyersPage() {
                 <ChevronDown className="w-5 h-5 text-gray-500 group-open:rotate-180 transition" />
               </summary>
               <p className="text-gray-500 mt-4">
-                Yes. If you're a first home buyer, you can withdraw your full KiwiSaver balance and all the contributions your employer made. You can also withdraw the government contribution (once it's been in the scheme for 5 years). We'll make sure you do this the right way and keep IRD happy.
+                Yes. If you're a first home buyer and have been in KiwiSaver for 3 years or more, you can withdraw your balance (minus $1,000) to put towards your first home. We'll make sure you do this the right way and keep everything on track.
               </p>
             </details>
 
             {/* FAQ 3 */}
             <details className="border border-gray-100 rounded-2xl p-6 open:bg-[#FAF7F0] group cursor-pointer">
               <summary className="flex items-center justify-between font-bold text-gray-900 text-lg select-none">
-                What's the First Home Loan exactly?
-                <ChevronDown className="w-5 h-5 text-gray-500 group-open:rotate-180 transition" />
-              </summary>
-              <p className="text-gray-500 mt-4">
-                It's a government scheme run by most banks. If you qualify, you get a better interest rate and lower fees than a standard home loan. You need to be under 40 years old, buying a place to live (not investment), and this is your first home purchase. We'll check if you qualify and apply for you.
-              </p>
-            </details>
-
-            {/* FAQ 4 */}
-            <details className="border border-gray-100 rounded-2xl p-6 open:bg-[#FAF7F0] group cursor-pointer">
-              <summary className="flex items-center justify-between font-bold text-gray-900 text-lg select-none">
                 How long does it take to get pre-approved?
                 <ChevronDown className="w-5 h-5 text-gray-500 group-open:rotate-180 transition" />
               </summary>
               <p className="text-gray-500 mt-4">
-                Usually 3-5 working days from when you've given us all your info. We'll handle all the paperwork with the bank. Once you're pre-approved, you can start house hunting with confidence and move quickly when you find the right place.
+                Usually 5–10 working days from when you've given us all your info. We'll handle all the paperwork with the bank. Once you're pre-approved, you can start house hunting with confidence and move quickly when you find the right place.
               </p>
             </details>
           </div>

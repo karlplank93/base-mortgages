@@ -40,7 +40,6 @@ export default function Footer() {
                 ['Refix & Restructure',      '/services/refix'],
                 ['Property Investors',       '/services/investors'],
                 ['New Build & Construction', '/services/construction'],
-                ['Alternative Lending',      '/services/alternative-lending'],
               ].map(([l, h]) => (
                 <Link key={h} href={h} className="block text-gray-500 hover:text-navy transition-colors">{l}</Link>
               ))}
@@ -67,10 +66,8 @@ export default function Footer() {
             <h4 className="text-sm font-semibold text-gray-900 uppercase tracking-wider mb-5">Legal</h4>
             <div className="space-y-2.5 text-sm">
               {[
-                ['Disclosures',     '/disclosures'],
                 ['Privacy Policy',  '/privacy'],
                 ['Terms of Service','/terms'],
-                ['Complaints',      '/complaints'],
               ].map(([l, h]) => (
                 <Link key={h} href={h} className="block text-gray-500 hover:text-navy transition-colors">{l}</Link>
               ))}
@@ -90,7 +87,7 @@ export default function Footer() {
         <div className="flex flex-wrap items-center justify-between gap-4 pt-6 border-t border-gray-100 text-xs text-gray-400">
           <span>© 2026 Base Mortgages. All rights reserved.</span>
           <div className="flex gap-4">
-            {[['Privacy', '/privacy'], ['Disclosures', '/disclosures'], ['Complaints', '/complaints']].map(([l, h]) => (
+            {[['Privacy', '/privacy'], ['Terms', '/terms']].map(([l, h]) => (
               <Link key={h} href={h} className="hover:text-navy transition-colors">{l}</Link>
             ))}
           </div>
