@@ -77,7 +77,7 @@ const jsonLd = {
   description:
     "Mortgage advisers helping New Zealanders buy their first home, refinance, and invest in property.",
   url: "https://www.basemortgages.co.nz",
-  telephone: "",
+  telephone: "+64272664925",
   email: "karl@basemortgages.co.nz",
   address: {
     "@type": "PostalAddress",
@@ -95,7 +95,7 @@ const jsonLd = {
     opens: "08:00",
     closes: "18:00",
   },
-  sameAs: [],
+  sameAs: ["https://www.basemortgages.co.nz"],
   aggregateRating: {
     "@type": "AggregateRating",
     ratingValue: "4.9",
