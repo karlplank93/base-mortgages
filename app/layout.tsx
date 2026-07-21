@@ -95,7 +95,7 @@ const jsonLd = {
     opens: "08:00",
     closes: "18:00",
   },
-  sameAs: ["https://www.basemortgages.co.nz"],
+  sameAs: ["https://www.basemortgages.co.nz", "https://share.google/y9Ht2DIUHJnpQ2lGO"],
   aggregateRating: {
     "@type": "AggregateRating",
     ratingValue: "4.9",
