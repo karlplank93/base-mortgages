@@ -109,8 +109,8 @@ export default function ContactPage() {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
-                    <h3 className="font-display text-2xl font-bold text-gray-900 mb-2">Message Sent!</h3>
-                    <p className="text-gray-500 mb-6">We&apos;ll get back to you within 24 hours.</p>
+                    <h3 className="font-display text-2xl font-bold text-gray-900 mb-2">Message sent!</h3>
+                    <p className="text-gray-500 mb-6">Thanks for reaching out — we&apos;ll get back to you shortly.</p>
                     <button onClick={() => setSubmitted(false)} className="text-teal hover:text-teal-dark font-semibold text-sm transition-colors">
                       Send another message
                     </button>
