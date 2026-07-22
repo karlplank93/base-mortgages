@@ -99,7 +99,7 @@ const jsonLd = {
   aggregateRating: {
     "@type": "AggregateRating",
     ratingValue: "4.9",
-    reviewCount: "39",
+    reviewCount: "52",
   },
   priceRange: "Free",
   serviceType: "Mortgage Advice",

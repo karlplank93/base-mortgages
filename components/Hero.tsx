@@ -64,7 +64,7 @@ export default function Hero() {
                     5.0 Google Rating
                   </span>
                   <span className="text-xs" style={{ color: '#6B7280' }}>
-                    From 43 reviews
+                    From 52 reviews
                   </span>
                 </div>
               </a>
