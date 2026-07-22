@@ -16,18 +16,26 @@ export default function ContactPage() {
   const { register, handleSubmit, reset, formState: { errors } } = useForm<FormData>();
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [submitError, setSubmitError] = useState(false);
 
   const onSubmit = async (data: FormData) => {
     setSubmitting(true);
+    setSubmitError(false);
     try {
       const response = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data),
       });
-      if (response.ok) { setSubmitted(true); reset(); }
+      if (response.ok) {
+        setSubmitted(true);
+        reset();
+      } else {
+        setSubmitError(true);
+      }
     } catch (error) {
       console.error('Form submission error:', error);
+      setSubmitError(true);
     } finally {
       setSubmitting(false);
     }
@@ -186,6 +194,12 @@ export default function ContactPage() {
                     >
                       {submitting ? 'Sending...' : <><Send className="w-4 h-4" /> Send Message</>}
                     </button>
+
+                    {submitError && (
+                      <p className="text-red-500 text-sm text-center">
+                        Something went wrong — please try again or email us directly at <a href="mailto:karl@basemortgages.co.nz" className="underline">karl@basemortgages.co.nz</a>.
+                      </p>
+                    )}
 
                     <p className="text-xs text-gray-400 text-center">
                       By submitting this form, you agree to our Privacy Policy and Terms of Service.
