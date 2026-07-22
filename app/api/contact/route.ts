@@ -5,33 +5,27 @@ export async function POST(request: Request) {
     const body = await request.json();
     const { name, email, phone, type, message } = body;
 
-    // TODO: Replace this with your actual email service
-    // Options:
-    // 1. Resend.com (recommended - simple, reliable)
-    // 2. SendGrid
-    // 3. Nodemailer with your SMTP
-    // 4. Web3Forms (no backend needed)
+    const response = await fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        access_key: '8875219d-36f9-4502-8843-68fe3740e966',
+        subject: `New enquiry from ${name} — ${type}`,
+        from_name: 'Base Mortgages Website',
+        replyto: email,
+        name,
+        email,
+        phone: phone || 'Not provided',
+        interest: type,
+        message,
+      }),
+    });
 
-    // Example with Resend (you'll need to install: npm install resend)
-    // const { Resend } = require('resend');
-    // const resend = new Resend(process.env.RESEND_API_KEY);
-    // 
-    // await resend.emails.send({
-    //   from: 'Base Mortgages <noreply@basemortgages.co.nz>',
-    //   to: 'hello@basemortgages.co.nz',
-    //   subject: `New Contact Form: ${type}`,
-    //   html: `
-    //     <h2>New Contact Form Submission</h2>
-    //     <p><strong>Name:</strong> ${name}</p>
-    //     <p><strong>Email:</strong> ${email}</p>
-    //     <p><strong>Phone:</strong> ${phone || 'Not provided'}</p>
-    //     <p><strong>Interest:</strong> ${type}</p>
-    //     <p><strong>Message:</strong></p>
-    //     <p>${message}</p>
-    //   `,
-    // });
+    const result = await response.json();
 
-    console.log('Form submission received:', { name, email, phone, type, message });
+    if (!result.success) {
+      throw new Error(result.message || 'Web3Forms submission failed');
+    }
 
     return NextResponse.json({ success: true });
   } catch (error) {

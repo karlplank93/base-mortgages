@@ -38,7 +38,7 @@ export default function Hero() {
             </p>
 
             <a
-              href="https://calendly.com/karl-mortgage-adviser/borrowing-review"
+              href="https://calendly.com/base-mortgages/check"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-8 py-4 rounded-lg text-white font-bold text-base transition-all hover:opacity-90"

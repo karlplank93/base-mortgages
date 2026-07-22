@@ -116,7 +116,7 @@ export default function AboutPage() {
 
           <div className="flex flex-wrap justify-center gap-3 mt-10">
             <a
-              href="https://calendly.com/karl-mortgage-adviser/borrowing-review"
+              href="https://calendly.com/base-mortgages/check"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-6 py-3 rounded-full text-white font-semibold text-sm transition-all hover:opacity-90"
@@ -198,7 +198,7 @@ export default function AboutPage() {
             Book a free 20-minute Discovery Call and let&apos;s talk about your mortgage goals.
           </p>
           <a
-            href="https://calendly.com/karl-mortgage-adviser/borrowing-review"
+            href="https://calendly.com/base-mortgages/check"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center px-8 py-3.5 rounded-full text-white font-semibold text-base transition-all hover:opacity-90"
