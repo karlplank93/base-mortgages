@@ -22,12 +22,24 @@ export default function ContactPage() {
     setSubmitting(true);
     setSubmitError(false);
     try {
-      const response = await fetch('/api/contact', {
+      const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data),
+        body: JSON.stringify({
+          access_key: '8875219d-36f9-4502-8843-68fe3740e966',
+          subject: `New enquiry from ${data.name} — ${data.type}`,
+          from_name: 'Base Mortgages Website',
+          replyto: data.email,
+          name: data.name,
+          email: data.email,
+          phone: data.phone || 'Not provided',
+          interest: data.type,
+          message: data.message,
+          botcheck: false,
+        }),
       });
-      if (response.ok) {
+      const result = await response.json();
+      if (result.success) {
         setSubmitted(true);
         reset();
       } else {
@@ -96,7 +108,7 @@ export default function ContactPage() {
 
               <div className="pt-2">
                 <a
-                  href="https://calendly.com/karl-mortgage-adviser/borrowing-review"
+                  href="https://calendly.com/base-mortgages/check"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center w-full py-3 rounded-full text-white font-semibold text-sm transition-all hover:opacity-90"
