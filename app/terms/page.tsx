@@ -21,7 +21,7 @@ export default function TermsPage() {
 
             <div>
               <h2 className="font-display text-xl font-bold text-gray-900 mb-3">Licensing Information</h2>
-              <p>NZ Financial Services Group Limited (FSP286965) holds a license issued by the Financial Markets Authority to provide financial advice. Base Mortgages is authorised by the license to provide financial advice.</p>
+              <p>Kiwi Adviser Network Limited (FSP763551) holds a license issued by the Financial Markets Authority to provide financial advice. Base Mortgages is authorised by the license to provide financial advice.</p>
               <p className="mt-3">Karl Plank (FSP1007409) and Vincent Uys (FSP1012855) are Financial Advisers authorised to provide financial advice on behalf of Base Mortgages.</p>
             </div>
 
@@ -122,7 +122,7 @@ export default function TermsPage() {
 
             <div>
               <h2 className="font-display text-xl font-bold text-gray-900 mb-3">Contact Details</h2>
-              <p>Base Mortgages is the Financial Advice Provider, authorised under NZ Financial Services Group Limited (FSP286965).</p>
+              <p>Base Mortgages is the Financial Advice Provider, authorised under Kiwi Adviser Network Limited (FSP763551).</p>
               <ul className="mt-3 space-y-1">
                 <li>Phone: <a href="tel:0272664925" className="text-teal hover:underline">027 266 4925</a></li>
                 <li>Email: <a href="mailto:karl@basemortgages.co.nz" className="text-teal hover:underline">karl@basemortgages.co.nz</a></li>
