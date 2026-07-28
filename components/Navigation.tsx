@@ -125,6 +125,7 @@ export default function Navigation() {
               <Link
                 key={href}
                 href={href}
+                onClick={() => setMobileOpen(false)}
                 className="block px-4 py-2.5 text-sm font-medium rounded-lg transition-colors hover:bg-gray-50"
                 style={{ color: '#1F2933' }}
               >
@@ -132,13 +133,14 @@ export default function Navigation() {
               </Link>
             ))}
             <div className="border-t border-gray-100 my-2" />
-            <Link href="/about"      className="block px-4 py-2.5 text-sm font-medium rounded-lg transition-colors hover:bg-gray-50" style={linkColor}>About Us</Link>
-            <Link href="/resources"  className="block px-4 py-2.5 text-sm font-medium rounded-lg transition-colors hover:bg-gray-50" style={linkColor}>Guides</Link>
-            <Link href="/calculator" className="block px-4 py-2.5 text-sm font-medium rounded-lg transition-colors hover:bg-gray-50" style={linkColor}>Calculators</Link>
-            <Link href="/contact"    className="block px-4 py-2.5 text-sm font-medium rounded-lg transition-colors hover:bg-gray-50" style={linkColor}>Contact</Link>
+            <Link href="/about"      onClick={() => setMobileOpen(false)} className="block px-4 py-2.5 text-sm font-medium rounded-lg transition-colors hover:bg-gray-50" style={linkColor}>About Us</Link>
+            <Link href="/resources"  onClick={() => setMobileOpen(false)} className="block px-4 py-2.5 text-sm font-medium rounded-lg transition-colors hover:bg-gray-50" style={linkColor}>Guides</Link>
+            <Link href="/calculator" onClick={() => setMobileOpen(false)} className="block px-4 py-2.5 text-sm font-medium rounded-lg transition-colors hover:bg-gray-50" style={linkColor}>Calculators</Link>
+            <Link href="/contact"    onClick={() => setMobileOpen(false)} className="block px-4 py-2.5 text-sm font-medium rounded-lg transition-colors hover:bg-gray-50" style={linkColor}>Contact</Link>
             <div className="pt-3 px-4">
               <Link
                 href="/contact"
+                onClick={() => setMobileOpen(false)}
                 className="block text-center w-full py-3 rounded-lg text-sm font-semibold text-white"
                 style={{ background: '#006D77' }}
               >
