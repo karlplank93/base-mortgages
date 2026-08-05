@@ -21,7 +21,7 @@ export default function TermsPage() {
 
             <div>
               <h2 className="font-display text-xl font-bold text-gray-900 mb-3">Licensing Information</h2>
-              <p>Kiwi Adviser Network Limited (FSP763551) holds a license issued by the Financial Markets Authority to provide financial advice. Base Mortgages is authorised by the license to provide financial advice.</p>
+              <p>Base Mortgages Limited (FSP1011808) holds a license issued by the Financial Markets Authority to provide financial advice. Base Mortgages is authorised by the license to provide financial advice.</p>
               <p className="mt-3">Karl Plank (FSP1007409) and Vincent Uys (FSP1012855) are Financial Advisers authorised to provide financial advice on behalf of Base Mortgages.</p>
             </div>
 
