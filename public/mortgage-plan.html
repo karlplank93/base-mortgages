@@ -878,8 +878,18 @@
         <span class="aval">5.00%</span>
       </div>
       <div class="arow">
-        <span>Cashback (every 3 yrs)</span>
-        <span class="aval">1.25% first refix, 0.90% after</span>
+        <span>Cashback – 1st refix</span>
+        <div style="display:flex;align-items:center;gap:3px;">
+          <input type="number" id="cb1rate" value="1.25" min="0" max="5" step="0.05" oninput="calc()" style="width:52px;font-size:12px;font-weight:600;color:var(--teal);border:1px solid var(--teal);border-radius:4px;padding:1px 4px;background:transparent;text-align:right;">
+          <span class="aval">%</span>
+        </div>
+      </div>
+      <div class="arow">
+        <span>Cashback – subsequent</span>
+        <div style="display:flex;align-items:center;gap:3px;">
+          <input type="number" id="cb2rate" value="0.90" min="0" max="5" step="0.05" oninput="calc()" style="width:52px;font-size:12px;font-weight:600;color:var(--teal);border:1px solid var(--teal);border-radius:4px;padding:1px 4px;background:transparent;text-align:right;">
+          <span class="aval">%</span>
+        </div>
       </div>
       <div class="arow">
         <span>Solicitor fees per refi</span>
@@ -1023,7 +1033,7 @@
 
     function tryApplyCb() {
       if (!applyCashbacks) return;
-      const cbRate = cbCount === 0 ? 0.0125 : 0.009; // 1.25% first refix, 0.90% after
+      const cbRate = cbCount === 0 ? (parseFloat(document.getElementById('cb1rate').value) || 1.25) / 100 : (parseFloat(document.getElementById('cb2rate').value) || 0.90) / 100;
       const gross = bal * cbRate;
       const net = Math.max(0, gross - 900);
       if (net > 0) {
@@ -1071,7 +1081,7 @@
 
     function tryApply() {
       if (cbCount >= n) return;
-      const cbRate = cbCount === 0 ? 0.0125 : 0.009; // 1.25% first refix, 0.90% after
+      const cbRate = cbCount === 0 ? (parseFloat(document.getElementById('cb1rate').value) || 1.25) / 100 : (parseFloat(document.getElementById('cb2rate').value) || 0.90) / 100;
       const net = Math.max(0, bal * cbRate - 900);
       if (net > 0) bal -= net;
       cbCount++;
